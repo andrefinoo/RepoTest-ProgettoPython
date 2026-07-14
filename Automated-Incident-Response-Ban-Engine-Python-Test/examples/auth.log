@@ -1,0 +1,500 @@
+[101] Jul 08 10:06:01 srv-prod-01 sshd[22001]: Invalid user admin from 193.201.224.50 port 51220
+[102] Jul 08 10:06:02 srv-prod-01 sshd[22001]: Failed password for invalid user admin from 193.201.224.50 port 51220 ssh2
+[103] Jul 08 10:06:02 srv-prod-01 sshd[22001]: Connection closed by invalid user admin 193.201.224.50 port 51220 [preauth]
+[104] Jul 08 10:06:15 srv-prod-01 sshd[22005]: Invalid user admin1 from 193.201.224.50 port 51226
+[105] Jul 08 10:06:16 srv-prod-01 sshd[22005]: Failed password for invalid user admin1 from 193.201.224.50 port 51226 ssh2
+[106] Jul 08 10:06:30 srv-prod-01 sshd[22010]: Failed password for root from 193.201.224.50 port 51232 ssh2
+[107] Jul 08 10:06:34 srv-prod-01 sshd[22012]: Failed password for root from 193.201.224.50 port 51238 ssh2
+[108] Jul 08 10:07:01 srv-prod-01 sshd[22018]: Accepted publickey for lneri from 192.168.1.72 port 43310 ssh2: RSA SHA256:ZTg0b...
+[109] Jul 08 10:07:01 srv-prod-01 sshd[22018]: pam_unix(sshd:session): session opened for user lneri by (uid=0)
+[110] Jul 08 10:07:02 srv-prod-01 systemd-logind[845]: New session 146 of user lneri.
+[111] Jul 08 10:07:45 srv-prod-01 sshd[22030]: Invalid user user3 from 193.201.224.50 port 51244
+[112] Jul 08 10:07:46 srv-prod-01 sshd[22030]: Failed password for invalid user user3 from 193.201.224.50 port 51244 ssh2
+[113] Jul 08 10:08:12 srv-prod-01 sshd[22042]: Invalid user guest1 from 198.51.100.3 port 60221
+[114] Jul 08 10:08:13 srv-prod-01 sshd[22042]: Failed password for invalid user guest1 from 198.51.100.3 port 60221 ssh2
+[115] Jul 08 10:09:00 srv-prod-01 sshd[22018]: pam_unix(sshd:session): session closed for user lneri
+[116] Jul 08 10:09:00 srv-prod-01 systemd-logind[845]: Removed session 146.
+[117] Jul 08 10:09:15 srv-prod-01 sshd[22055]: Failed password for root from 193.201.224.50 port 51250 ssh2
+[118] Jul 08 10:09:18 srv-prod-01 sshd[22058]: Failed password for root from 193.201.224.50 port 51256 ssh2
+[119] Jul 08 10:09:22 srv-prod-01 sshd[22060]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=193.201.224.50  user=root
+[120] Jul 08 10:09:24 srv-prod-01 sshd[22060]: Failed password for root from 193.201.224.50 port 51262 ssh2
+[121] Jul 08 10:10:05 srv-prod-01 sshd[22072]: Connection closed by authenticating user root 185.220.101.5 port 39422 [preauth]
+[122] Jul 08 10:11:12 srv-prod-01 sshd[22080]: Invalid user test1 from 198.51.100.3 port 60230
+[123] Jul 08 10:11:13 srv-prod-01 sshd[22080]: Failed password for invalid user test1 from 198.51.100.3 port 60230 ssh2
+[124] Jul 08 10:12:01 srv-prod-01 sshd[22095]: Accepted password for abianchi from 192.168.1.80 port 49112 ssh2
+[125] Jul 08 10:12:01 srv-prod-01 sshd[22095]: pam_unix(sshd:session): session opened for user abianchi by (uid=0)
+[126] Jul 08 10:12:02 srv-prod-01 systemd-logind[845]: New session 147 of user abianchi.
+[127] Jul 08 10:13:10 srv-prod-01 sshd[22110]: Invalid user elastic from 203.0.113.44 port 55120
+[128] Jul 08 10:13:11 srv-prod-01 sshd[22110]: Failed password for invalid user elastic from 203.0.113.44 port 55120 ssh2
+[129] Jul 08 10:14:15 srv-prod-01 sshd[22125]: Invalid user logstash from 203.0.113.44 port 55128
+[130] Jul 08 10:14:16 srv-prod-01 sshd[22125]: Failed password for invalid user logstash from 203.0.113.44 port 55128 ssh2
+[131] Jul 08 10:15:30 srv-prod-01 sshd[22095]: pam_unix(sshd:session): session closed for user abianchi
+[132] Jul 08 10:16:01 srv-prod-01 sshd[22140]: Did not receive identification string from 198.51.100.12 port 33211
+[133] Jul 08 10:17:12 srv-prod-01 sshd[22152]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=193.201.224.50  user=root
+[134] Jul 08 10:17:14 srv-prod-01 sshd[22152]: Accepted password for root from 193.201.224.50 port 51280 ssh2
+[135] Jul 08 10:17:14 srv-prod-01 sshd[22152]: pam_unix(sshd:session): session opened for user root by (uid=0)
+[136] Jul 08 10:17:15 srv-prod-01 systemd-logind[845]: New session 148 of user root.
+[137] Jul 08 10:18:02 srv-prod-01 sshd[22165]: Invalid user kibana from 203.0.113.44 port 55136
+[138] Jul 08 10:18:03 srv-prod-01 sshd[22165]: Failed password for invalid user kibana from 203.0.113.44 port 55136 ssh2
+[139] Jul 08 10:19:18 srv-prod-01 sshd[22152]: pam_unix(sshd:session): session closed for user root
+[140] Jul 08 10:20:05 srv-prod-01 sshd[22180]: Invalid user alpine from 198.51.100.9 port 41102
+[141] Jul 08 10:20:06 srv-prod-01 sshd[22180]: Failed password for invalid user alpine from 198.51.100.9 port 41102 ssh2
+[142] Jul 08 10:20:22 srv-prod-01 sshd[22185]: Invalid user arch from 198.51.100.9 port 41108
+[143] Jul 08 10:20:23 srv-prod-01 sshd[22185]: Failed password for invalid user arch from 198.51.100.9 port 41108 ssh2
+[144] Jul 08 10:21:02 srv-prod-01 sshd[22201]: Accepted publickey for ansiblerunner from 10.0.5.20 port 48910 ssh2: ED25519 SHA256:N3Ry...
+[145] Jul 08 10:21:02 srv-prod-01 sshd[22201]: pam_unix(sshd:session): session opened for user ansiblerunner by (uid=0)
+[146] Jul 08 10:21:04 srv-prod-01 sshd[22201]: pam_unix(sshd:session): session closed for user ansiblerunner
+[147] Jul 08 10:22:15 srv-prod-01 sshd[22215]: Invalid user fedora from 198.51.100.9 port 41114
+[148] Jul 08 10:22:16 srv-prod-01 sshd[22215]: Failed password for invalid user fedora from 198.51.100.9 port 41114 ssh2
+[149] Jul 08 10:23:04 srv-prod-01 sshd[22222]: Invalid user redhat from 198.51.100.9 port 41120
+[150] Jul 08 10:23:05 srv-prod-01 sshd[22222]: Failed password for invalid user redhat from 198.51.100.9 port 41120 ssh2
+[151] Jul 08 10:44:11 srv-prod-01 sshd[22230]: Failed password for root from 198.51.100.9 port 41126 ssh2
+[152] Jul 08 10:44:15 srv-prod-01 sshd[22235]: Failed password for root from 198.51.100.9 port 41132 ssh2
+[153] Jul 08 10:44:19 srv-prod-01 sshd[22240]: Failed password for root from 198.51.100.9 port 41138 ssh2
+[154] Jul 08 10:45:30 srv-prod-01 sshd[22252]: Connection reset by 193.201.224.50 port 51300 [preauth]
+[155] Jul 08 10:46:12 srv-prod-01 sshd[22260]: Invalid user node from 203.0.113.44 port 55150
+[156] Jul 08 10:46:13 srv-prod-01 sshd[22260]: Failed password for invalid user node from 203.0.113.44 port 55150 ssh2
+[157] Jul 08 10:47:01 srv-prod-01 sshd[22272]: Invalid user gitlab from 203.0.113.44 port 55156
+[158] Jul 08 10:47:02 srv-prod-01 sshd[22272]: Failed password for invalid user gitlab from 203.0.113.44 port 55156 ssh2
+[159] Jul 08 10:48:22 srv-prod-01 sshd[22285]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.199  user=root
+[160] Jul 08 10:48:24 srv-prod-01 sshd[22285]: Accepted publickey for root from 198.51.100.199 port 42110 ssh2: RSA SHA256:VnBYcGFz...
+[161] Jul 08 10:48:24 srv-prod-01 sshd[22285]: pam_unix(sshd:session): session opened for user root by (uid=0)
+[162] Jul 08 10:49:01 srv-prod-01 sshd[22299]: Invalid user hub from 203.0.113.44 port 55162
+[163] Jul 08 10:49:02 srv-prod-01 sshd[22299]: Failed password for invalid user hub from 203.0.113.44 port 55162 ssh2
+[164] Jul 08 10:50:11 srv-prod-01 sshd[22310]: Invalid user staff from 185.220.101.15 port 36120
+[165] Jul 08 10:50:12 srv-prod-01 sshd[22310]: Failed password for invalid user staff from 185.220.101.15 port 36120 ssh2
+[166] Jul 08 10:51:55 srv-prod-01 sshd[22285]: pam_unix(sshd:session): session closed for user root
+[167] Jul 08 10:52:04 srv-prod-01 sshd[22325]: Invalid user user4 from 185.220.101.15 port 36126
+[168] Jul 08 10:52:05 srv-prod-01 sshd[22325]: Failed password for invalid user user4 from 185.220.101.15 port 36126 ssh2
+[169] Jul 08 10:53:12 srv-prod-01 sshd[22338]: Invalid user user5 from 185.220.101.15 port 36132
+[170] Jul 08 10:53:13 srv-prod-01 sshd[22338]: Failed password for invalid user user5 from 185.220.101.15 port 36132 ssh2
+[171] Jul 08 10:54:20 srv-prod-01 sshd[22350]: Invalid user manager from 185.220.101.15 port 36138
+[172] Jul 08 10:54:21 srv-prod-01 sshd[22350]: Failed password for invalid user manager from 185.220.101.15 port 36138 ssh2
+[173] Jul 08 10:55:02 srv-prod-01 sshd[22365]: Accepted publickey for fverdi from 192.168.2.115 port 51142 ssh2: RSA SHA256:Y29uZmln...
+[174] Jul 08 10:55:02 srv-prod-01 sshd[22365]: pam_unix(sshd:session): session opened for user fverdi by (uid=0)
+[175] Jul 08 10:55:03 srv-prod-01 systemd-logind[845]: New session 149 of user fverdi.
+[176] Jul 08 10:56:40 srv-prod-01 sshd[22380]: Failed password for root from 185.220.101.15 port 36144 ssh2
+[177] Jul 08 10:56:44 srv-prod-01 sshd[22383]: Failed password for root from 185.220.101.15 port 36150 ssh2
+[178] Jul 08 10:57:01 srv-prod-01 sshd[22365]: pam_unix(sshd:session): session closed for user fverdi
+[179] Jul 08 10:58:12 srv-prod-01 sshd[22401]: Invalid user tomcat from 203.0.113.88 port 41200
+[180] Jul 08 10:58:13 srv-prod-01 sshd[22401]: Failed password for invalid user tomcat from 203.0.113.88 port 41200 ssh2
+[181] Jul 08 10:59:05 srv-prod-01 sshd[22412]: Invalid user jboss from 203.0.113.88 port 41206
+[182] Jul 08 10:59:06 srv-prod-01 sshd[22412]: Failed password for invalid user jboss from 203.0.113.88 port 41206 ssh2
+[183] Jul 08 11:00:22 srv-prod-01 sshd[22425]: Invalid user wildfly from 203.0.113.88 port 41212
+[184] Jul 08 11:00:23 srv-prod-01 sshd[22425]: Failed password for invalid user wildfly from 203.0.113.88 port 41212 ssh2
+[185] Jul 08 11:01:10 srv-prod-01 sshd[22440]: error: PAM: Authentication failure for illegal user sysadmin from 198.51.100.35
+[186] Jul 08 11:01:11 srv-prod-01 sshd[22440]: Accepted password for sysadmin from 198.51.100.35 port 47100 ssh2
+[187] Jul 08 11:01:11 srv-prod-01 sshd[22440]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+[188] Jul 08 11:02:45 srv-prod-01 sshd[22440]: pam_unix(sshd:session): session closed for user sysadmin
+[189] Jul 08 11:03:15 srv-prod-01 sshd[22460]: Invalid user test3 from 185.220.101.18 port 59102
+[190] Jul 08 11:03:16 srv-prod-01 sshd[22460]: Failed password for invalid user test3 from 185.220.101.18 port 59102 ssh2
+[191] Jul 08 11:04:02 srv-prod-01 sshd[22472]: Failed password for root from 185.220.101.18 port 59108 ssh2
+[192] Jul 08 11:04:05 srv-prod-01 sshd[22475]: Failed password for root from 185.220.101.18 port 59114 ssh2
+[193] Jul 08 11:04:09 srv-prod-01 sshd[22478]: Failed password for root from 185.220.101.18 port 59120 ssh2
+[194] Jul 08 11:04:12 srv-prod-01 sshd[22480]: Accepted password for root from 185.220.101.18 port 59126 ssh2
+[195] Jul 08 11:04:12 srv-prod-01 sshd[22480]: pam_unix(sshd:session): session opened for user root by (uid=0)
+[196] Jul 08 11:05:00 srv-prod-01 sshd[22480]: Received disconnect from 185.220.101.18 port 59126:11: user request
+[197] Jul 08 11:06:11 srv-prod-01 sshd[22495]: Invalid user zabbix from 203.0.113.99 port 38112
+[198] Jul 08 11:06:12 srv-prod-01 sshd[22495]: Failed password for invalid user zabbix from 203.0.113.99 port 38112 ssh2
+[199] Jul 08 11:07:20 srv-prod-01 sshd[22510]: Invalid user nagios from 203.0.113.99 port 38118
+[200] Jul 08 11:07:21 srv-prod-01 sshd[22510]: Failed password for invalid user nagios from 203.0.113.99 port 38118 ssh2
+[201] Jul 08 11:08:45 srv-prod-01 sshd[22525]: Invalid user prometheus from 203.0.113.99 port 38124
+[202] Jul 08 11:08:46 srv-prod-01 sshd[22525]: Failed password for invalid user prometheus from 203.0.113.99 port 38124 ssh2
+[203] Jul 08 11:09:01 srv-prod-01 sshd[22540]: Accepted publickey for gneri from 192.168.1.99 port 54100 ssh2: ED25519 SHA256:S2sz...
+[204] Jul 08 11:09:01 srv-prod-01 sshd[22540]: pam_unix(sshd:session): session opened for user gneri by (uid=0)
+[205] Jul 08 11:10:15 srv-prod-01 sshd[22552]: Invalid user grafana from 203.0.113.99 port 38130
+[206] Jul 08 11:10:16 srv-prod-01 sshd[22552]: Failed password for invalid user grafana from 203.0.113.99 port 38130 ssh2
+[207] Jul 08 11:11:02 srv-prod-01 sshd[22540]: pam_unix(sshd:session): session closed for user gneri
+[208] Jul 08 11:12:33 srv-prod-01 sshd[22570]: Invalid user alertmanager from 203.0.113.99 port 38136
+[209] Jul 08 11:12:34 srv-prod-01 sshd[22570]: Failed password for invalid user alertmanager from 203.0.113.99 port 38136 ssh2
+[210] Jul 08 11:13:45 srv-prod-01 sshd[22585]: Failed password for root from 185.220.101.20 port 49112 ssh2
+[211] Jul 08 11:13:49 srv-prod-01 sshd[22588]: Failed password for root from 185.220.101.20 port 49118 ssh2
+[212] Jul 08 11:14:01 srv-prod-01 sshd[22595]: Invalid user vagrant from 198.51.100.12 port 50210
+[213] Jul 08 11:14:02 srv-prod-01 sshd[22595]: Failed password for invalid user vagrant from 198.51.100.12 port 50210 ssh2
+[214] Jul 08 11:15:22 srv-prod-01 sshd[22610]: Invalid user packer from 198.51.100.12 port 50216
+[215] Jul 08 11:15:23 srv-prod-01 sshd[22610]: Failed password for invalid user packer from 198.51.100.12 port 50216 ssh2
+[216] Jul 08 11:16:11 srv-prod-01 sshd[22625]: Invalid user terraform from 198.51.100.12 port 50222
+[217] Jul 08 11:16:12 srv-prod-01 sshd[22625]: Failed password for invalid user terraform from 198.51.100.12 port 50222 ssh2
+[218] Jul 08 11:17:05 srv-prod-01 sshd[22640]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.188  user=root
+[219] Jul 08 11:17:06 srv-prod-01 sshd[22640]: Accepted publickey for root from 198.51.100.188 port 44321 ssh2: ED25519 SHA256:RmFzdEJw...
+[220] Jul 08 11:17:06 srv-prod-01 sshd[22640]: pam_unix(sshd:session): session opened for user root by (uid=0)
+[221] Jul 08 11:18:15 srv-prod-01 sshd[22652]: Invalid user consul from 198.51.100.12 port 50228
+[222] Jul 08 11:18:16 srv-prod-01 sshd[22652]: Failed password for invalid user consul from 198.51.100.12 port 50228 ssh2
+[223] Jul 08 11:19:30 srv-prod-01 sshd[22640]: pam_unix(sshd:session): session closed for user root
+[224] Jul 08 11:20:11 srv-prod-01 sshd[22670]: Invalid user vault from 198.51.100.12 port 50234
+[225] Jul 08 11:20:12 srv-prod-01 sshd[22670]: Failed password for invalid user vault from 198.51.100.12 port 50234 ssh2
+[226] Jul 08 11:21:40 srv-prod-01 sshd[22685]: Invalid user nomad from 198.51.100.12 port 50240
+[227] Jul 08 11:21:41 srv-prod-01 sshd[22685]: Failed password for invalid user nomad from 198.51.100.12 port 50240 ssh2
+[228] Jul 08 11:22:02 srv-prod-01 sshd[22700]: Accepted password for rrusso from 192.168.1.112 port 49812 ssh2
+[229] Jul 08 11:22:02 srv-prod-01 sshd[22700]: pam_unix(sshd:session): session opened for user rrusso by (uid=0)
+[230] Jul 08 11:22:03 srv-prod-01 systemd-logind[845]: New session 150 of user rrusso.
+[231] Jul 08 11:23:15 srv-prod-01 sshd[22715]: Failed password for root from 185.220.101.20 port 49130 ssh2
+[232] Jul 08 11:23:19 srv-prod-01 sshd[22718]: Failed password for root from 185.220.101.20 port 49136 ssh2
+[233] Jul 08 11:24:55 srv-prod-01 sshd[22700]: pam_unix(sshd:session): session closed for user rrusso
+[234] Jul 08 11:25:01 srv-prod-01 sshd[22730]: Did not receive identification string from 203.0.113.12 port 58990
+[235] Jul 08 11:26:12 srv-prod-01 sshd[22742]: Invalid user k8s from 203.0.113.150 port 42100
+[236] Jul 08 11:26:13 srv-prod-01 sshd[22742]: Failed password for invalid user k8s from 203.0.113.150 port 42100 ssh2
+[237] Jul 08 11:27:04 srv-prod-01 sshd[22755]: Invalid user kubernetes from 203.0.113.150 port 42106
+[238] Jul 08 11:27:05 srv-prod-01 sshd[22755]: Failed password for invalid user kubernetes from 203.0.113.150 port 42106 ssh2
+[239] Jul 08 11:28:18 srv-prod-01 sshd[22770]: Invalid user minikube from 203.0.113.150 port 42112
+[240] Jul 08 11:28:19 srv-prod-01 sshd[22770]: Failed password for invalid user minikube from 203.0.113.150 port 42112 ssh2
+[241] Jul 08 11:29:10 srv-prod-01 sshd[22785]: Invalid user helm from 203.0.113.150 port 42118
+[242] Jul 08 11:29:11 srv-prod-01 sshd[22785]: Failed password for invalid user helm from 203.0.113.150 port 42118 ssh2
+[243] Jul 08 11:30:15 srv-prod-01 sshd[22801]: Invalid user tanzu from 203.0.113.150 port 42124
+[244] Jul 08 11:30:16 srv-prod-01 sshd[22801]: Failed password for invalid user tanzu from 203.0.113.150 port 42124 ssh2
+[245] Jul 08 11:31:02 srv-prod-01 sshd[22815]: Accepted publickey for ansiblerunner from 10.0.5.20 port 49012 ssh2: ED25519 SHA256:N3Ry...
+[246] Jul 08 11:31:02 srv-prod-01 sshd[22815]: pam_unix(sshd:session): session opened for user ansiblerunner by (uid=0)
+[247] Jul 08 11:31:04 srv-prod-01 sshd[22815]: pam_unix(sshd:session): session closed for user ansiblerunner
+[248] Jul 08 11:32:40 srv-prod-01 sshd[22830]: Invalid user openshift from 203.0.113.150 port 42130
+[249] Jul 08 11:32:41 srv-prod-01 sshd[22830]: Failed password for invalid user openshift from 203.0.113.150 port 42130 ssh2
+[250] Jul 08 11:33:15 srv-prod-01 sshd[22845]: Failed password for root from 185.220.101.25 port 37112 ssh2
+[251] Jul 08 11:33:19 srv-prod-01 sshd[22848]: Failed password for root from 185.220.101.25 port 37118 ssh2
+[252] Jul 08 11:33:22 srv-prod-01 sshd[22850]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=185.220.101.25  user=root
+[253] Jul 08 11:33:24 srv-prod-01 sshd[22850]: Failed password for root from 185.220.101.25 port 37124 ssh2
+[254] Jul 08 11:34:02 srv-prod-01 sshd[22862]: Connection closed by authenticating user root 195.12.44.35 port 59110 [preauth]
+[255] Jul 08 11:35:12 srv-prod-01 sshd[22875]: Invalid user raddb from 198.51.100.50 port 48112
+[256] Jul 08 11:35:13 srv-prod-01 sshd[22875]: Failed password for invalid user raddb from 198.51.100.50 port 48112 ssh2
+[257] Jul 08 11:36:01 srv-prod-01 sshd[22890]: Accepted password for gverga from 192.168.1.130 port 39412 ssh2
+[258] Jul 08 11:36:01 srv-prod-01 sshd[22890]: pam_unix(sshd:session): session opened for user gverga by (uid=0)
+[259] Jul 08 11:36:02 srv-prod-01 systemd-logind[845]: New session 151 of user gverga.
+[260] Jul 08 11:37:15 srv-prod-01 sshd[22905]: Invalid user radius from 198.51.100.50 port 48118
+[261] Jul 08 11:37:16 srv-prod-01 sshd[22905]: Failed password for invalid user radius from 198.51.100.50 port 48118 ssh2
+[262] Jul 08 11:38:45 srv-prod-01 sshd[22890]: pam_unix(sshd:session): session closed for user gverga
+[263] Jul 08 11:39:02 srv-prod-01 sshd[22920]: Invalid user diameter from 198.51.100.50 port 48124
+[264] Jul 08 11:39:03 srv-prod-01 sshd[22920]: Failed password for invalid user diameter from 198.51.100.50 port 48124 ssh2
+[265] Jul 08 11:40:11 srv-prod-01 sshd[22935]: error: PAM: Authentication failure for illegal user tacacs from 198.51.100.50
+[266] Jul 08 11:40:12 srv-prod-01 sshd[22935]: Accepted password for tacacs from 198.51.100.50 port 48130 ssh2
+[267] Jul 08 11:40:12 srv-prod-01 sshd[22935]: pam_unix(sshd:session): session opened for user tacacs by (uid=0)
+[268] Jul 08 11:41:50 srv-prod-01 sshd[22935]: pam_unix(sshd:session): session closed for user tacacs
+[269] Jul 08 11:42:04 srv-prod-01 sshd[22950]: Invalid user openldap from 203.0.113.66 port 51102
+[270] Jul 08 11:42:05 srv-prod-01 sshd[22950]: Failed password for invalid user openldap from 203.0.113.66 port 51102 ssh2
+[271] Jul 08 11:43:12 srv-prod-01 sshd[22962]: Invalid user slapd from 203.0.113.66 port 51108
+[272] Jul 08 11:43:13 srv-prod-01 sshd[22962]: Failed password for invalid user slapd from 203.0.113.66 port 51108 ssh2
+[273] Jul 08 11:44:20 srv-prod-01 sshd[22975]: Invalid user krb5 from 203.0.113.66 port 51114
+[274] Jul 08 11:44:21 srv-prod-01 sshd[22975]: Failed password for invalid user krb5 from 203.0.113.66 port 51114 ssh2
+[275] Jul 08 11:45:02 srv-prod-01 sshd[22990]: Accepted publickey for mpirandello from 192.168.1.140 port 42210 ssh2: RSA SHA256:S2V5...
+[276] Jul 08 11:45:02 srv-prod-01 sshd[22990]: pam_unix(sshd:session): session opened for user mpirandello by (uid=0)
+[277] Jul 08 11:45:03 srv-prod-01 systemd-logind[845]: New session 152 of user mpirandello.
+[278] Jul 08 11:46:40 srv-prod-01 sshd[23005]: Failed password for root from 185.220.101.25 port 37130 ssh2
+[279] Jul 08 11:46:44 srv-prod-01 sshd[23008]: Failed password for root from 185.220.101.25 port 37136 ssh2
+[280] Jul 08 11:47:11 srv-prod-01 sshd[22990]: pam_unix(sshd:session): session closed for user mpirandello
+[281] Jul 08 11:48:12 srv-prod-01 sshd[23020]: Invalid user ipa from 203.0.113.66 port 51120
+[282] Jul 08 11:48:13 srv-prod-01 sshd[23020]: Failed password for invalid user ipa from 203.0.113.66 port 51120 ssh2
+[283] Jul 08 11:49:05 srv-prod-01 sshd[23035]: Invalid user freeipa from 203.0.113.66 port 51126
+[284] Jul 08 11:49:06 srv-prod-01 sshd[23035]: Failed password for invalid user freeipa from 203.0.113.66 port 51126 ssh2
+[285] Jul 08 11:50:22 srv-prod-01 sshd[23050]: Invalid user active_directory from 203.0.113.66 port 51132
+[286] Jul 08 11:50:23 srv-prod-01 sshd[23050]: Failed password for invalid user active_directory from 203.0.113.66 port 51132 ssh2
+[287] Jul 08 11:51:10 srv-prod-01 sshd[23062]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.210  user=root
+[288] Jul 08 11:51:11 srv-prod-01 sshd[23062]: Accepted publickey for root from 198.51.100.210 port 38911 ssh2: ED25519 SHA256:TWVn...
+[289] Jul 08 11:51:11 srv-prod-01 sshd[23062]: pam_unix(sshd:session): session opened for user root by (uid=0)
+[290] Jul 08 11:52:45 srv-prod-01 sshd[23062]: pam_unix(sshd:session): session closed for user root
+[291] Jul 08 11:53:15 srv-prod-01 sshd[23080]: Invalid user samba from 203.0.113.66 port 51138
+[292] Jul 08 11:53:16 srv-prod-01 sshd[23080]: Failed password for invalid user samba from 203.0.113.66 port 51138 ssh2
+[293] Jul 08 11:04:02 srv-prod-01 sshd[23095]: Failed password for root from 185.220.101.30 port 41102 ssh2
+[294] Jul 08 11:04:05 srv-prod-01 sshd[23098]: Failed password for root from 185.220.101.30 port 41108 ssh2
+[295] Jul 08 11:04:09 srv-prod-01 sshd[23100]: Failed password for root from 185.220.101.30 port 41114 ssh2
+[296] Jul 08 11:04:12 srv-prod-01 sshd[23102]: Accepted password for root from 185.220.101.30 port 41120 ssh2
+[297] Jul 08 11:04:12 srv-prod-01 sshd[23102]: pam_unix(sshd:session): session opened for user root by (uid=0)
+[298] Jul 08 11:05:00 srv-prod-01 sshd[23102]: Received disconnect from 185.220.101.30 port 41120:11: user request
+[299] Jul 08 12:01:05 srv-prod-01 sshd[23115]: Connection closed by authenticating user root 195.12.44.40 port 49112 [preauth]
+[300] Jul 08 12:02:11 srv-prod-01 sshd[23120]: Invalid user winrm from 198.51.100.80 port 53100
+[301] Jul 08 12:02:12 srv-prod-01 sshd[23120]: Failed password for invalid user winrm from 198.51.100.80 port 53100 ssh2
+[302] Jul 08 12:03:45 srv-prod-01 sshd[23135]: Invalid user powershell from 198.51.100.80 port 53106
+[303] Jul 08 12:03:46 srv-prod-01 sshd[23135]: Failed password for invalid user powershell from 198.51.100.80 port 53106 ssh2
+[304] Jul 08 12:04:02 srv-prod-01 sshd[23140]: Accepted password for lpirandello from 192.168.1.145 port 51112 ssh2
+[305] Jul 08 12:04:02 srv-prod-01 sshd[23140]: pam_unix(sshd:session): session opened for user lpirandello by (uid=0)
+[306] Jul 08 12:04:03 srv-prod-01 systemd-logind[845]: New session 153 of user lpirandello.
+[307] Jul 08 12:05:22 srv-prod-01 sshd[23152]: Invalid user wmi from 198.51.100.80 port 53112
+[308] Jul 08 12:05:23 srv-prod-01 sshd[23152]: Failed password for invalid user wmi from 198.51.100.80 port 53112 ssh2
+[309] Jul 08 12:06:11 srv-prod-01 sshd[23140]: pam_unix(sshd:session): session closed for user lpirandello
+[310] Jul 08 12:07:05 srv-prod-01 sshd[23170]: Invalid user rpc from 198.51.100.80 port 53118
+[311] Jul 08 12:07:06 srv-prod-01 sshd[23170]: Failed password for invalid user rpc from 198.51.100.80 port 53118 ssh2
+[312] Jul 08 12:08:15 srv-prod-01 sshd[23185]: Failed password for root from 185.220.101.30 port 41126 ssh2
+[313] Jul 08 12:08:19 srv-prod-01 sshd[23188]: Failed password for root from 185.220.101.30 port 41132 ssh2
+[314] Jul 08 12:09:01 srv-prod-01 sshd[23201]: Accepted publickey for ansiblerunner from 10.0.5.20 port 49112 ssh2: ED25519 SHA256:N3Ry...
+[315] Jul 08 12:09:01 srv-prod-01 sshd[23201]: pam_unix(sshd:session): session opened for user ansiblerunner by (uid=0)
+[316] Jul 08 12:09:04 srv-prod-01 sshd[23201]: pam_unix(sshd:session): session closed for user ansiblerunner
+[317] Jul 08 12:10:40 srv-prod-01 sshd[23215]: Invalid user rpcbind from 198.51.100.80 port 53124
+[318] Jul 08 12:10:41 srv-prod-01 sshd[23215]: Failed password for invalid user rpcbind from 198.51.100.80 port 53124 ssh2
+[319] Jul 08 12:11:15 srv-prod-01 sshd[23230]: Invalid user nfs from 198.51.100.80 port 53130
+[320] Jul 08 12:11:16 srv-prod-01 sshd[23230]: Failed password for invalid user nfs from 198.51.100.80 port 53130 ssh2
+[321] Jul 08 12:12:02 srv-prod-01 sshd[23242]: Accepted password for asvevo from 192.168.1.160 port 42312 ssh2
+[322] Jul 08 12:12:02 srv-prod-01 sshd[23242]: pam_unix(sshd:session): session opened for user asvevo by (uid=0)
+[323] Jul 08 12:12:03 srv-prod-01 systemd-logind[845]: New session 154 of user asvevo.
+[324] Jul 08 12:13:55 srv-prod-01 sshd[23242]: pam_unix(sshd:session): session closed for user asvevo
+[325] Jul 08 12:14:12 srv-prod-01 sshd[23260]: Invalid user nfsserver from 198.51.100.80 port 53136
+[326] Jul 08 12:14:13 srv-prod-01 sshd[23260]: Failed password for invalid user nfsserver from 198.51.100.80 port 53136 ssh2
+[327] Jul 08 12:15:01 srv-prod-01 sshd[23272]: Did not receive identification string from 203.0.113.19 port 34100
+[328] Jul 08 12:16:45 srv-prod-01 sshd[23285]: Invalid user samba-tool from 198.51.100.80 port 53142
+[329] Jul 08 12:16:46 srv-prod-01 sshd[23285]: Failed password for invalid user samba-tool from 198.51.100.80 port 53142 ssh2
+[330] Jul 08 12:17:11 srv-prod-01 sshd[23301]: error: PAM: Authentication failure for illegal user smbadmin from 198.51.100.80
+[331] Jul 08 12:17:12 srv-prod-01 sshd[23301]: Accepted password for smbadmin from 198.51.100.80 port 53148 ssh2
+[332] Jul 08 12:17:12 srv-prod-01 sshd[23301]: pam_unix(sshd:session): session opened for user smbadmin by (uid=0)
+[333] Jul 08 12:18:50 srv-prod-01 sshd[23301]: pam_unix(sshd:session): session closed for user smbadmin
+[334] Jul 08 12:19:04 srv-prod-01 sshd[23320]: Invalid user netbios from 198.51.100.80 port 53154
+[335] Jul 08 12:19:05 srv-prod-01 sshd[23320]: Failed password for invalid user netbios from 198.51.100.80 port 53154 ssh2
+[336] Jul 08 12:20:12 srv-prod-01 sshd[23335]: Invalid user winuser from 198.51.100.80 port 53160
+[337] Jul 08 12:20:13 srv-prod-01 sshd[23335]: Failed password for invalid user winuser from 198.51.100.80 port 53160 ssh2
+[338] Jul 08 12:21:20 srv-prod-01 sshd[23348]: Invalid user domainadmin from 198.51.100.80 port 53166
+[339] Jul 08 12:21:21 srv-prod-01 sshd[23348]: Failed password for invalid user domainadmin from 198.51.100.80 port 53166 ssh2
+[340] Jul 08 12:22:02 srv-prod-01 sshd[23360]: Accepted publickey for umaba from 192.168.1.170 port 52100 ssh2: RSA SHA256:VGVzd...
+[341] Jul 08 12:22:02 srv-prod-01 sshd[23360]: pam_unix(sshd:session): session opened for user umaba by (uid=0)
+[342] Jul 08 12:22:03 srv-prod-01 systemd-logind[845]: New session 155 of user umaba.
+[343] Jul 08 12:23:40 srv-prod-01 sshd[23375]: Failed password for root from 185.220.101.35 port 55102 ssh2
+[344] Jul 08 12:23:44 srv-prod-01 sshd[23378]: Failed password for root from 185.220.101.35 port 55108 ssh2
+[345] Jul 08 12:24:11 srv-prod-01 sshd[23360]: pam_unix(sshd:session): session closed for user umaba
+[346] Jul 08 12:25:12 srv-prod-01 sshd[23395]: Invalid user ads from 198.51.100.80 port 53172
+[347] Jul 08 12:25:13 srv-prod-01 sshd[23395]: Failed password for invalid user ads from 198.51.100.80 port 53172 ssh2
+[348] Jul 08 12:26:05 srv-prod-01 sshd[23410]: Invalid user ldapuser from 198.51.100.80 port 53178
+[349] Jul 08 12:26:06 srv-prod-01 sshd[23410]: Failed password for invalid user ldapuser from 198.51.100.80 port 53178 ssh2
+[350] Jul 08 12:27:22 srv-prod-01 sshd[23425]: Invalid user ldapadmin from 198.51.100.80 port 53184
+[351] Jul 08 12:27:23 srv-prod-01 sshd[23425]: Failed password for invalid user ldapadmin from 198.51.100.80 port 53184 ssh2
+[352] Jul 08 12:28:10 srv-prod-01 sshd[23440]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.222  user=root
+[353] Jul 08 12:28:12 srv-prod-01 sshd[23440]: Accepted publickey for root from 198.51.100.222 port 49110 ssh2: ED25519 SHA256:TmV3...
+[354] Jul 08 12:28:12 srv-prod-01 sshd[23440]: pam_unix(sshd:session): session opened for user root by (uid=0)
+[355] Jul 08 12:29:45 srv-prod-01 sshd[23440]: pam_unix(sshd:session): session closed for user root
+[356] Jul 08 12:30:15 srv-prod-01 sshd[23460]: Invalid user kerberos from 198.51.100.80 port 53190
+[357] Jul 08 12:30:16 srv-prod-01 sshd[23460]: Failed password for invalid user kerberos from 198.51.100.80 port 53190 ssh2
+[358] Jul 08 13:01:02 srv-prod-01 sshd[23475]: Accepted publickey for ansiblerunner from 10.0.5.20 port 49220 ssh2: ED25519 SHA256:N3Ry...
+[359] Jul 08 13:01:02 srv-prod-01 sshd[23475]: pam_unix(sshd:session): session opened for user ansiblerunner by (uid=0)
+[360] Jul 08 13:01:04 srv-prod-01 sshd[23475]: pam_unix(sshd:session): session closed for user ansiblerunner
+[361] Jul 08 13:02:11 srv-prod-01 sshd[23490]: Invalid user kdc from 198.51.100.80 port 53196
+[362] Jul 08 13:02:12 srv-prod-01 sshd[23490]: Failed password for invalid user kdc from 198.51.100.80 port 53196 ssh2
+[363] Jul 08 13:03:45 srv-prod-01 sshd[23505]: Invalid user kadmin from 198.51.100.80 port 53202
+[364] Jul 08 13:03:46 srv-prod-01 sshd[23505]: Failed password for invalid user kadmin from 198.51.100.80 port 53202 ssh2
+[365] Jul 08 13:04:02 srv-prod-01 sshd[23510]: Accepted password for dbeccaria from 192.168.1.180 port 43342 ssh2
+[366] Jul 08 13:04:02 srv-prod-01 sshd[23510]: pam_unix(sshd:session): session opened for user dbeccaria by (uid=0)
+[367] Jul 08 13:04:03 srv-prod-01 systemd-logind[845]: New session 156 of user dbeccaria.
+[368] Jul 08 13:05:22 srv-prod-01 sshd[23525]: Invalid user krbfast from 198.51.100.80 port 53208
+[369] Jul 08 13:05:23 srv-prod-01 sshd[23525]: Failed password for invalid user krbfast from 198.51.100.80 port 53208 ssh2
+[370] Jul 08 13:06:11 srv-prod-01 sshd[23510]: pam_unix(sshd:session): session closed for user dbeccaria
+[371] Jul 08 13:07:05 srv-prod-01 sshd[23540]: Invalid user policy from 198.51.100.80 port 53214
+[372] Jul 08 13:07:06 srv-prod-01 sshd[23540]: Failed password for invalid user policy from 198.51.100.80 port 53214 ssh2
+[373] Jul 08 13:08:15 srv-prod-01 sshd[23555]: Failed password for root from 185.220.101.35 port 55114 ssh2
+[374] Jul 08 13:08:19 srv-prod-01 sshd[23558]: Failed password for root from 185.220.101.35 port 55120 ssh2
+[375] Jul 08 13:09:40 srv-prod-01 sshd[23570]: Invalid user ipsec from 198.51.100.80 port 53220
+[376] Jul 08 13:09:41 srv-prod-01 sshd[23570]: Failed password for invalid user ipsec from 198.51.100.80 port 53220 ssh2
+[377] Jul 08 13:10:15 srv-prod-01 sshd[23585]: Invalid user vpn from 198.51.100.80 port 53226
+[378] Jul 08 13:10:16 srv-prod-01 sshd[23585]: Failed password for invalid user vpn from 198.51.100.80 port 53226 ssh2
+[379] Jul 08 13:11:05 srv-prod-01 sshd[23601]: Connection reset by 193.201.224.50 port 51400 [preauth]
+[380] Jul 08 13:12:02 srv-prod-01 sshd[23610]: Accepted password for gparini from 192.168.1.185 port 52210 ssh2
+[381] Jul 08 13:12:02 srv-prod-01 sshd[23610]: pam_unix(sshd:session): session opened for user gparini by (uid=0)
+[382] Jul 08 13:12:03 srv-prod-01 systemd-logind[845]: New session 157 of user gparini.
+[383] Jul 08 13:13:55 srv-prod-01 sshd[23610]: pam_unix(sshd:session): session closed for user gparini
+[384] Jul 08 13:14:12 srv-prod-01 sshd[23625]: Invalid user openvpn from 198.51.100.80 port 53232
+[385] Jul 08 13:14:13 srv-prod-01 sshd[23625]: Failed password for invalid user openvpn from 198.51.100.80 port 53232 ssh2
+[386] Jul 08 13:15:01 srv-prod-01 sshd[23640]: Did not receive identification string from 203.0.113.25 port 41100
+[387] Jul 08 13:16:45 srv-prod-01 sshd[23652]: Invalid user wireguard from 198.51.100.80 port 53238
+[388] Jul 08 13:16:46 srv-prod-01 sshd[23652]: Failed password for invalid user wireguard from 198.51.100.80 port 53238 ssh2
+[389] Jul 08 13:17:11 srv-prod-01 sshd[23670]: error: PAM: Authentication failure for illegal user strongswan from 198.51.100.80
+[390] Jul 08 13:17:12 srv-prod-01 sshd[23670]: Accepted password for strongswan from 198.51.100.80 port 53244 ssh2
+[391] Jul 08 13:17:12 srv-prod-01 sshd[23670]: pam_unix(sshd:session): session opened for user strongswan by (uid=0)
+[392] Jul 08 13:18:50 srv-prod-01 sshd[23670]: pam_unix(sshd:session): session closed for user strongswan
+[393] Jul 08 13:19:04 srv-prod-01 sshd[23685]: Invalid user proxy from 198.51.100.80 port 53250
+[394] Jul 08 13:19:05 srv-prod-01 sshd[23685]: Failed password for invalid user proxy from 198.51.100.80 port 53250 ssh2
+[395] Jul 08 13:20:12 srv-prod-01 sshd[23701]: Invalid user haproxy from 198.51.100.80 port 53256
+[396] Jul 08 13:20:13 srv-prod-01 sshd[23701]: Failed password for invalid user haproxy from 198.51.100.80 port 53256 ssh2
+[397] Jul 08 13:21:20 srv-prod-01 sshd[23715]: Invalid user squid from 198.51.100.80 port 53262
+[398] Jul 08 13:21:21 srv-prod-01 sshd[23715]: Failed password for invalid user squid from 198.51.100.80 port 53262 ssh2
+[399] Jul 08 13:22:02 srv-prod-01 sshd[23730]: Accepted publickey for ufoffolo from 192.168.1.190 port 38442 ssh2: RSA SHA256:S2V5...
+[400] Jul 08 13:22:02 srv-prod-01 sshd[23730]: pam_unix(sshd:session): session opened for user ufoffolo by (uid=0)
+[401] Jul 08 13:22:03 srv-prod-01 systemd-logind[845]: New session 158 of user ufoffolo.
+[402] Jul 08 13:23:40 srv-prod-01 sshd[23745]: Failed password for root from 185.220.101.40 port 43112 ssh2
+[403] Jul 08 13:23:44 srv-prod-01 sshd[23748]: Failed password for root from 185.220.101.40 port 43118 ssh2
+[404] Jul 08 13:24:11 srv-prod-01 sshd[23730]: pam_unix(sshd:session): session closed for user ufoffolo
+[405] Jul 08 13:25:12 srv-prod-01 sshd[23760]: Invalid user varnish from 198.51.100.80 port 53268
+[406] Jul 08 13:25:13 srv-prod-01 sshd[23760]: Failed password for invalid user varnish from 198.51.100.80 port 53268 ssh2
+[407] Jul 08 13:26:05 srv-prod-01 sshd[23772]: Invalid user envoy from 198.51.100.80 port 53274
+[408] Jul 08 13:26:06 srv-prod-01 sshd[23772]: Failed password for invalid user envoy from 198.51.100.80 port 53274 ssh2
+[409] Jul 08 13:27:22 srv-prod-01 sshd[23785]: Invalid user traefik from 198.51.100.80 port 53280
+[410] Jul 08 13:27:23 srv-prod-01 sshd[23785]: Failed password for invalid user traefik from 198.51.100.80 port 53280 ssh2
+[411] Jul 08 13:28:10 srv-prod-01 sshd[23801]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.233  user=root
+[412] Jul 08 13:28:12 srv-prod-01 sshd[23801]: Accepted publickey for root from 198.51.100.233 port 50110 ssh2: ED25519 SHA256:QW5v...
+[413] Jul 08 13:28:12 srv-prod-01 sshd[23801]: pam_unix(sshd:session): session opened for user root by (uid=0)
+[414] Jul 08 13:29:45 srv-prod-01 sshd[23801]: pam_unix(sshd:session): session closed for user root
+[415] Jul 08 13:30:15 srv-prod-01 sshd[23815]: Invalid user kong from 198.51.100.80 port 53286
+[416] Jul 08 13:30:16 srv-prod-01 sshd[23815]: Failed password for invalid user kong from 198.51.100.80 port 53286 ssh2
+[417] Jul 08 14:01:02 srv-prod-01 sshd[23830]: Accepted publickey for ansiblerunner from 10.0.5.20 port 49330 ssh2: ED25519 SHA256:N3Ry...
+[418] Jul 08 14:01:02 srv-prod-01 sshd[23830]: pam_unix(sshd:session): session opened for user ansiblerunner by (uid=0)
+[419] Jul 08 14:01:04 srv-prod-01 sshd[23830]: pam_unix(sshd:session): session closed for user ansiblerunner
+[420] Jul 08 14:02:11 srv-prod-01 sshd[23845]: Invalid user nginx-ingress from 198.51.100.80 port 53292
+[421] Jul 08 14:02:12 srv-prod-01 sshd[23845]: Failed password for invalid user nginx-ingress from 198.51.100.80 port 53292 ssh2
+[422] Jul 08 14:03:45 srv-prod-01 sshd[23860]: Invalid user alb from 198.51.100.80 port 53298
+[423] Jul 08 14:03:46 srv-prod-01 sshd[23860]: Failed password for invalid user alb from 198.51.100.80 port 53298 ssh2
+[424] Jul 08 14:04:02 srv-prod-01 sshd[23872]: Accepted password for valfieri from 192.168.1.195 port 41100 ssh2
+[425] Jul 08 14:04:02 srv-prod-01 sshd[23872]: pam_unix(sshd:session): session opened for user valfieri by (uid=0)
+[426] Jul 08 14:04:03 srv-prod-01 systemd-logind[845]: New session 159 of user valfieri.
+[427] Jul 08 14:05:22 srv-prod-01 sshd[23885]: Invalid user elb from 198.51.100.80 port 53304
+[428] Jul 08 14:05:23 srv-prod-01 sshd[23885]: Failed password for invalid user elb from 198.51.100.80 port 53304 ssh2
+[429] Jul 08 14:06:11 srv-prod-01 sshd[23872]: pam_unix(sshd:session): session closed for user valfieri
+[430] Jul 08 14:07:05 srv-prod-01 sshd[23901]: Invalid user clb from 198.51.100.80 port 53310
+[431] Jul 08 14:07:06 srv-prod-01 sshd[23901]: Failed password for invalid user clb from 198.51.100.80 port 53310 ssh2
+[432] Jul 08 14:08:15 srv-prod-01 sshd[23915]: Failed password for root from 185.220.101.40 port 43126 ssh2
+[433] Jul 08 14:08:19 srv-prod-01 sshd[23918]: Failed password for root from 185.220.101.40 port 43132 ssh2
+[434] Jul 08 14:09:40 srv-prod-01 sshd[23930]: Invalid user f5 from 198.51.100.80 port 53316
+[435] Jul 08 14:09:41 srv-prod-01 sshd[23930]: Failed password for invalid user f5 from 198.51.100.80 port 53316 ssh2
+[436] Jul 08 14:10:15 srv-prod-01 sshd[23942]: Invalid user netscaler from 198.51.100.80 port 53322
+[437] Jul 08 14:10:16 srv-prod-01 sshd[23942]: Failed password for invalid user netscaler from 198.51.100.80 port 53322 ssh2
+[438] Jul 08 14:11:05 srv-prod-01 sshd[23960]: Connection reset by 193.201.224.50 port 51500 [preauth]
+[439] Jul 08 14:12:02 srv-prod-01 sshd[23972]: Accepted password for iisvevo from 192.168.1.198 port 53442 ssh2
+[440] Jul 08 14:12:02 srv-prod-01 sshd[23972]: pam_unix(sshd:session): session opened for user iisvevo by (uid=0)
+[441] Jul 08 14:12:03 srv-prod-01 systemd-logind[845]: New session 160 of user iisvevo.
+[442] Jul 08 14:13:55 srv-prod-01 sshd[23972]: pam_unix(sshd:session): session closed for user iisvevo
+[443] Jul 08 14:14:12 srv-prod-01 sshd[23990]: Invalid user barracuda from 198.51.100.80 port 53328
+[444] Jul 08 14:14:13 srv-prod-01 sshd[23990]: Failed password for invalid user barracuda from 198.51.100.80 port 53328 ssh2
+[445] Jul 08 14:15:01 srv-prod-01 sshd[24001]: Did not receive identification string from 203.0.113.33 port 49880
+[446] Jul 08 14:16:45 srv-prod-01 sshd[24012]: Invalid user citrix from 198.51.100.80 port 53334
+[447] Jul 08 14:16:46 srv-prod-01 sshd[24012]: Failed password for invalid user citrix from 198.51.100.80 port 53334 ssh2
+[448] Jul 08 14:17:11 srv-prod-01 sshd[24025]: error: PAM: Authentication failure for illegal user checkpoint from 198.51.100.80
+[449] Jul 08 14:17:12 srv-prod-01 sshd[24025]: Accepted password for checkpoint from 198.51.100.80 port 53340 ssh2
+[450] Jul 08 14:17:12 srv-prod-01 sshd[24025]: pam_unix(sshd:session): session opened for user checkpoint by (uid=0)
+[451] Jul 08 14:18:50 srv-prod-01 sshd[24025]: pam_unix(sshd:session): session closed for user checkpoint
+[452] Jul 08 14:19:04 srv-prod-01 sshd[24040]: Invalid user paloalto from 198.51.100.80 port 53346
+[453] Jul 08 14:19:05 srv-prod-01 sshd[24040]: Failed password for invalid user Paloalto from 198.51.100.80 port 53346 ssh2
+[454] Jul 08 14:20:12 srv-prod-01 sshd[24052]: Invalid user fortinet from 198.51.100.80 port 53352
+[455] Jul 08 14:20:13 srv-prod-01 sshd[24052]: Failed password for invalid user fortinet from 198.51.100.80 port 53352 ssh2
+[456] Jul 08 14:21:20 srv-prod-01 sshd[24065]: Invalid user sophos from 198.51.100.80 port 53358
+[457] Jul 08 14:21:21 srv-prod-01 sshd[24065]: Failed password for invalid user sophos from 198.51.100.80 port 53358 ssh2
+[458] Jul 08 14:22:02 srv-prod-01 sshd[24080]: Accepted publickey for cgoldoni from 192.168.1.210 port 48112 ssh2: RSA SHA256:S2V5...
+[459] Jul 08 14:22:02 srv-prod-01 sshd[24080]: pam_unix(sshd:session): session opened for user cgoldoni by (uid=0)
+[460] Jul 08 14:22:03 srv-prod-01 systemd-logind[845]: New session 161 of user cgoldoni.
+[461] Jul 08 14:23:40 srv-prod-01 sshd[24095]: Failed password for root from 185.220.101.45 port 59112 ssh2
+[462] Jul 08 14:23:44 srv-prod-01 sshd[24098]: Failed password for root from 185.220.101.45 port 59118 ssh2
+[463] Jul 08 14:24:11 srv-prod-01 sshd[24080]: pam_unix(sshd:session): session closed for user cgoldoni
+[464] Jul 08 14:25:12 srv-prod-01 sshd[24110]: Invalid user watchguard from 198.51.100.80 port 53364
+[465] Jul 08 14:25:13 srv-prod-01 sshd[24110]: Failed password for invalid user watchguard from 198.51.100.80 port 53364 ssh2
+[466] Jul 08 14:26:05 srv-prod-01 sshd[24122]: Invalid user juniper from 198.51.100.80 port 53370
+[467] Jul 08 14:26:06 srv-prod-01 sshd[24122]: Failed password for invalid user juniper from 198.51.100.80 port 53370 ssh2
+[468] Jul 08 14:27:22 srv-prod-01 sshd[24135]: Invalid user cisco from 198.51.100.80 port 53376
+[469] Jul 08 14:27:23 srv-prod-01 sshd[24135]: Failed password for invalid user cisco from 198.51.100.80 port 53376 ssh2
+[470] Jul 08 14:28:10 srv-prod-01 sshd[24150]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.244  user=root
+[471] Jul 08 14:28:12 srv-prod-01 sshd[24150]: Accepted publickey for root from 198.51.100.244 port 51100 ssh2: ED25519 SHA256:T3V0...
+[472] Jul 08 14:28:12 srv-prod-01 sshd[24150]: pam_unix(sshd:session): session opened for user root by (uid=0)
+[473] Jul 08 14:29:45 srv-prod-01 sshd[24150]: pam_unix(sshd:session): session closed for user root
+[474] Jul 08 14:30:15 srv-prod-01 sshd[24165]: Invalid user ASA from 198.51.100.80 port 53382
+[475] Jul 08 14:30:16 srv-prod-01 sshd[24165]: Failed password for invalid user ASA from 198.51.100.80 port 53382 ssh2
+[476] Jul 08 15:01:02 srv-prod-01 sshd[24180]: Accepted publickey for ansiblerunner from 10.0.5.20 port 49440 ssh2: ED25519 SHA256:N3Ry...
+[477] Jul 08 15:01:02 srv-prod-01 sshd[24180]: pam_unix(sshd:session): session opened for user ansiblerunner by (uid=0)
+[478] Jul 08 15:01:04 srv-prod-01 sshd[24180]: pam_unix(sshd:session): session closed for user ansiblerunner
+[479] Jul 08 15:02:11 srv-prod-01 sshd[24195]: Invalid user pix from 198.51.100.80 port 53388
+[480] Jul 08 15:02:12 srv-prod-01 sshd[24195]: Failed password for invalid user pix from 198.51.100.80 port 53388 ssh2
+[481] Jul 08 15:03:45 srv-prod-01 sshd[24210]: Invalid user firewalld from 198.51.100.80 port 53394
+[482] Jul 08 15:03:46 srv-prod-01 sshd[24210]: Failed password for invalid user firewalld from 198.51.100.80 port 53394 ssh2
+[483] Jul 08 15:04:02 srv-prod-01 sshd[24222]: Accepted password for tgoldoni from 192.168.1.215 port 39442 ssh2
+[484] Jul 08 15:04:02 srv-prod-01 sshd[24222]: pam_unix(sshd:session): session opened for user tgoldoni by (uid=0)
+[485] Jul 08 15:04:03 srv-prod-01 systemd-logind[845]: New session 162 of user tgoldoni.
+[486] Jul 08 15:05:22 srv-prod-01 sshd[24235]: Invalid user iptables from 198.51.100.80 port 53400
+[487] Jul 08 15:05:23 srv-prod-01 sshd[24235]: Failed password for invalid user iptables from 198.51.100.80 port 53400 ssh2
+[488] Jul 08 15:06:11 srv-prod-01 sshd[24222]: pam_unix(sshd:session): session closed for user tgoldoni
+[489] Jul 08 15:07:05 srv-prod-01 sshd[24251]: Invalid user ufw from 198.51.100.80 port 53406
+[490] Jul 08 15:07:06 srv-prod-01 sshd[24251]: Failed password for invalid user ufw from 198.51.100.80 port 53406 ssh2
+[491] Jul 08 15:08:15 srv-prod-01 sshd[24265]: Failed password for root from 185.220.101.45 port 59124 ssh2
+[492] Jul 08 15:08:19 srv-prod-01 sshd[24268]: Failed password for root from 185.220.101.45 port 59130 ssh2
+[493] Jul 08 15:09:40 srv-prod-01 sshd[24280]: Invalid user nftables from 198.51.100.80 port 53412
+[494] Jul 08 15:09:41 srv-prod-01 sshd[24280]: Failed password for invalid user nftables from 198.51.100.80 port 53412 ssh2
+[495] Jul 08 15:10:15 srv-prod-01 sshd[24292]: Invalid user pf from 198.51.100.80 port 53418
+[496] Jul 08 15:10:16 srv-prod-01 sshd[24292]: Failed password for invalid user pf from 198.51.100.80 port 53418 ssh2
+[497] Jul 08 15:11:05 srv-prod-01 sshd[24310]: Connection reset by 193.201.224.50 port 51600 [preauth]
+[498] Jul 08 15:12:02 srv-prod-01 sshd[24322]: Accepted password for jbello from 192.168.1.220 port 51220 ssh2
+[499] Jul 08 15:12:02 srv-prod-01 sshd[24322]: pam_unix(sshd:session): session opened for user jbello by (uid=0)
+[500] Jul 08 15:12:03 srv-prod-01 systemd-logind[845]: New session 163 of user jbello.
+[501] Jul 08 15:13:55 srv-prod-01 sshd[24322]: pam_unix(sshd:session): session closed for user jbello
+[502] Jul 08 15:14:12 srv-prod-01 sshd[24340]: Invalid user ipfw from 198.51.100.80 port 53424
+[503] Jul 08 15:14:13 srv-prod-01 sshd[24340]: Failed password for invalid user ipfw from 198.51.100.80 port 53424 ssh2
+[504] Jul 08 15:15:01 srv-prod-01 sshd[24352]: Did not receive identification string from 203.0.113.40 port 52100
+[505] Jul 08 15:16:45 srv-prod-01 sshd[24365]: Invalid user ipfilter from 198.51.100.80 port 53430
+[506] Jul 08 15:16:46 srv-prod-01 sshd[24365]: Failed password for invalid user ipfilter from 198.51.100.80 port 53430 ssh2
+[507] Jul 08 15:17:11 srv-prod-01 sshd[24380]: error: PAM: Authentication failure for illegal user snort from 198.51.100.80
+[508] Jul 08 15:17:12 srv-prod-01 sshd[24380]: Accepted password for snort from 198.51.100.80 port 53436 ssh2
+[509] Jul 08 15:17:12 srv-prod-01 sshd[24380]: pam_unix(sshd:session): session opened for user snort by (uid=0)
+[510] Jul 08 15:18:50 srv-prod-01 sshd[24380]: pam_unix(sshd:session): session closed for user snort
+[511] Jul 08 15:19:04 srv-prod-01 sshd[24395]: Invalid user suricata from 198.51.100.80 port 53442
+[512] Jul 08 15:19:05 srv-prod-01 sshd[24395]: Failed password for invalid user suricata from 198.51.100.80 port 53442 ssh2
+[513] Jul 08 15:20:12 srv-prod-01 sshd[24410]: Invalid user zeek from 198.51.100.80 port 53448
+[514] Jul 08 15:20:13 srv-prod-01 sshd[24410]: Failed password for invalid user zeek from 198.51.100.80 port 53448 ssh2
+[515] Jul 08 15:21:20 srv-prod-01 sshd[24422]: Invalid user bro from 198.51.100.80 port 53454
+[516] Jul 08 15:21:21 srv-prod-01 sshd[24422]: Failed password for invalid user bro from 198.51.100.80 port 53454 ssh2
+[517] Jul 08 15:22:02 srv-prod-01 sshd[24435]: Accepted publickey for mrossi from 192.168.1.50 port 52332 ssh2: RSA SHA256:dGhpcy...
+[518] Jul 08 15:22:02 srv-prod-01 sshd[24435]: pam_unix(sshd:session): session opened for user mrossi by (uid=0)
+[519] Jul 08 15:22:03 srv-prod-01 systemd-logind[845]: New session 164 of user mrossi.
+[520] Jul 08 15:23:40 srv-prod-01 sshd[24450]: Failed password for root from 185.220.101.50 port 34112 ssh2
+[521] Jul 08 15:23:44 srv-prod-01 sshd[24453]: Failed password for root from 185.220.101.50 port 34118 ssh2
+[522] Jul 08 15:24:11 srv-prod-01 sshd[24435]: pam_unix(sshd:session): session closed for user mrossi
+[523] Jul 08 15:25:12 srv-prod-01 sshd[24470]: Invalid user ossec from 198.51.100.80 port 53460
+[524] Jul 08 15:25:13 srv-prod-01 sshd[24470]: Failed password for invalid user ossec from 198.51.100.80 port 53460 ssh2
+[525] Jul 08 15:26:05 srv-prod-01 sshd[24482]: Invalid user wazuh from 198.51.100.80 port 53466
+[526] Jul 08 15:26:06 srv-prod-01 sshd[24482]: Failed password for invalid user wazuh from 198.51.100.80 port 53466 ssh2
+[527] Jul 08 15:27:22 srv-prod-01 sshd[24495]: Invalid user samhain from 198.51.100.80 port 53472
+[528] Jul 08 15:27:23 srv-prod-01 sshd[24495]: Failed password for invalid user samhain from 198.51.100.80 port 53472 ssh2
+[529] Jul 08 15:28:10 srv-prod-01 sshd[24510]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.250  user=root
+[530] Jul 08 15:28:12 srv-prod-01 sshd[24510]: Accepted publickey for root from 198.51.100.250 port 43310 ssh2: ED25519 SHA256:T3V0...
+[531] Jul 08 15:28:12 srv-prod-01 sshd[24510]: pam_unix(sshd:session): session opened for user root by (uid=0)
+[532] Jul 08 15:29:45 srv-prod-01 sshd[24510]: pam_unix(sshd:session): session closed for user root
+[533] Jul 08 15:30:15 srv-prod-01 sshd[24525]: Invalid user tripwire from 198.51.100.80 port 53478
+[534] Jul 08 15:30:16 srv-prod-01 sshd[24525]: Failed password for invalid user tripwire from 198.51.100.80 port 53478 ssh2
+[535] Jul 08 16:01:02 srv-prod-01 sshd[24540]: Accepted publickey for ansiblerunner from 10.0.5.20 port 49550 ssh2: ED25519 SHA256:N3Ry...
+[536] Jul 08 16:01:02 srv-prod-01 sshd[24540]: pam_unix(sshd:session): session opened for user ansiblerunner by (uid=0)
+[537] Jul 08 16:01:04 srv-prod-01 sshd[24540]: pam_unix(sshd:session): session closed for user ansiblerunner
+[538] Jul 08 16:02:11 srv-prod-01 sshd[24555]: Invalid user aide from 198.51.100.80 port 53484
+[539] Jul 08 16:02:12 srv-prod-01 sshd[24555]: Failed password for invalid user aide from 198.51.100.80 port 53484 ssh2
+[540] Jul 08 16:03:45 srv-prod-01 sshd[24570]: Invalid user rkhunter from 198.51.100.80 port 53490
+[541] Jul 08 16:03:46 srv-prod-01 sshd[24570]: Failed password for invalid user rkhunter from 198.51.100.80 port 53490 ssh2
+[542] Jul 08 16:04:02 srv-prod-01 sshd[24582]: Accepted password for sbello from 192.168.1.225 port 42310 ssh2
+[543] Jul 08 16:04:02 srv-prod-01 sshd[24582]: pam_unix(sshd:session): session opened for user sbello by (uid=0)
+[544] Jul 08 16:04:03 srv-prod-01 systemd-logind[845]: New session 165 of user sbello.
+[545] Jul 08 16:05:22 srv-prod-01 sshd[24595]: Invalid user chkrootkit from 198.51.100.80 port 53496
+[546] Jul 08 16:05:23 srv-prod-01 sshd[24595]: Failed password for invalid user chkrootkit from 198.51.100.80 port 53496 ssh2
+[547] Jul 08 16:06:11 srv-prod-01 sshd[24582]: pam_unix(sshd:session): session closed for user sbello
+[548] Jul 08 16:07:05 srv-prod-01 sshd[24610]: Invalid user lynis from 198.51.100.80 port 53502
+[549] Jul 08 16:07:06 srv-prod-01 sshd[24610]: Failed password for invalid user lynis from 198.51.100.80 port 53502 ssh2
+[550] Jul 08 16:08:15 srv-prod-01 sshd[24625]: Failed password for root from 185.220.101.50 port 34124 ssh2
+[551] Jul 08 16:08:19 srv-prod-01 sshd[24628]: Failed password for root from 185.220.101.50 port 34130 ssh2
+[552] Jul 08 16:09:40 srv-prod-01 sshd[24640]: Invalid user clamav from 198.51.100.80 port 53508
+[553] Jul 08 16:09:41 srv-prod-01 sshd[24640]: Failed password for invalid user clamav from 198.51.100.80 port 53508 ssh2
+[554] Jul 08 16:10:15 srv-prod-01 sshd[24652]: Invalid user freshclam from 198.51.100.80 port 53514
+[555] Jul 08 16:10:16 srv-prod-01 sshd[24652]: Failed password for invalid user freshclam from 198.51.100.80 port 53514 ssh2
+[556] Jul 08 16:11:05 srv-prod-01 sshd[24670]: Connection reset by 193.201.224.50 port 51700 [preauth]
+[557] Jul 08 16:12:02 srv-prod-01 sshd[24682]: Accepted password for fboito from 192.168.1.230 port 59412 ssh2
+[558] Jul 08 16:12:02 srv-prod-01 sshd[24682]: pam_unix(sshd:session): session opened for user fboito by (uid=0)
+[559] Jul 08 16:12:03 srv-prod-01 systemd-logind[845]: New session 166 of user fboito.
+[560] Jul 08 16:13:55 srv-prod-01 sshd[24682]: pam_unix(sshd:session): session closed for user fboito
+[561] Jul 08 16:14:12 srv-prod-01 sshd[24701]: Invalid user openvas from 198.51.100.80 port 53520
+[562] Jul 08 16:14:13 srv-prod-01 sshd[24701]: Failed password for invalid user openvas from 198.51.100.80 port 53520 ssh2
+[563] Jul 08 16:15:01 srv-prod-01 sshd[24715]: Did not receive identification string from 203.0.113.45 port 39110
+[564] Jul 08 16:16:45 srv-prod-01 sshd[24728]: Invalid user gvm from 198.51.100.80 port 53526
+[565] Jul 08 16:16:46 srv-prod-01 sshd[24728]: Failed password for invalid user gvm from 198.51.100.80 port 53526 ssh2
+[566] Jul 08 16:17:11 srv-prod-01 sshd[24740]: error: PAM: Authentication failure for illegal user nessus from 198.51.100.80
+[567] Jul 08 16:17:12 srv-prod-01 sshd[24740]: Accepted password for nessus from 198.51.100.80 port 53532 ssh2
+[568] Jul 08 16:17:12 srv-prod-01 sshd[24740]: pam_unix(sshd:session): session opened for user nessus by (uid=0)
+[569] Jul 08 16:18:50 srv-prod-01 sshd[24740]: pam_unix(sshd:session): session closed for user nessus
+[570] Jul 08 16:19:04 srv-prod-01 sshd[24755]: Invalid user nmap from 198.51.100.80 port 53538
+[571] Jul 08 16:19:05 srv-prod-01 sshd[24755]: Failed password for invalid user nmap from 198.51.100.80 port 53538 ssh2
+[572] Jul 08 16:20:12 srv-prod-01 sshd[24770]: Invalid user ncat from 198.51.100.80 port 53544
+[573] Jul 08 16:20:13 srv-prod-01 sshd[24770]: Failed password for invalid user ncat from 198.51.100.80 port 53544 ssh2
+[574] Jul 08 16:21:20 srv-prod-01 sshd[24785]: Invalid user socat from 198.51.100.80 port 53550
+[575] Jul 08 16:21:21 srv-prod-01 sshd[24785]: Failed password for invalid user socat from 198.51.100.80 port 53550 ssh2
+[576] Jul 08 16:22:02 srv-prod-01 sshd[24801]: Accepted publickey for srossi from 192.168.1.65 port 39122 ssh2: RSA SHA256:bW9yZ...
+[577] Jul 08 16:22:02 srv-prod-01 sshd[24801]: pam_unix(sshd:session): session opened for user srossi by (uid=0)
+[578] Jul 08 16:22:03 srv-prod-01 systemd-logind[845]: New session 167 of user srossi.
+[579] Jul 08 16:23:40 srv-prod-01 sshd[24815]: Failed password for root from 185.220.101.55 port 42112 ssh2
+[580] Jul 08 16:23:44 srv-prod-01 sshd[24818]: Failed password for root from 185.220.101.55 port 42118 ssh2
+[581] Jul 08 16:24:11 srv-prod-01 sshd[24801]: pam_unix(sshd:session): session closed for user srossi
+[582] Jul 08 16:25:12 srv-prod-01 sshd[24830]: Invalid user tcpdump from 198.51.100.80 port 53556
+[583] Jul 08 16:25:13 srv-prod-01 sshd[24830]: Failed password for invalid user tcpdump from 198.51.100.80 port 53556 ssh2
+[584] Jul 08 16:26:05 srv-prod-01 sshd[24842]: Invalid user wireshark from 198.51.100.80 port 53562
+[585] Jul 08 16:26:06 srv-prod-01 sshd[24842]: Failed password for invalid user wireshark from 198.51.100.80 port 53562 ssh2
+[586] Jul 08 16:27:22 srv-prod-01 sshd[24855]: Invalid user tshark from 198.51.100.80 port 53568
+[587] Jul 08 16:27:23 srv-prod-01 sshd[24855]: Failed password for invalid user tshark from 198.51.100.80 port 53568 ssh2
+[588] Jul 08 16:28:10 srv-prod-01 sshd[24870]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.1  user=root
+[589] Jul 08 16:28:11 srv-prod-01 sshd[24870]: Accepted password for root from 198.51.100.1 port 52100 ssh2
+[590] Jul 08 16:28:11 srv-prod-01 sshd[24870]: pam_unix(sshd:session): session opened for user root by (uid=0)
+[591] Jul 08 16:29:45 srv-prod-01 sshd[24870]: pam_unix(sshd:session): session closed for user root
+[592] Jul 08 16:30:15 srv-prod-01 sshd[24885]: Invalid user mitmproxy from 198.51.100.80 port 53574
+[593] Jul 08 16:30:16 srv-prod-01 sshd[24885]: Failed password for invalid user mitmproxy from 198.51.100.80 port 53574 ssh2
+[594] Jul 08 17:01:02 srv-prod-01 sshd[24900]: Accepted publickey for ansiblerunner from 10.0.5.20 port 49660 ssh2: ED25519 SHA256:N3Ry...
+[595] Jul 08 17:01:02 srv-prod-01 sshd[24900]: pam_unix(sshd:session): session opened for user ansiblerunner by (uid=0)
+[596] Jul 08 17:01:04 srv-prod-01 sshd[24900]: pam_unix(sshd:session): session closed for user ansiblerunner
+[597] Jul 08 17:02:11 srv-prod-01 sshd[24915]: Invalid user burpsuite from 198.51.100.80 port 53580
+[598] Jul 08 17:02:12 srv-prod-01 sshd[24915]: Failed password for invalid user burpsuite from 198.51.100.80 port 53580 ssh2
+[599] Jul 08 17:04:02 srv-prod-01 sshd[24930]: Accepted password for rleoncavallo from 192.168.1.240 port 49120 ssh2
+[600] Jul 08 17:04:02 srv-prod-01 sshd[24930]: pam_unix(sshd:session): session opened for user rleoncavallo by (uid=0)
