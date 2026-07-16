@@ -1,233 +1,95 @@
 # Scelte implementative
 
-Questo documento raccoglie le decisioni tecniche non immediate adottate durante lo sviluppo del progetto. Le scelte vengono aggiornate progressivamente quando una parte del programma diventa stabile e verificata dai test.
-
-## 1. Gerarchia dei backend firewall
-
-### Contesto
-
-Il programma deve poter applicare la stessa operazione di mitigazione su sistemi differenti. Linux utilizza `iptables`, Windows utilizza `netsh advfirewall`, mentre durante test e dimostrazioni è necessario simulare il comportamento senza modificare il firewall reale.
-
-### Scelta adottata
-
-Abbiamo definito la classe base astratta `FirewallBackend`, che stabilisce un contratto comune tramite tre metodi:
-
-- `block_ip(ip: str)`;
-- `unblock_ip(ip: str)`;
-- `is_blocked(ip: str) -> bool`.
-
-Le implementazioni concrete attuali sono:
-
-- `DryRunFirewallBackend`;
-- `LinuxIptablesBackend`;
-- `WindowsFirewallBackend`.
-
-La classe base eredita da `ABC` e i tre metodi sono dichiarati con `@abstractmethod`. In questo modo `FirewallBackend` non può essere istanziata direttamente e ogni nuova sottoclasse deve implementare tutte le operazioni richieste.
-
-### Perché abbiamo usato l'ereditarietà
-
-In questo caso la relazione “è un” è corretta: ogni implementazione concreta **è un backend firewall** e rispetta lo stesso contratto operativo, anche se traduce le operazioni in modo differente.
-
-L'ereditarietà permette al resto del programma di lavorare con un riferimento di tipo `FirewallBackend` senza conoscere la classe concreta. Il codice può quindi chiamare `backend.block_ip(ip)` allo stesso modo per Linux, Windows o dry-run. Il comportamento effettivo viene deciso dall'oggetto ricevuto: questo è il punto in cui si realizza il polimorfismo.
-
-La gerarchia rende inoltre più semplice aggiungere in futuro un nuovo backend, per esempio basato su `nftables`, senza modificare la logica di analisi degli incidenti.
-
-### Alternative considerate
-
-Una prima alternativa sarebbe stata creare funzioni separate, come `block_ip_linux()` e `block_ip_windows()`. Questa soluzione avrebbe però distribuito la stessa responsabilità in più funzioni e avrebbe obbligato il chiamante a conoscere il sistema operativo.
-
-Un'altra alternativa sarebbe stata inserire nel motore una catena di condizioni:
-
-```python
-if sistema == "linux":
-    ...
-elif sistema == "windows":
-    ...
-```
-
-Abbiamo scartato questa soluzione perché avrebbe accoppiato la logica di rilevamento ai dettagli del firewall. Ogni nuovo sistema operativo avrebbe richiesto una modifica al motore.
-
-La composizione rimane invece la scelta corretta a un livello superiore: l'`IncidentResponseEngine` riceverà e utilizzerà un oggetto `FirewallBackend`, ma non erediterà da esso. Un motore di risposta agli incidenti **ha un** backend firewall, non **è un** backend firewall.
-
-### Compromessi
-
-La gerarchia introduce più classi e più file rispetto a una soluzione procedurale. In cambio otteniamo un contratto esplicito, responsabilità separate, test più isolati ed estensione più semplice.
-
-## 2. Backend dry-run separato dai backend reali
-
-### Contesto
-
-L'esecuzione di comandi firewall reali durante i test o la demo potrebbe richiedere privilegi amministrativi e potrebbe modificare la connettività del computer.
-
-### Scelta adottata
-
-Abbiamo creato `DryRunFirewallBackend`, che implementa lo stesso contratto dei backend reali ma conserva gli indirizzi bloccati in un `set[str]`.
-
-Il metodo `block_ip()` aggiunge l'indirizzo all'insieme, `unblock_ip()` lo rimuove con `discard()` e `is_blocked()` verifica la presenza dell'indirizzo.
-
-### Motivazione
-
-Il dry-run non è stato inserito come semplice condizione dentro i backend Linux o Windows. È una sottoclasse autonoma perché rappresenta una strategia completa e sostituibile, utilizzabile dal programma esattamente come un backend reale.
-
-L'uso di un `set` evita duplicati e rende immediato il controllo di appartenenza. La scelta è adatta alla simulazione, anche se lo stato rimane soltanto in memoria e viene perso alla chiusura del processo.
-
-## 3. Esecuzione dei comandi di sistema con `subprocess`
-
-### Scelta adottata
-
-I backend reali costruiscono i comandi come liste di argomenti e li passano a `subprocess.run()` senza utilizzare `shell=True`.
-
-Per le operazioni che modificano il firewall, `block_ip()` e `unblock_ip()`, utilizziamo `check=True`. Un comando terminato con codice di errore provoca quindi un'eccezione invece di essere ignorato silenziosamente.
-
-Per `is_blocked()` utilizziamo invece `check=False`, perché un codice di ritorno diverso da zero può significare semplicemente che la regola cercata non esiste. L'output viene acquisito solo quando necessario.
-
-### Motivazione
-
-Le liste di argomenti sono più leggibili e riducono i rischi legati all'interpretazione di una stringa da parte della shell. Inoltre rendono i comandi più semplici da verificare nei test.
-
-Nel backend Windows abbiamo adottato il prefisso costante `BanEngine` e il metodo `_rule_name(ip)` per produrre nomi di regola deterministici. In questo modo la stessa regola può essere cercata e rimossa senza duplicare la logica di costruzione del nome.
-
-## 4. Test sicuri tramite mock
-
-### Contesto
-
-I test non devono eseguire realmente `iptables` o `netsh`, né dipendere dal sistema operativo sul quale viene eseguita la suite.
-
-### Scelta adottata
-
-Nei test dei singoli backend sostituiamo `subprocess.run()` con un mock. Verifichiamo così:
-
-- il comando costruito;
-- gli argomenti passati;
-- l'uso di `check`, `capture_output` e `text`;
-- l'interpretazione del codice di ritorno e dell'output.
-
-Il test polimorfico usa una funzione che accetta un parametro di tipo `FirewallBackend` e invoca `block_ip()` senza controllare la sottoclasse concreta. Per Linux e Windows viene applicato `patch.object()` direttamente al metodo delle istanze, mentre il backend dry-run esegue il proprio comportamento reale in memoria.
-
-### Motivazione
-
-Questa soluzione dimostra il polimorfismo senza invocare comandi privilegiati. L'uso di `patch.object()` nel test comune evita inoltre interferenze tra mock applicati a moduli che fanno riferimento allo stesso oggetto `subprocess`.
-
-## 5. Decisioni ancora da consolidare
-
-Le scelte relative a `IncidentResponseEngine`, configurazione JSON, persistenza dello storico dei ban e interfaccia CLI verranno aggiunte quando le rispettive implementazioni saranno complete e verificate dai test.
+Questo documento riassume le principali decisioni tecniche prese durante lo sviluppo di **Automated Incident Response Ban Engine**.  
+Le scelte sono state aggiunte man mano che le varie parti del progetto diventavano stabili e verificate dai test.
 
 ---
 
-**Riferimento di sviluppo:** commit `1b10851` — `completa backend firewall polimorfici`.# Scelte implementative
-
-Questo documento raccoglie le decisioni tecniche non immediate adottate durante lo sviluppo del progetto. Le scelte vengono aggiornate progressivamente quando una parte del programma diventa stabile e verificata dai test.
-
 ## 1. Gerarchia dei backend firewall
 
-### Contesto
+Abbiamo creato la classe astratta `FirewallBackend`, che definisce i metodi comuni `block_ip()`, `unblock_ip()` e `is_blocked()`.
 
-Il programma deve poter applicare la stessa operazione di mitigazione su sistemi differenti. Linux utilizza `iptables`, Windows utilizza `netsh advfirewall`, mentre durante test e dimostrazioni è necessario simulare il comportamento senza modificare il firewall reale.
+Da questa classe derivano `DryRunFirewallBackend`, `LinuxIptablesBackend` e `WindowsFirewallBackend`.
 
-### Scelta adottata
+Abbiamo scelto l’ereditarietà perché ogni classe concreta **è un backend firewall** e deve rispettare lo stesso contratto, anche se esegue operazioni diverse.
 
-Abbiamo definito la classe base astratta `FirewallBackend`, che stabilisce un contratto comune tramite tre metodi:
+In questo modo il resto del programma può usare un oggetto di tipo `FirewallBackend` senza sapere se sta lavorando con Linux, Windows o dry-run.
 
-- `block_ip(ip: str)`;
-- `unblock_ip(ip: str)`;
-- `is_blocked(ip: str) -> bool`.
-
-Le implementazioni concrete attuali sono:
-
-- `DryRunFirewallBackend`;
-- `LinuxIptablesBackend`;
-- `WindowsFirewallBackend`.
-
-La classe base eredita da `ABC` e i tre metodi sono dichiarati con `@abstractmethod`. In questo modo `FirewallBackend` non può essere istanziata direttamente e ogni nuova sottoclasse deve implementare tutte le operazioni richieste.
-
-### Perché abbiamo usato l'ereditarietà
-
-In questo caso la relazione “è un” è corretta: ogni implementazione concreta **è un backend firewall** e rispetta lo stesso contratto operativo, anche se traduce le operazioni in modo differente.
-
-L'ereditarietà permette al resto del programma di lavorare con un riferimento di tipo `FirewallBackend` senza conoscere la classe concreta. Il codice può quindi chiamare `backend.block_ip(ip)` allo stesso modo per Linux, Windows o dry-run. Il comportamento effettivo viene deciso dall'oggetto ricevuto: questo è il punto in cui si realizza il polimorfismo.
-
-La gerarchia rende inoltre più semplice aggiungere in futuro un nuovo backend, per esempio basato su `nftables`, senza modificare la logica di analisi degli incidenti.
-
-### Alternative considerate
-
-Una prima alternativa sarebbe stata creare funzioni separate, come `block_ip_linux()` e `block_ip_windows()`. Questa soluzione avrebbe però distribuito la stessa responsabilità in più funzioni e avrebbe obbligato il chiamante a conoscere il sistema operativo.
-
-Un'altra alternativa sarebbe stata inserire nel motore una catena di condizioni:
-
-```python
-if sistema == "linux":
-    ...
-elif sistema == "windows":
-    ...
-```
-
-Abbiamo scartato questa soluzione perché avrebbe accoppiato la logica di rilevamento ai dettagli del firewall. Ogni nuovo sistema operativo avrebbe richiesto una modifica al motore.
-
-La composizione rimane invece la scelta corretta a un livello superiore: l'`IncidentResponseEngine` riceverà e utilizzerà un oggetto `FirewallBackend`, ma non erediterà da esso. Un motore di risposta agli incidenti **ha un** backend firewall, non **è un** backend firewall.
-
-### Compromessi
-
-La gerarchia introduce più classi e più file rispetto a una soluzione procedurale. In cambio otteniamo un contratto esplicito, responsabilità separate, test più isolati ed estensione più semplice.
-
-## 2. Backend dry-run separato dai backend reali
-
-### Contesto
-
-L'esecuzione di comandi firewall reali durante i test o la demo potrebbe richiedere privilegi amministrativi e potrebbe modificare la connettività del computer.
-
-### Scelta adottata
-
-Abbiamo creato `DryRunFirewallBackend`, che implementa lo stesso contratto dei backend reali ma conserva gli indirizzi bloccati in un `set[str]`.
-
-Il metodo `block_ip()` aggiunge l'indirizzo all'insieme, `unblock_ip()` lo rimuove con `discard()` e `is_blocked()` verifica la presenza dell'indirizzo.
-
-### Motivazione
-
-Il dry-run non è stato inserito come semplice condizione dentro i backend Linux o Windows. È una sottoclasse autonoma perché rappresenta una strategia completa e sostituibile, utilizzabile dal programma esattamente come un backend reale.
-
-L'uso di un `set` evita duplicati e rende immediato il controllo di appartenenza. La scelta è adatta alla simulazione, anche se lo stato rimane soltanto in memoria e viene perso alla chiusura del processo.
-
-## 3. Esecuzione dei comandi di sistema con `subprocess`
-
-### Scelta adottata
-
-I backend reali costruiscono i comandi come liste di argomenti e li passano a `subprocess.run()` senza utilizzare `shell=True`.
-
-Per le operazioni che modificano il firewall, `block_ip()` e `unblock_ip()`, utilizziamo `check=True`. Un comando terminato con codice di errore provoca quindi un'eccezione invece di essere ignorato silenziosamente.
-
-Per `is_blocked()` utilizziamo invece `check=False`, perché un codice di ritorno diverso da zero può significare semplicemente che la regola cercata non esiste. L'output viene acquisito solo quando necessario.
-
-### Motivazione
-
-Le liste di argomenti sono più leggibili e riducono i rischi legati all'interpretazione di una stringa da parte della shell. Inoltre rendono i comandi più semplici da verificare nei test.
-
-Nel backend Windows abbiamo adottato il prefisso costante `BanEngine` e il metodo `_rule_name(ip)` per produrre nomi di regola deterministici. In questo modo la stessa regola può essere cercata e rimossa senza duplicare la logica di costruzione del nome.
-
-## 4. Test sicuri tramite mock
-
-### Contesto
-
-I test non devono eseguire realmente `iptables` o `netsh`, né dipendere dal sistema operativo sul quale viene eseguita la suite.
-
-### Scelta adottata
-
-Nei test dei singoli backend sostituiamo `subprocess.run()` con un mock. Verifichiamo così:
-
-- il comando costruito;
-- gli argomenti passati;
-- l'uso di `check`, `capture_output` e `text`;
-- l'interpretazione del codice di ritorno e dell'output.
-
-Il test polimorfico usa una funzione che accetta un parametro di tipo `FirewallBackend` e invoca `block_ip()` senza controllare la sottoclasse concreta. Per Linux e Windows viene applicato `patch.object()` direttamente al metodo delle istanze, mentre il backend dry-run esegue il proprio comportamento reale in memoria.
-
-### Motivazione
-
-Questa soluzione dimostra il polimorfismo senza invocare comandi privilegiati. L'uso di `patch.object()` nel test comune evita inoltre interferenze tra mock applicati a moduli che fanno riferimento allo stesso oggetto `subprocess`.
-
-## 5. Decisioni ancora da consolidare
-
-Le scelte relative a `IncidentResponseEngine`, configurazione JSON, persistenza dello storico dei ban e interfaccia CLI verranno aggiunte quando le rispettive implementazioni saranno complete e verificate dai test.
+Abbiamo scartato funzioni separate o controlli `if/elif` sul sistema operativo, perché avrebbero legato troppo il motore ai dettagli dei singoli firewall.
 
 ---
 
-**Riferimento di sviluppo:** commit `1b10851` — `completa backend firewall polimorfici`.
+## 2. Backend dry-run separato
+
+Per test e dimostrazioni avevamo bisogno di una modalità sicura che non modificasse il firewall reale.
+
+Abbiamo quindi creato `DryRunFirewallBackend`, che salva gli IP bloccati in un `set`.
+
+`block_ip()` aggiunge l’indirizzo, `unblock_ip()` lo rimuove e `is_blocked()` controlla se è presente.
+
+Abbiamo preferito una sottoclasse autonoma invece di un semplice flag nei backend reali, perché il dry-run rappresenta un comportamento completo e può essere usato allo stesso modo degli altri backend.
+
+Il limite è che lo stato rimane solo in memoria e viene perso alla chiusura del programma.
+
+---
+
+## 3. Uso di `subprocess`
+
+I backend Linux e Windows costruiscono i comandi come liste di argomenti e li passano a `subprocess.run()` senza usare `shell=True`.
+
+Per blocco e sblocco usiamo `check=True`, così un errore del comando non viene ignorato.
+
+Per `is_blocked()` usiamo `check=False`, perché un codice di ritorno diverso da zero può indicare semplicemente che la regola non esiste.
+
+Nel backend Windows ogni regola usa il nome `BanEngine-<ip>`, così la stessa regola può essere cercata e rimossa in modo prevedibile.
+
+Questa soluzione rende i comandi più leggibili, più semplici da testare e meno dipendenti dall’interpretazione della shell.
+
+---
+
+## 4. Test con mock
+
+Durante i test non vogliamo eseguire davvero `iptables` o `netsh`.
+
+Per questo sostituiamo `subprocess.run()` con dei mock e controlliamo il comando costruito, gli argomenti passati e il risultato interpretato dal backend.
+
+Nel test polimorfico usiamo una funzione che riceve un generico `FirewallBackend` e chiama `block_ip()`.
+
+Per Linux e Windows applichiamo `patch.object()` direttamente ai metodi delle istanze, mentre il backend dry-run esegue il comportamento reale in memoria.
+
+Abbiamo scelto questa soluzione dopo aver notato che due patch contemporanee su `subprocess.run()` interferivano tra loro.
+
+---
+
+## 5. Ereditarietà e composizione
+
+L’ereditarietà viene usata solo nella gerarchia dei backend, dove la relazione “è un” è corretta.
+
+L’`IncidentResponseEngine` non erediterà da `FirewallBackend`: riceverà invece un backend come dipendenza.
+
+In questo caso la relazione è “ha un”, quindi la composizione è più adatta.
+
+Questa separazione permette al motore di usare backend diversi senza contenere logica specifica per Linux o Windows.
+
+---
+
+## 6. Decisioni ancora da completare
+
+Le scelte relative a `IncidentResponseEngine`, configurazione JSON, persistenza dello stato e CLI verranno aggiunte quando queste parti saranno realmente implementate e verificate dai test.
+
+---
+
+## Compromessi principali
+
+La gerarchia introduce più classi e file rispetto a semplici funzioni, ma rende il codice
+più estendibile e permette di usare backend diversi con la stessa interfaccia.
+
+Il dry-run è sicuro e semplice da testare, ma conserva lo stato solo in memoria.
+
+I backend reali dipendono da comandi specifici del sistema operativo e richiedono privilegi
+amministrativi, quindi nei test dobbiamo usare i mock.
+
+L’uso dei mock rende i test sicuri e ripetibili, ma non verifica che `iptables` o `netsh`
+funzionino davvero sulla macchina finale.
+
+---
