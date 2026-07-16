@@ -1,0 +1,198 @@
+[
+  {
+    "ip": "193.201.224.50",
+    "attempts_count": 8,
+    "window_seconds": 120,
+    "reason": "8 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.910734"
+  },
+  {
+    "ip": "203.0.113.44",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.910920"
+  },
+  {
+    "ip": "198.51.100.9",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.911070"
+  },
+  {
+    "ip": "185.220.101.15",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.911238"
+  },
+  {
+    "ip": "203.0.113.88",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.911333"
+  },
+  {
+    "ip": "185.220.101.18",
+    "attempts_count": 5,
+    "window_seconds": 120,
+    "reason": "5 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.911432"
+  },
+  {
+    "ip": "203.0.113.99",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.911560"
+  },
+  {
+    "ip": "198.51.100.12",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.911739"
+  },
+  {
+    "ip": "203.0.113.150",
+    "attempts_count": 6,
+    "window_seconds": 120,
+    "reason": "6 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.911824"
+  },
+  {
+    "ip": "185.220.101.25",
+    "attempts_count": 3,
+    "window_seconds": 120,
+    "reason": "3 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.911896"
+  },
+  {
+    "ip": "198.51.100.50",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.912001"
+  },
+  {
+    "ip": "203.0.113.66",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.912177"
+  },
+  {
+    "ip": "185.220.101.30",
+    "attempts_count": 3,
+    "window_seconds": 120,
+    "reason": "3 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.912313"
+  },
+  {
+    "ip": "198.51.100.80",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:08:17.912737"
+  },
+  {
+    "ip": "193.201.224.50",
+    "attempts_count": 8,
+    "window_seconds": 120,
+    "reason": "8 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.917641"
+  },
+  {
+    "ip": "203.0.113.44",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.917820"
+  },
+  {
+    "ip": "198.51.100.9",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.918142"
+  },
+  {
+    "ip": "185.220.101.15",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.918377"
+  },
+  {
+    "ip": "203.0.113.88",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.918490"
+  },
+  {
+    "ip": "185.220.101.18",
+    "attempts_count": 5,
+    "window_seconds": 120,
+    "reason": "5 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.918611"
+  },
+  {
+    "ip": "203.0.113.99",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.918790"
+  },
+  {
+    "ip": "198.51.100.12",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.919023"
+  },
+  {
+    "ip": "203.0.113.150",
+    "attempts_count": 6,
+    "window_seconds": 120,
+    "reason": "6 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.919135"
+  },
+  {
+    "ip": "185.220.101.25",
+    "attempts_count": 3,
+    "window_seconds": 120,
+    "reason": "3 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.919239"
+  },
+  {
+    "ip": "198.51.100.50",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.919359"
+  },
+  {
+    "ip": "203.0.113.66",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.919447"
+  },
+  {
+    "ip": "185.220.101.30",
+    "attempts_count": 3,
+    "window_seconds": 120,
+    "reason": "3 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.919502"
+  },
+  {
+    "ip": "198.51.100.80",
+    "attempts_count": 4,
+    "window_seconds": 120,
+    "reason": "4 tentativi falliti in 120 secondi",
+    "created_at": "2026-07-16T09:09:24.919859"
+  }
+]

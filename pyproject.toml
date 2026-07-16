@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "automated-incident-response-ban-engine"
+version = "0.1.0"
+description = "CLI didattica per analizzare log SSH e bloccare IP sospetti"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]

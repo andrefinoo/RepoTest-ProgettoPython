@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: automated-incident-response-ban-engine
+Version: 0.1.0
+Summary: CLI didattica per analizzare log SSH e bloccare IP sospetti
+Requires-Python: >=3.11
