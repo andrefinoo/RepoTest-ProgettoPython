@@ -1,0 +1,20 @@
+Questa suite aggiunge test completi senza cancellare i test gia presenti.
+
+Numero di test verificati nella ricostruzione del progetto: 168.
+Risultato ottenuto: 168 passed.
+
+Copia la cartella tests nella root del repository e lancia:
+
+    py -m pytest -q
+
+Se compare un errore di import, tutti gli import del progetto devono usare:
+
+    from ban_engine...
+
+o import relativi come:
+
+    from .models import LoginAttempt
+
+Non usare:
+
+    from src.ban_engine...

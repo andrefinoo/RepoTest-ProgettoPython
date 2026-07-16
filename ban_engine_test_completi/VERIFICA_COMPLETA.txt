@@ -1,0 +1,74 @@
+VERIFICA COMPLETA - AUTOMATED INCIDENT RESPONSE BAN ENGINE
+
+COME APPLICARE I TEST
+1. Apri lo ZIP.
+2. Copia la cartella tests/ nella root del repository.
+3. Puoi mantenere anche i test gia presenti: questi file hanno il suffisso _complete.
+4. Esegui i comandi dalla cartella principale del progetto.
+
+CONTROLLO 1 - TUTTA LA SUITE
+py -m pytest -q
+
+CONTROLLO 2 - RISULTATO DETTAGLIATO
+py -m pytest -v
+
+CONTROLLO 3 - FERMA AL PRIMO ERRORE
+py -m pytest -q -x
+
+CONTROLLO 4 - MODELLI
+py -m pytest -q tests/test_models_complete.py
+
+CONTROLLO 5 - PARSER
+py -m pytest -q tests/test_parser_complete.py
+
+CONTROLLO 6 - FIREWALL E POLIMORFISMO
+py -m pytest -q tests/test_firewall_complete.py
+
+CONTROLLO 7 - ENGINE
+py -m pytest -q tests/test_engine_complete.py
+
+CONTROLLO 8 - CONFIGURAZIONE
+py -m pytest -q tests/test_config_complete.py
+
+CONTROLLO 9 - STATO JSON
+py -m pytest -q tests/test_state_complete.py
+
+CONTROLLO 10 - CLI
+py -m pytest -q tests/test_cli_complete.py
+
+CONTROLLO 11 - INTEGRAZIONE COMPLETA
+py -m pytest -q tests/test_integration_complete.py
+
+CONTROLLO 12 - HELP DEL PROGRAMMA
+py -m ban_engine --help
+
+CONTROLLO 13 - DEMO SICURA
+py -m ban_engine --log examples/auth.log --config examples/config.json --dry-run
+
+CONTROLLO 14 - TEST DA INSTALLAZIONE EDITABLE (CONSIGLIATO)
+py -m pip install -e .
+py -m pytest -q
+py -m ban_engine --help
+
+CONTROLLO 15 - COVERAGE OPZIONALE
+py -m pip install pytest-cov
+py -m pytest --cov=ban_engine --cov-report=term-missing
+
+COSA VIENE VERIFICATO
+- validazione e normalizzazione IPv4/IPv6;
+- serializzazione dei modelli;
+- parsing Failed password, Failed publickey e Invalid user;
+- righe ignorate, file vuoti, file mancanti e IP non validi;
+- classe astratta, override e polimorfismo;
+- dry-run senza modifiche reali;
+- comandi iptables e netsh completamente mockati;
+- soglia, finestra temporale, limite esatto e tentativi non ordinati;
+- raggruppamento per IP, whitelist e IP gia bloccati;
+- configurazione completa, parziale, mancante e malformata;
+- storico ban, append, cartelle annidate e JSON non valido;
+- opzioni CLI, override, report ed error code;
+- flusso parser -> engine -> firewall -> stato;
+- IPv6 e piu IP nello stesso log.
+
+IMPORTANTE
+I test Linux e Windows non eseguono mai iptables o netsh: subprocess.run viene sostituito da mock.

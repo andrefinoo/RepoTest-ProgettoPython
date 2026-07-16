@@ -498,3 +498,1003 @@
 [598] Jul 08 17:02:12 srv-prod-01 sshd[24915]: Failed password for invalid user burpsuite from 198.51.100.80 port 53580 ssh2
 [599] Jul 08 17:04:02 srv-prod-01 sshd[24930]: Accepted password for rleoncavallo from 192.168.1.240 port 49120 ssh2
 [600] Jul 08 17:04:02 srv-prod-01 sshd[24930]: pam_unix(sshd:session): session opened for user rleoncavallo by (uid=0)
+Jul 14  7:30:11 server01 sshd[1201]: Accepted publickey for andrea from 10.0.0.20 port 29144 ssh2
+Jul 14  7:30:23 server01 sshd[1202]: Invalid user guest from 203.0.113.10 port 21952
+Jul 14  7:30:27 server02 sshd[1203]: Invalid user service from 2001:db8::11 port 62590
+Jul 14  7:30:34 server02 sshd[1207]: Invalid user pi from 2001:db8:abcd::42 port 20425
+Jul 14  7:30:46 web-prod sshd[1210]: Failed password for admin from 2001:db8::10 port 26698 ssh2
+Jul 14  7:30:52 gateway sshd[1213]: Connection closed by authenticating user root 45.155.205.99 port 55142 [preauth]
+Jul 14  7:30:54 web-prod sshd[1214]: Invalid user manager from 2001:db8:feed::99 port 61198
+Jul 14  7:31:00 db-node sshd[1216]: Accepted publickey for deploy from 10.0.0.15 port 34935 ssh2
+Jul 14  7:31:05 server01 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  7:31:12 gateway sshd[1222]: Invalid user jenkins from 192.0.2.45 port 30659
+Jul 14  7:31:18 server02 sshd[1225]: Accepted publickey for deploy from 10.0.0.15 port 61613 ssh2
+Jul 14  7:31:21 db-node sshd[1227]: Failed password for root from 198.51.100.23 port 64866 ssh2
+Jul 14  7:31:25 server01 sshd[1230]: Failed password for invalid user nagios from 2001:db8::10 port 33934 ssh2
+Jul 14  7:31:36 web-prod sshd[1232]: Failed password for user from 2001:db8::10 port 58311 ssh2
+Jul 14  7:31:43 gateway sshd[1234]: Failed password senza indirizzo IP
+Jul 14  7:31:52 web-prod sshd[1235]: Accepted publickey for andrea from 10.0.0.15 port 61120 ssh2
+Jul 14  7:31:55 web-prod sshd[1236]: Failed password for git from 45.155.205.99 port 54676 ssh2
+Jul 14  7:31:56 server01 sshd[1239]: Accepted publickey for andrea from 192.168.1.50 port 39234 ssh2
+Jul 14  7:32:03 server02 sshd[1243]: Failed password for invalid user service from 91.240.118.172 port 52806 ssh2
+Jul 14  7:32:05 gateway sshd[1245]: Failed password for invalid user manager from 172.16.0.12 port 54757 ssh2
+Jul 14  7:32:11 web-prod sshd[1246]: Failed password for user from 2001:db8::10 port 35692 ssh2
+Jul 14  7:32:13 server01 sshd[1250]: Connection closed by authenticating user root 91.240.118.172 port 28241 [preauth]
+Jul 14  7:32:16 web-prod sshd[1252]: Failed password for invalid user ftpuser from 2001:db8:feed::99 port 33880 ssh2
+Jul 14  7:32:28 gateway kernel: eth0: link is up
+Jul 14  7:32:36 db-node sshd[1260]: Failed password for invalid user ftpuser from 2001:db8::10 port 21378 ssh2
+Jul 14  7:32:46 server02 sshd[1261]: Failed password for invalid user jenkins from 198.51.100.23 port 24417 ssh2
+Jul 14  7:32:48 db-node sshd[1263]: Failed password for invalid user ftpuser from 198.51.100.23 port 57423 ssh2
+Jul 14  7:32:56 web-prod sshd[1265]: Failed password for webmaster from 2001:db8::11 port 47759 ssh2
+Jul 14  7:32:57 server01 sshd[1266]: Failed password for git from 203.0.113.10 port 36295 ssh2
+Jul 14  7:33:05 server02 sshd[1270]: Failed password for invalid user service from 203.0.113.10 port 49041 ssh2
+Jul 14  7:33:07 server01 sshd[1271]: Received disconnect: 11: Bye Bye
+Jul 14  7:33:11 server02 sshd[1275]: Failed password for root from 45.155.205.99 port 23842 ssh2
+Jul 14  7:33:18 gateway sshd[1279]: Failed password for invalid user pi from 172.16.0.12 port 63376 ssh2
+Jul 14  7:33:22 gateway sshd[1281]: Received disconnect: 11: Bye Bye
+Jul 14  7:33:32 db-node sshd[1282]: Accepted publickey for andrea from 10.0.0.15 port 58284 ssh2
+Jul 14  7:33:40 db-node sshd[1284]: Failed password for invalid user ftpuser from 198.51.100.23 port 24490 ssh2
+Jul 14  7:33:47 server01 sshd[1286]: Invalid user guest from 203.0.113.10 port 60591
+Jul 14  7:33:54 db-node CRON[1289]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  7:33:58 gateway sshd[1291]: Failed password for admin from 2001:db8::10 port 49964 ssh2
+Jul 14  7:33:59 web-prod sshd[1292]: Failed password for invalid user guest from 2001:db8::10 port 28680 ssh2
+Jul 14  7:34:03 gateway sshd[1295]: Failed password for invalid user service from 89.248.165.12 port 60086 ssh2
+Jul 14  7:34:04 db-node CRON[1298]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  7:34:06 server02 sshd[1301]: Failed password for test from 198.51.100.23 port 37848 ssh2
+Jul 14  7:34:18 gateway sshd[1303]: Accepted publickey for deploy from 192.168.1.50 port 52016 ssh2
+Jul 14  7:34:23 server01 sshd[1304]: Invalid user administrator from 2001:db8:feed::99 port 38132
+Jul 14  7:34:24 gateway sshd[1306]: Invalid user minecraft from 192.0.2.44 port 30589
+Jul 14  7:34:33 web-prod sshd[1307]: Failed password for postgres from 192.0.2.44 port 55755 ssh2
+Jul 14  7:34:43 db-node sshd[1309]: Failed password for invalid user ftpuser from 2001:db8::10 port 22614 ssh2
+Jul 14  7:34:54 server02 sshd[1310]: Failed password for invalid user ftpuser from 45.155.205.99 port 60675 ssh2
+Jul 14  7:34:57 server02 sshd[1314]: Failed password for invalid user ftpuser from 2001:db8::10 port 46982 ssh2
+Jul 14  7:35:02 server02 sshd[1315]: Failed password for backup from 45.155.205.99 port 34577 ssh2
+Jul 14  7:35:08 gateway sshd[1317]: Failed password for admin from 2001:db8:abcd::42 port 41512 ssh2
+Jul 14  7:35:13 gateway sshd[1321]: Accepted publickey for andrea from 192.168.1.50 port 27559 ssh2
+Jul 14  7:35:18 server02 sshd[1324]: Failed password for git from 2001:db8::10 port 40557 ssh2
+Jul 14  7:35:20 web-prod sshd[1326]: Failed password for invalid user service from 203.0.113.10 port 54073 ssh2
+Jul 14  7:35:31 server02 sshd[1329]: Failed password for admin from 2001:db8::10 port 60839 ssh2
+Jul 14  7:35:43 gateway sshd[1332]: Invalid user devops from 192.0.2.45 port 46371
+Jul 14  7:35:52 server02 sshd[1334]: Failed password for invalid user nagios from 192.0.2.45 port 60338 ssh2
+Jul 14  7:36:01 server01 sshd[1337]: Failed password for support from 2001:db8::10 port 50473 ssh2
+Jul 14  7:36:05 db-node sshd[1341]: Connection closed by authenticating user root 198.51.100.23 port 63178 [preauth]
+Jul 14  7:36:07 gateway sshd[1344]: Failed password for test from 45.155.205.99 port 64092 ssh2
+Jul 14  7:36:10 server01 sshd[1345]: Failed password for support from 203.0.113.10 port 49846 ssh2
+Jul 14  7:36:20 server02 sshd[1349]: Failed password for invalid user ftpuser from 203.0.113.10 port 26985 ssh2
+Jul 14  7:36:23 db-node sshd[1353]: Failed password for backup from 203.0.113.10 port 49914 ssh2
+Jul 14  7:36:34 db-node sshd[1356]: Received disconnect: 11: Bye Bye
+Jul 14  7:36:42 db-node sshd[1360]: Connection closed by authenticating user root 91.240.118.172 port 49223 [preauth]
+Jul 14  7:36:45 web-prod sshd[1364]: Failed password for test from 2001:db8::10 port 54163 ssh2
+Jul 14  7:36:50 web-prod sshd[1365]: Accepted publickey for alessio from 10.0.0.20 port 42010 ssh2
+Jul 14  7:36:56 db-node sshd[1366]: Failed password for deploy from 198.51.100.23 port 34021 ssh2
+Jul 14  7:37:02 db-node sshd[1370]: Failed password for invalid user manager from 45.155.205.99 port 45524 ssh2
+Jul 14  7:37:14 server01 sshd[1374]: Failed password for invalid user nagios from 89.248.165.12 port 45558 ssh2
+Jul 14  7:37:23 db-node sshd[1376]: Failed password for support from 45.155.205.99 port 21902 ssh2
+Jul 14  7:37:34 web-prod sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  7:37:37 db-node CRON[1379]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  7:37:47 db-node sshd[1380]: Failed password for deploy from 45.155.205.99 port 31909 ssh2
+Jul 14  7:37:53 server02 sshd[1384]: Failed password for invalid user nagios from 2001:db8:abcd::42 port 38235 ssh2
+Jul 14  7:37:58 server01 sshd[1388]: Failed password for invalid user administrator from 2001:db8::10 port 34694 ssh2
+Jul 14  7:37:59 server02 sshd[1390]: Connection closed by authenticating user root 89.248.165.12 port 29986 [preauth]
+Jul 14  7:38:03 server02 sshd[1394]: Invalid user minecraft from 89.248.165.12 port 34284
+Jul 14  7:38:15 gateway sshd[1397]: Failed password for invalid user guest from 203.0.113.10 port 30732 ssh2
+Jul 14  7:38:25 server01 sshd[1400]: Invalid user ftpuser from 185.220.101.18 port 45995
+Jul 14  7:38:27 db-node sshd[1402]: Failed password for invalid user jenkins from 198.51.100.24 port 57088 ssh2
+Jul 14  7:38:36 web-prod sshd[1405]: Failed password for invalid user guest from 203.0.113.10 port 47528 ssh2
+Jul 14  7:38:43 gateway sshd[1409]: Accepted publickey for andrea from 172.16.0.12 port 54193 ssh2
+Jul 14  7:38:54 gateway sshd[1413]: Failed password for invalid user guest from 91.240.118.172 port 41122 ssh2
+Jul 14  7:38:59 web-prod sshd[1415]: Accepted publickey for alessio from 172.16.0.12 port 21880 ssh2
+Jul 14  7:39:07 gateway sshd[1417]: Failed password for user from 2001:db8::10 port 42304 ssh2
+Jul 14  7:39:19 gateway sshd[1418]: Failed password for test from 198.51.100.23 port 46635 ssh2
+Jul 14  7:39:31 web-prod sshd[1422]: Failed password for test from 2001:db8::10 port 34522 ssh2
+Jul 14  7:39:36 db-node sshd[1425]: Failed password for webmaster from 45.155.205.99 port 56070 ssh2
+Jul 14  7:39:44 gateway sshd[1428]: Failed password for git from 198.51.100.23 port 40679 ssh2
+Jul 14  7:39:56 server02 sshd[1430]: Failed password for invalid user devops from 2001:db8::10 port 26588 ssh2
+Jul 14  7:40:00 gateway sshd[1432]: Failed password for root from 192.0.2.44 port 37977 ssh2
+Jul 14  7:40:09 gateway sshd[1434]: Invalid user guest from 2001:db8:abcd::42 port 52170
+Jul 14  7:40:10 db-node sshd[1437]: Failed password for backup from 198.51.100.23 port 23367 ssh2
+Jul 14  7:40:12 server01 sshd[1441]: Failed password for user from 203.0.113.10 port 29943 ssh2
+Jul 14  7:40:17 server01 sshd[1443]: Failed password for backup from 45.155.205.99 port 54247 ssh2
+Jul 14  7:40:22 db-node sshd[1447]: Failed password for invalid user devops from 203.0.113.10 port 33617 ssh2
+Jul 14  7:40:33 server01 sshd[1449]: Failed password for webmaster from 198.51.100.23 port 20175 ssh2
+Jul 14  7:40:43 web-prod sshd[1452]: Failed password for test from 2001:db8::10 port 49755 ssh2
+Jul 14  7:40:48 db-node sshd[1454]: Failed password for invalid user guest from 198.51.100.23 port 37408 ssh2
+Jul 14  7:40:49 server02 sshd[1457]: Invalid user devops from 2001:db8:feed::99 port 57303
+Jul 14  7:40:57 server01 sshd[1461]: Accepted publickey for alessio from 172.16.0.12 port 52798 ssh2
+Jul 14  7:41:06 web-prod sshd[1465]: Failed password for invalid user administrator from 45.155.205.99 port 41123 ssh2
+Jul 14  7:41:08 server02 kernel: eth0: link is up
+Jul 14  7:41:18 server01 sshd[1468]: Failed password for invalid user nagios from 91.240.118.172 port 31894 ssh2
+Jul 14  7:41:29 web-prod sshd[1469]: Failed password for ubuntu from 2001:db8::10 port 63917 ssh2
+Jul 14  7:41:35 web-prod sshd[1473]: Failed password for postgres from 172.16.0.12 port 22404 ssh2
+Jul 14  7:41:40 gateway sshd[1474]: Received disconnect: 11: Bye Bye
+Jul 14  7:41:47 db-node sshd[1475]: Invalid user nagios from 91.240.118.172 port 50276
+Jul 14  7:41:48 server02 sshd[1478]: Invalid user minecraft from 45.155.205.99 port 60986
+Jul 14  7:41:49 server02 sshd[1481]: Failed password for support from 10.0.0.15 port 51766 ssh2
+Jul 14  7:41:59 server02 sshd[1483]: Failed password for admin from 45.155.205.99 port 26108 ssh2
+Jul 14  7:42:07 server01 sshd[1485]: Failed password for backup from 192.168.1.50 port 37919 ssh2
+Jul 14  7:42:15 server02 sshd[1489]: Invalid user manager from 185.220.101.18 port 32491
+Jul 14  7:42:24 server02 sshd[1490]: Failed password for invalid user service from 2001:db8:feed::99 port 42274 ssh2
+Jul 14  7:42:29 server01 sshd[1493]: Accepted publickey for andrea from 172.16.0.12 port 49264 ssh2
+Jul 14  7:42:38 web-prod sshd[1496]: Failed password for invalid user ftpuser from 2001:db8:abcd::42 port 49841 ssh2
+Jul 14  7:42:50 server02 sshd[1500]: Failed password for invalid user nagios from 203.0.113.11 port 40852 ssh2
+Jul 14  7:42:57 server02 sshd[1504]: Received disconnect: 11: Bye Bye
+Jul 14  7:43:00 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  7:43:08 server01 sshd[1511]: Failed password for oracle from 198.51.100.23 port 24903 ssh2
+Jul 14  7:43:14 db-node sshd[1515]: Invalid user service from 2001:db8:feed::99 port 41532
+Jul 14  7:43:21 gateway sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  7:43:22 db-node sshd[1520]: Failed password for invalid user nagios from 89.248.165.12 port 34908 ssh2
+Jul 14  7:43:24 server01 sshd[1524]: Failed password for root from 203.0.113.10 port 23014 ssh2
+Jul 14  7:43:29 gateway sshd[1527]: Failed password for invalid user pi from 45.155.205.99 port 57088 ssh2
+Jul 14  7:43:32 server02 sshd[1528]: Invalid user ftpuser from 185.220.101.18 port 60613
+Jul 14  7:43:40 db-node sshd[1530]: Failed password for invalid user minecraft from 45.155.205.99 port 36733 ssh2
+Jul 14  7:43:45 db-node sshd[1532]: Failed password for invalid user devops from 89.248.165.12 port 61873 ssh2
+
+Jul 14  7:43:55 server02 sshd[1538]: Invalid user devops from 89.248.165.12 port 39390
+Jul 14  7:43:56 web-prod sshd[1541]: Failed password for invalid user devops from 203.0.113.11 port 59741 ssh2
+Jul 14  7:44:00 db-node sshd[1544]: Failed password for invalid user pi from 2001:db8::10 port 64417 ssh2
+Jul 14  7:44:11 server01 sshd[1545]: Failed password for oracle from 2001:db8::10 port 28612 ssh2
+Jul 14  7:44:17 web-prod sshd[1547]: Failed password for oracle from 2001:db8::11 port 54789 ssh2
+Jul 14  7:44:20 gateway sshd[1551]: Received disconnect: 11: Bye Bye
+Jul 14  7:44:25 gateway sshd[1552]: Failed password for invalid user nagios from 198.51.100.23 port 64323 ssh2
+Jul 14  7:44:34 gateway sshd[1553]: Connection closed by authenticating user root 203.0.113.10 port 37331 [preauth]
+Jul 14  7:44:43 server01 sshd[1557]: Failed password for support from 91.240.118.172 port 58309 ssh2
+Jul 14  7:44:49 server01 sshd[1559]: Failed password for admin from 2001:db8::10 port 59982 ssh2
+Jul 14  7:45:00 web-prod sshd[1562]: Invalid user administrator from 203.0.113.11 port 29160
+Jul 14  7:45:01 gateway sshd[1566]: Failed password for support from 198.51.100.23 port 45470 ssh2
+Jul 14  7:45:13 db-node sshd[1570]: Invalid user nagios from 2001:db8::11 port 30126
+Jul 14  7:45:24 server01 sshd[1574]: Invalid user jenkins from 192.0.2.44 port 22144
+Jul 14  7:45:28 web-prod sshd[1578]: Received disconnect: 11: Bye Bye
+Jul 14  7:45:34 server01 sshd[1581]: Failed password for test from 2001:db8::11 port 23968 ssh2
+Jul 14  7:45:36 web-prod sshd[1582]: Invalid user manager from 2001:db8::10 port 61909
+Jul 14  7:45:37 server01 sshd[1585]: Failed password for invalid user service from 198.51.100.23 port 24496 ssh2
+Jul 14  7:45:41 db-node sshd[1587]: Connection closed by authenticating user root 198.51.100.24 port 41532 [preauth]
+Jul 14  7:45:44 db-node sshd[1588]: Failed password for ubuntu from 192.0.2.44 port 55403 ssh2
+Jul 14  7:45:46 server01 sshd[1590]: Failed password for ubuntu from 45.155.205.99 port 58591 ssh2
+Jul 14  7:45:51 server01 sshd[1592]: Accepted publickey for deploy from 10.0.0.15 port 24165 ssh2
+Jul 14  7:45:59 web-prod sshd[1595]: Failed password for support from 198.51.100.23 port 60311 ssh2
+Jul 14  7:46:08 gateway sshd[1599]: Invalid user minecraft from 203.0.113.10 port 23986
+Jul 14  7:46:15 web-prod sshd[1600]: Failed password for ubuntu from 198.51.100.23 port 25294 ssh2
+Jul 14  7:46:17 server02 sshd[1603]: Invalid user jenkins from 89.248.165.12 port 55937
+Jul 14  7:46:24 db-node sshd[1606]: Failed password for invalid user service from 203.0.113.10 port 27498 ssh2
+Jul 14  7:46:36 server02 sshd[1610]: Failed password for webmaster from 2001:db8::10 port 49720 ssh2
+Jul 14  7:46:38 gateway sshd[1614]: Failed password for admin from 198.51.100.23 port 51081 ssh2
+Jul 14  7:46:40 web-prod sshd[1615]: Accepted publickey for andrea from 192.168.1.50 port 56462 ssh2
+Jul 14  7:46:41 db-node sshd[1618]: Accepted publickey for alessio from 172.16.0.12 port 63603 ssh2
+Jul 14  7:46:48 server01 sshd[1621]: Invalid user manager from 192.0.2.45 port 26789
+Jul 14  7:46:57 server02 sshd[1623]: Invalid user jenkins from 198.51.100.24 port 27092
+Jul 14  7:47:06 gateway sshd[1624]: Accepted publickey for alessio from 10.0.0.20 port 56763 ssh2
+Jul 14  7:47:16 db-node sshd[1625]: Invalid user administrator from 2001:db8::10 port 37527
+Jul 14  7:47:19 gateway CRON[1628]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  7:47:25 server01 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  7:47:35 web-prod sshd[1631]: Failed password for invalid user ftpuser from 203.0.113.10 port 26013 ssh2
+Jul 14  7:47:42 web-prod sshd[1635]: Failed password for invalid user administrator from 2001:db8::10 port 57197 ssh2
+Jul 14  7:47:45 server02 sshd[1636]: Accepted publickey for alessio from 192.168.1.50 port 63380 ssh2
+Jul 14  7:47:52 web-prod sshd[1640]: Failed password for oracle from 203.0.113.10 port 42621 ssh2
+Jul 14  7:48:03 db-node sshd[1644]: Failed password for invalid user administrator from 198.51.100.23 port 45903 ssh2
+Jul 14  7:48:04 server02 CRON[1647]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  7:48:07 gateway sshd[1650]: Failed password for git from 45.155.205.99 port 31514 ssh2
+Jul 14  7:48:19 server02 sshd[1653]: Failed password for admin from 203.0.113.11 port 48588 ssh2
+Jul 14  7:48:25 db-node sshd[1657]: Invalid user nagios from 2001:db8::11 port 61952
+Jul 14  7:48:30 server01 sshd[1661]: Failed password for admin from 45.155.205.99 port 43714 ssh2
+Jul 14  7:48:34 web-prod sshd[1665]: Failed password for ubuntu from 2001:db8::10 port 42250 ssh2
+Jul 14  7:48:36 db-node sshd[1666]: Failed password for invalid user pi from 2001:db8::10 port 43009 ssh2
+Jul 14  7:48:40 server01 sshd[1668]: Failed password for support from 198.51.100.23 port 62959 ssh2
+Jul 14  7:48:48 web-prod sshd[1672]: Accepted publickey for deploy from 192.168.1.50 port 40718 ssh2
+Jul 14  7:48:51 web-prod sshd[1673]: Failed password for git from 2001:db8::10 port 58759 ssh2
+Jul 14  7:48:53 gateway sshd[1677]: Failed password for invalid user guest from 2001:db8::10 port 25028 ssh2
+Jul 14  7:49:03 db-node sshd[1681]: Failed password for invalid user manager from 203.0.113.10 port 49473 ssh2
+Jul 14  7:49:14 server02 sshd[1684]: Invalid user administrator from 91.240.118.172 port 29886
+questa riga non è un log SSH valido
+Jul 14  7:49:31 server02 sshd[1688]: Failed password for ubuntu from 45.155.205.99 port 54345 ssh2
+Jul 14  7:49:37 gateway sshd[1691]: Failed password for invalid user guest from 203.0.113.11 port 61345 ssh2
+Jul 14  7:49:43 server01 sshd[1695]: Failed password for support from 192.0.2.44 port 41847 ssh2
+Jul 14  7:49:46 gateway sshd[1698]: Received disconnect: 11: Bye Bye
+Jul 14  7:49:58 web-prod sshd[1700]: Invalid user service from 203.0.113.11 port 40288
+Jul 14  7:50:05 gateway sshd[1702]: Accepted publickey for deploy from 10.0.0.15 port 63939 ssh2
+Jul 14  7:50:12 db-node sshd[1705]: Failed password for invalid user minecraft from 198.51.100.23 port 42395 ssh2
+Jul 14  7:50:16 server02 sshd[1707]: Failed password for invalid user service from 203.0.113.10 port 53271 ssh2
+Jul 14  7:50:17 gateway sshd[1709]: Invalid user pi from 198.51.100.23 port 30633
+Jul 14  7:50:29 db-node sshd[1711]: Accepted publickey for alessio from 10.0.0.15 port 43874 ssh2
+Jul 14  7:50:40 server02 sshd[1715]: Invalid user ftpuser from 2001:db8:abcd::42 port 49420
+Jul 14  7:50:49 server02 sshd[1718]: Received disconnect: 11: Bye Bye
+Jul 14  7:50:57 server02 sshd[1721]: Accepted publickey for alessio from 172.16.0.12 port 38466 ssh2
+Jul 14  7:51:04 db-node sshd[1725]: Received disconnect: 11: Bye Bye
+Jul 14  7:51:08 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  7:51:09 web-prod sshd[1730]: Invalid user guest from 203.0.113.11 port 53810
+Jul 14  7:51:14 server01 sshd[1732]: Failed password for test from 192.0.2.44 port 48670 ssh2
+Jul 14  7:51:22 gateway sshd[1733]: Failed password for admin from 2001:db8::10 port 35451 ssh2
+Jul 14  7:51:28 server02 sshd[1734]: Failed password for oracle from 2001:db8::10 port 29571 ssh2
+Jul 14  7:51:36 server02 sshd[1738]: Failed password for ubuntu from 203.0.113.10 port 21245 ssh2
+Jul 14  7:51:45 db-node sshd[1742]: Failed password for deploy from 2001:db8::10 port 27985 ssh2
+Jul 14  7:51:56 db-node sshd[1746]: Failed password for support from 10.0.0.20 port 59107 ssh2
+Jul 14  7:52:05 db-node sshd[1748]: Accepted publickey for alessio from 192.168.1.50 port 20102 ssh2
+Jul 14  7:52:15 gateway sshd[1750]: Invalid user guest from 198.51.100.23 port 63540
+Jul 14  7:52:24 gateway sshd[1751]: Received disconnect: 11: Bye Bye
+Jul 14  7:52:33 db-node sshd[1752]: Failed password for root from 45.155.205.99 port 44464 ssh2
+Jul 14  7:52:39 server01 sshd[1755]: Failed password for invalid user jenkins from 198.51.100.24 port 58135 ssh2
+Jul 14  7:52:42 server01 sshd[1758]: Failed password for webmaster from 192.0.2.45 port 64871 ssh2
+Jul 14  7:52:50 server02 sshd[1760]: Failed password for root from 10.0.0.15 port 22423 ssh2
+Jul 14  7:52:54 server01 CRON[1763]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  7:53:03 web-prod sshd[1767]: Failed password for root from 185.220.101.18 port 38750 ssh2
+Jul 14  7:53:14 gateway sshd[1770]: Failed password for invalid user nagios from 45.155.205.99 port 48818 ssh2
+Jul 14  7:53:20 server02 sshd[1774]: Accepted publickey for deploy from 192.168.1.50 port 37479 ssh2
+Jul 14  7:53:22 web-prod sshd[1775]: Failed password for admin from 192.0.2.45 port 55748 ssh2
+Jul 14  7:53:24 gateway sshd[1778]: Failed password for invalid user jenkins from 2001:db8:feed::99 port 30921 ssh2
+Jul 14  7:53:32 server01 sshd[1781]: Invalid user administrator from 185.220.101.18 port 37993
+Jul 14  7:53:34 web-prod sshd[1784]: Failed password for user from 192.0.2.45 port 22040 ssh2
+Jul 14  7:53:45 web-prod sshd[1785]: Failed password for deploy from 45.155.205.99 port 62281 ssh2
+Jul 14  7:53:55 server01 sshd[1787]: Accepted publickey for alessio from 192.168.1.50 port 49094 ssh2
+Jul 14  7:53:57 db-node sshd[1789]: Failed password for invalid user ftpuser from 2001:db8:abcd::42 port 40603 ssh2
+Jul 14  7:53:59 server01 sshd[1791]: Failed password for oracle from 2001:db8:abcd::42 port 56809 ssh2
+Jul 14  7:54:11 web-prod kernel: eth0: link is up
+Jul 14  7:54:23 web-prod sshd[1795]: Failed password for webmaster from 198.51.100.23 port 49625 ssh2
+Jul 14  7:54:31 server01 sshd[1798]: Invalid user service from 2001:db8::11 port 24255
+Jul 14  7:54:40 gateway sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  7:54:52 server02 sshd[1804]: Failed password for invalid user ftpuser from 198.51.100.24 port 33171 ssh2
+Jul 14  7:55:00 server01 sshd[1807]: Invalid user service from 192.0.2.45 port 50631
+Jul 14  7:55:03 db-node sshd[1808]: Failed password for deploy from 2001:db8:abcd::42 port 51369 ssh2
+Jul 14  7:55:13 server01 sshd[1810]: Received disconnect: 11: Bye Bye
+Jul 14  7:55:24 server01 sshd[1814]: Failed password for git from 192.168.1.50 port 42578 ssh2
+Jul 14  7:55:35 db-node sshd[1816]: Accepted publickey for alessio from 10.0.0.20 port 52955 ssh2
+Jul 14  7:55:36 server01 sshd[1818]: Failed password for invalid user ftpuser from 192.0.2.45 port 41145 ssh2
+Jul 14  7:55:42 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  7:55:47 server02 sshd[1824]: Failed password for git from 89.248.165.12 port 60267 ssh2
+Jul 14  7:55:58 server02 sshd[1826]: Failed password for root from 2001:db8::10 port 56937 ssh2
+Jul 14  7:56:00 server01 sshd[1829]: Invalid user nagios from 2001:db8:abcd::42 port 57495
+Jul 14  7:56:10 server01 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  7:56:19 gateway sshd[1836]: Failed password for webmaster from 2001:db8:abcd::42 port 39492 ssh2
+Jul 14  7:56:20 server02 sshd[1840]: Failed password for ubuntu from 10.0.0.15 port 33370 ssh2
+Jul 14  7:56:26 gateway sshd[1843]: Failed password senza indirizzo IP
+Jul 14  7:56:32 db-node sshd[1844]: Failed password for test from 10.0.0.15 port 28029 ssh2
+Jul 14  7:56:35 server01 sshd[1845]: Failed password for ubuntu from 2001:db8:abcd::42 port 60329 ssh2
+Jul 14  7:56:41 db-node sshd[1848]: Failed password for invalid user minecraft from 192.0.2.45 port 52654 ssh2
+Jul 14  7:56:49 gateway sshd[1852]: Failed password for test from 2001:db8:abcd::42 port 53124 ssh2
+Jul 14  7:56:53 db-node sshd[1855]: Failed password for invalid user minecraft from 89.248.165.12 port 52433 ssh2
+Jul 14  7:56:58 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  7:57:05 server02 sshd[1859]: Accepted publickey for alessio from 172.16.0.12 port 22965 ssh2
+Jul 14  7:57:12 server01 sshd[1861]: Failed password for backup from 89.248.165.12 port 24818 ssh2
+Jul 14  7:57:21 gateway sshd[1862]: Failed password for postgres from 198.51.100.24 port 45814 ssh2
+Jul 14  7:57:30 gateway sshd[1864]: Failed password for root from 192.168.1.50 port 46305 ssh2
+Jul 14  7:57:31 server02 sshd[1867]: Connection closed by authenticating user root 91.240.118.172 port 49949 [preauth]
+Jul 14  7:57:34 db-node sshd[1869]: Failed password for user from 2001:db8::10 port 30649 ssh2
+Jul 14  7:57:46 gateway sshd[1872]: Failed password for user from 192.168.1.50 port 54887 ssh2
+Jul 14  7:57:51 web-prod sshd[1873]: Failed password for invalid user administrator from 198.51.100.24 port 47298 ssh2
+Jul 14  7:58:01 web-prod sshd[1876]: Received disconnect: 11: Bye Bye
+Jul 14  7:58:11 db-node sshd[1878]: Accepted publickey for andrea from 172.16.0.12 port 54356 ssh2
+Jul 14  7:58:22 db-node sshd[1882]: Failed password for invalid user guest from 45.155.205.99 port 22069 ssh2
+Jul 14  7:58:26 server01 sshd[1886]: Failed password for invalid user nagios from 192.0.2.44 port 47063 ssh2
+Jul 14  7:58:35 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  7:58:47 server01 sshd[1892]: Failed password for invalid user minecraft from 172.16.0.12 port 41302 ssh2
+Jul 14  7:58:56 web-prod sshd[1895]: Received disconnect: 11: Bye Bye
+Jul 14  7:59:04 db-node sshd[1898]: Failed password for test from 91.240.118.172 port 59981 ssh2
+Jul 14  7:59:09 db-node sshd[1901]: Failed password for invalid user minecraft from 89.248.165.12 port 38940 ssh2
+Jul 14  7:59:15 web-prod sshd[1904]: Invalid user devops from 2001:db8:abcd::42 port 37921
+Jul 14  7:59:17 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  7:59:24 gateway sshd[1910]: Failed password for backup from 89.248.165.12 port 25179 ssh2
+Jul 14  7:59:35 gateway sshd[1914]: Failed password for invalid user devops from 172.16.0.12 port 37768 ssh2
+Jul 14  7:59:38 server01 sshd[1916]: Failed password for invalid user administrator from 192.168.1.50 port 34789 ssh2
+Jul 14  7:59:40 web-prod sshd[1919]: Accepted publickey for deploy from 10.0.0.15 port 29009 ssh2
+Jul 14  7:59:41 db-node sshd[1921]: Failed password for invalid user devops from 10.0.0.20 port 51290 ssh2
+Jul 14  7:59:47 gateway CRON[1922]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  7:59:49 db-node sshd[1924]: Failed password for ubuntu from 203.0.113.11 port 31473 ssh2
+Jul 14  7:59:50 web-prod sshd[1928]: Failed password for user from 89.248.165.12 port 22455 ssh2
+Jul 14  8:00:00 server01 sshd[1931]: Failed password for ubuntu from 172.16.0.12 port 54361 ssh2
+Jul 14  8:00:09 web-prod sshd[1934]: Failed password for backup from 198.51.100.24 port 41671 ssh2
+Jul 14  8:00:20 gateway sshd[1936]: Failed password for invalid user ftpuser from 2001:db8::10 port 39334 ssh2
+Jul 14  8:00:23 db-node sshd[1940]: Connection closed by authenticating user root 91.240.118.172 port 41491 [preauth]
+Jul 14  8:00:25 web-prod sshd[1941]: Failed password for test from 192.0.2.44 port 51290 ssh2
+Jul 14  8:00:26 gateway sshd[1945]: Failed password for webmaster from 91.240.118.172 port 41602 ssh2
+Jul 14  8:00:36 server01 sshd[1948]: Invalid user administrator from 2001:db8::11 port 35486
+Jul 14  8:00:47 server01 sshd[1952]: Failed password for webmaster from 2001:db8:abcd::42 port 64962 ssh2
+Jul 14  8:00:52 server01 sshd[1955]: Failed password for invalid user minecraft from 45.155.205.99 port 34360 ssh2
+Jul 14  8:00:55 web-prod sshd[1958]: Failed password for invalid user ftpuser from 172.16.0.12 port 50856 ssh2
+Jul 14  8:00:59 db-node sshd[1959]: Failed password for user from 192.168.1.50 port 43709 ssh2
+Jul 14  8:01:01 server01 sshd[1961]: Invalid user jenkins from 198.51.100.23 port 30783
+Jul 14  8:01:10 web-prod sshd[1962]: Accepted publickey for andrea from 172.16.0.12 port 53447 ssh2
+Jul 14  8:01:18 server01 sshd[1966]: Failed password for invalid user service from 2001:db8:feed::99 port 49936 ssh2
+Jul 14  8:01:26 gateway sshd[1967]: Failed password for invalid user administrator from 203.0.113.10 port 34280 ssh2
+Jul 14  8:01:33 gateway sshd[1968]: Failed password for invalid user minecraft from 203.0.113.11 port 24523 ssh2
+Jul 14  8:01:34 gateway sshd[1972]: Failed password for invalid user nagios from 192.0.2.44 port 62042 ssh2
+Jul 14  8:01:40 web-prod sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:01:47 web-prod sshd[1977]: Accepted publickey for deploy from 10.0.0.20 port 42791 ssh2
+Jul 14  8:01:49 server02 sshd[1981]: Failed password for invalid user devops from 45.155.205.99 port 20227 ssh2
+Jul 14  8:01:57 db-node sshd[1985]: Failed password for ubuntu from 45.155.205.99 port 36220 ssh2
+Jul 14  8:02:02 server02 sshd[1986]: Failed password for invalid user administrator from 2001:db8:feed::99 port 60299 ssh2
+Jul 14  8:02:06 server02 sshd[1987]: Failed password for invalid user administrator from 203.0.113.11 port 49257 ssh2
+Jul 14  8:02:10 server01 sshd[1991]: Failed password for invalid user administrator from 172.16.0.12 port 34238 ssh2
+Jul 14  8:02:13 db-node sshd[1994]: Failed password for invalid user jenkins from 2001:db8::10 port 57845 ssh2
+Jul 14  8:02:17 gateway sshd[1996]: Failed password senza indirizzo IP
+Jul 14  8:02:24 gateway sshd[1999]: Failed password for invalid user service from 192.0.2.45 port 61025 ssh2
+Jul 14  8:02:32 server01 CRON[2002]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:02:43 web-prod sshd[2005]: Accepted publickey for andrea from 172.16.0.12 port 39653 ssh2
+Jul 14  8:02:50 server02 sshd[2009]: Failed password for invalid user pi from 45.155.205.99 port 39709 ssh2
+Jul 14  8:02:58 server01 sshd[2013]: Received disconnect: 11: Bye Bye
+Jul 14  8:03:07 db-node sshd[2015]: Failed password for admin from 91.240.118.172 port 33325 ssh2
+Jul 14  8:03:15 gateway sshd[2016]: Failed password for support from 185.220.101.18 port 23377 ssh2
+Jul 14  8:03:25 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:03:29 db-node sshd[2019]: Failed password for invalid user administrator from 2001:db8::10 port 39869 ssh2
+Jul 14  8:03:33 server02 sshd[2020]: Accepted publickey for andrea from 172.16.0.12 port 59610 ssh2
+Jul 14  8:03:45 server02 CRON[2024]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:03:54 gateway sshd[2027]: Failed password for oracle from 172.16.0.12 port 62514 ssh2
+Jul 14  8:04:00 db-node sshd[2031]: Failed password for invalid user jenkins from 10.0.0.20 port 40986 ssh2
+Jul 14  8:04:06 web-prod sshd[2032]: Invalid user administrator from 198.51.100.24 port 29563
+Jul 14  8:04:11 db-node sshd[2036]: Failed password for user from 185.220.101.18 port 41618 ssh2
+Jul 14  8:04:15 web-prod sshd[2039]: Failed password for invalid user minecraft from 10.0.0.20 port 62054 ssh2
+Jul 14  8:04:18 gateway sshd[2041]: Failed password for git from 172.16.0.12 port 52002 ssh2
+Jul 14  8:04:29 server01 sshd[2042]: Connection closed by authenticating user root 203.0.113.11 port 63792 [preauth]
+Jul 14  8:04:30 server01 sshd[2046]: Failed password for invalid user administrator from 45.155.205.99 port 24454 ssh2
+Jul 14  8:04:34 db-node sshd[2050]: Failed password for root from 10.0.0.20 port 63206 ssh2
+Jul 14  8:04:43 db-node sshd[2054]: Failed password for oracle from 192.168.1.50 port 38005 ssh2
+Jul 14  8:04:44 db-node sshd[2058]: Connection closed by authenticating user root 198.51.100.23 port 27013 [preauth]
+Jul 14  8:04:46 db-node sshd[2060]: Failed password for invalid user devops from 192.168.1.50 port 36542 ssh2
+Jul 14  8:04:53 server01 sshd[2063]: Received disconnect: 11: Bye Bye
+Jul 14  8:05:01 db-node sshd[2065]: Failed password senza indirizzo IP
+Jul 14  8:05:06 server01 sshd[2066]: Failed password for invalid user administrator from 2001:db8:abcd::42 port 44718 ssh2
+Jul 14  8:05:17 server01 sshd[2068]: Failed password for invalid user manager from 2001:db8:feed::99 port 62264 ssh2
+Jul 14  8:05:19 db-node sshd[2069]: Failed password for admin from 10.0.0.20 port 37766 ssh2
+Jul 14  8:05:30 gateway sshd[2070]: Failed password for invalid user manager from 2001:db8::10 port 21026 ssh2
+Jul 14  8:05:33 web-prod sshd[2071]: Failed password for invalid user nagios from 45.155.205.99 port 57138 ssh2
+Jul 14  8:05:44 db-node sshd[2074]: Failed password for postgres from 192.0.2.44 port 25139 ssh2
+Jul 14  8:05:45 server01 sshd[2078]: Failed password for invalid user manager from 198.51.100.23 port 42321 ssh2
+Jul 14  8:05:55 web-prod sshd[2081]: Failed password for postgres from 91.240.118.172 port 49527 ssh2
+Jul 14  8:06:04 web-prod sshd[2085]: Failed password for invalid user devops from 2001:db8:abcd::42 port 25616 ssh2
+Jul 14  8:06:08 server01 sshd[2086]: Failed password for deploy from 2001:db8:abcd::42 port 61543 ssh2
+Jul 14  8:06:14 gateway sshd[2087]: Failed password for oracle from 89.248.165.12 port 49146 ssh2
+Jul 14  8:06:16 server02 sshd[2088]: Failed password for invalid user nagios from 10.0.0.15 port 56502 ssh2
+Jul 14  8:06:18 server01 sshd[2089]: Failed password for invalid user jenkins from 198.51.100.23 port 59120 ssh2
+Jul 14  8:06:25 server01 sshd[2092]: Failed password for invalid user ftpuser from 198.51.100.23 port 56669 ssh2
+Jul 14  8:06:35 db-node sshd[2094]: Accepted publickey for andrea from 10.0.0.20 port 37623 ssh2
+Jul 14  8:06:40 gateway sshd[2098]: Failed password for oracle from 192.0.2.45 port 48486 ssh2
+Jul 14  8:06:48 server01 sshd[2101]: Failed password for user from 45.155.205.99 port 60962 ssh2
+Jul 14  8:06:52 web-prod sshd[2102]: Failed password for user from 203.0.113.10 port 45932 ssh2
+Jul 14  8:06:59 gateway sshd[2106]: Failed password for webmaster from 192.0.2.44 port 39689 ssh2
+Jul 14  8:07:03 web-prod sshd[2109]: Failed password for webmaster from 2001:db8:abcd::42 port 40915 ssh2
+Jul 14  8:07:14 web-prod sshd[2111]: Failed password for user from 91.240.118.172 port 45751 ssh2
+Jul 14  8:07:18 db-node sshd[2113]: Accepted publickey for deploy from 10.0.0.15 port 50252 ssh2
+Jul 14  8:07:30 server02 sshd[2117]: Connection closed by authenticating user root 203.0.113.11 port 46813 [preauth]
+Jul 14  8:07:41 web-prod sshd[2119]: Invalid user pi from 198.51.100.24 port 36559
+Jul 14  8:07:53 web-prod sshd[2123]: Failed password for git from 10.0.0.20 port 58157 ssh2
+Jul 14  8:08:05 web-prod sshd[2124]: Connection closed by authenticating user root 192.0.2.45 port 55186 [preauth]
+Jul 14  8:08:15 server01 sshd[2125]: Accepted publickey for andrea from 192.168.1.50 port 62401 ssh2
+Jul 14  8:08:25 server01 sshd[2129]: Received disconnect: 11: Bye Bye
+Jul 14  8:08:31 web-prod sshd[2130]: Failed password for git from 91.240.118.172 port 34549 ssh2
+Jul 14  8:08:40 db-node sshd[2132]: Failed password for invalid user manager from 2001:db8:abcd::42 port 50347 ssh2
+Jul 14  8:08:52 db-node sshd[2134]: Failed password for deploy from 203.0.113.10 port 51638 ssh2
+Jul 14  8:08:54 server01 sshd[2136]: Failed password for invalid user service from 2001:db8::10 port 49840 ssh2
+Jul 14  8:09:02 gateway sshd[2140]: Failed password for root from 10.0.0.15 port 40900 ssh2
+Jul 14  8:09:14 server01 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:09:25 server01 CRON[2143]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:09:37 server02 sshd[2145]: Invalid user nagios from 192.0.2.45 port 56690
+Jul 14  8:09:45 server02 sshd[2149]: Invalid user nagios from 198.51.100.23 port 61974
+Jul 14  8:09:52 server01 sshd[2151]: Failed password for test from 2001:db8:feed::99 port 45482 ssh2
+Jul 14  8:09:56 gateway sshd[2152]: Invalid user pi from 2001:db8:abcd::42 port 55185
+Jul 14  8:10:02 gateway sshd[2154]: Failed password for invalid user service from 91.240.118.172 port 63955 ssh2
+Jul 14  8:10:13 gateway sshd[2158]: Invalid user jenkins from 89.248.165.12 port 27486
+Jul 14  8:10:19 web-prod sshd[2160]: Connection closed by authenticating user root 192.0.2.44 port 60270 [preauth]
+Jul 14  8:10:29 server01 sshd[2162]: Failed password for postgres from 45.155.205.99 port 40013 ssh2
+Jul 14  8:10:41 server02 sshd[2166]: Failed password for ubuntu from 192.0.2.44 port 57670 ssh2
+Jul 14  8:10:49 db-node sshd[2168]: Invalid user pi from 45.155.205.99 port 38929
+Jul 14  8:10:52 gateway sshd[2172]: Invalid user administrator from 2001:db8:feed::99 port 43529
+Jul 14  8:11:00 server02 sshd[2174]: Connection closed by authenticating user root 91.240.118.172 port 53124 [preauth]
+Jul 14  8:11:11 web-prod sshd[2178]: Accepted publickey for deploy from 172.16.0.12 port 49088 ssh2
+Jul 14  8:11:19 server02 sshd[2179]: Invalid user devops from 2001:db8:abcd::42 port 34452
+Jul 14  8:11:20 gateway sshd[2181]: Failed password for invalid user minecraft from 192.0.2.45 port 49971 ssh2
+Jul 14  8:11:29 db-node sshd[2182]: Invalid user jenkins from 192.0.2.44 port 55593
+Jul 14  8:11:38 server01 sshd[2186]: Failed password for invalid user ftpuser from 2001:db8:feed::99 port 26711 ssh2
+Jul 14  8:11:43 server01 sshd[2190]: Failed password for invalid user guest from 198.51.100.23 port 48774 ssh2
+Jul 14  8:11:47 server02 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:11:57 web-prod sshd[2195]: Invalid user ftpuser from 2001:db8:abcd::42 port 33541
+Jul 14  8:11:58 db-node sshd[2198]: Failed password for webmaster from 172.16.0.12 port 31034 ssh2
+Jul 14  8:12:03 gateway sshd[2201]: Received disconnect: 11: Bye Bye
+Jul 14  8:12:12 server01 sshd[2203]: Received disconnect: 11: Bye Bye
+Jul 14  8:12:19 server01 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:12:22 server02 sshd[2208]: Failed password for invalid user nagios from 2001:db8::10 port 36223 ssh2
+Jul 14  8:12:30 server02 sshd[2211]: Invalid user guest from 185.220.101.18 port 49621
+Jul 14  8:12:41 server01 sshd[2215]: Failed password for backup from 91.240.118.172 port 44187 ssh2
+Jul 14  8:12:47 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:12:59 server01 sshd[2220]: Invalid user guest from 2001:db8::11 port 43476
+Jul 14  8:13:08 web-prod sshd[2222]: Received disconnect: 11: Bye Bye
+Jul 14  8:13:12 web-prod sshd[2225]: Failed password for ubuntu from 89.248.165.12 port 42135 ssh2
+Jul 14  8:13:22 web-prod sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:13:23 server01 sshd[2229]: Invalid user administrator from 2001:db8:feed::99 port 50119
+Jul 14  8:13:25 server02 sshd[2233]: Failed password for invalid user pi from 2001:db8:feed::99 port 33259 ssh2
+Jul 14  8:13:36 gateway sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:13:41 server01 sshd[2238]: Failed password for invalid user pi from 2001:db8::11 port 63549 ssh2
+Jul 14  8:13:42 web-prod sshd[2241]: Accepted publickey for alessio from 10.0.0.20 port 62957 ssh2
+Jul 14  8:13:44 server01 sshd[2242]: Failed password for invalid user service from 198.51.100.23 port 28696 ssh2
+Jul 14  8:13:55 web-prod sshd[2243]: Failed password for invalid user nagios from 2001:db8::10 port 27903 ssh2
+Jul 14  8:14:07 server02 sshd[2247]: Failed password for invalid user guest from 2001:db8:abcd::42 port 25854 ssh2
+Jul 14  8:14:09 gateway sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:14:12 web-prod sshd[2252]: Invalid user guest from 2001:db8::10 port 29362
+Jul 14  8:14:21 db-node sshd[2253]: Invalid user jenkins from 198.51.100.23 port 48842
+Jul 14  8:14:33 server02 CRON[2255]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:14:43 web-prod sshd[2257]: Failed password for invalid user manager from 198.51.100.24 port 29175 ssh2
+Jul 14  8:14:55 web-prod sshd[2260]: Received disconnect: 11: Bye Bye
+Jul 14  8:15:01 server02 sshd[2262]: Failed password for invalid user manager from 198.51.100.23 port 36263 ssh2
+Jul 14  8:15:13 db-node sshd[2265]: Connection closed by authenticating user root 203.0.113.10 port 63149 [preauth]
+Jul 14  8:15:18 server02 sshd[2267]: Accepted publickey for deploy from 192.168.1.50 port 23576 ssh2
+Jul 14  8:15:22 web-prod sshd[2271]: Failed password for invalid user service from 10.0.0.20 port 61817 ssh2
+Jul 14  8:15:23 gateway sshd[2274]: Failed password for ubuntu from 2001:db8:feed::99 port 43947 ssh2
+Jul 14  8:15:31 server01 sshd[2275]: Invalid user ftpuser from 203.0.113.10 port 37182
+Jul 14  8:15:32 server01 sshd[2279]: Failed password for deploy from 192.168.1.50 port 47225 ssh2
+Jul 14  8:15:34 db-node sshd[2281]: Failed password for test from 89.248.165.12 port 25178 ssh2
+Jul 14  8:15:37 db-node sshd[2284]: Failed password for invalid user ftpuser from 198.51.100.23 port 40327 ssh2
+Jul 14  8:15:38 server02 CRON[2285]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:15:40 web-prod sshd[2286]: Failed password for ubuntu from 192.0.2.45 port 27827 ssh2
+Jul 14  8:15:52 server01 sshd[2288]: Failed password for webmaster from 2001:db8::11 port 54275 ssh2
+Jul 14  8:15:57 server02 sshd[2291]: Failed password for invalid user administrator from 91.240.118.172 port 27736 ssh2
+Jul 14  8:16:03 web-prod sshd[2294]: Failed password for invalid user minecraft from 91.240.118.172 port 57791 ssh2
+Jul 14  8:16:11 db-node sshd[2297]: Failed password for admin from 192.0.2.45 port 44096 ssh2
+Jul 14  8:16:21 server01 sshd[2299]: Accepted publickey for andrea from 10.0.0.15 port 20805 ssh2
+Jul 14  8:16:25 server01 sshd[2303]: Failed password for invalid user administrator from 192.0.2.44 port 31728 ssh2
+Jul 14  8:16:34 web-prod sshd[2305]: Failed password for admin from 2001:db8:feed::99 port 40967 ssh2
+Jul 14  8:16:44 gateway sshd[2306]: Failed password for git from 203.0.113.11 port 31753 ssh2
+Jul 14  8:16:45 web-prod sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:16:50 gateway sshd[2310]: Failed password for oracle from 10.0.0.15 port 20522 ssh2
+Jul 14  8:17:00 gateway sshd[2312]: Failed password for invalid user service from 10.0.0.20 port 32807 ssh2
+Jul 14  8:17:04 server02 CRON[2313]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:17:05 server02 sshd[2316]: Invalid user jenkins from 2001:db8::11 port 20628
+Jul 14  8:17:06 web-prod sshd[2319]: Failed password for root from 192.168.1.50 port 35608 ssh2
+Jul 14  8:17:09 gateway sshd[2320]: Failed password for postgres from 45.155.205.99 port 54062 ssh2
+Jul 14  8:17:17 server01 sshd[2321]: Failed password for invalid user administrator from 2001:db8:abcd::42 port 24904 ssh2
+Jul 14  8:17:24 server02 sshd[2323]: Failed password for invalid user jenkins from 2001:db8::10 port 45752 ssh2
+Jul 14  8:17:30 web-prod sshd[2326]: Failed password for invalid user manager from 185.220.101.18 port 28920 ssh2
+Jul 14  8:17:32 server02 sshd[2327]: Failed password for git from 10.0.0.15 port 40580 ssh2
+Jul 14  8:17:38 server02 sshd[2331]: Failed password for support from 91.240.118.172 port 27858 ssh2
+Jul 14  8:17:43 db-node sshd[2332]: Failed password for test from 2001:db8::10 port 29720 ssh2
+Jul 14  8:17:49 web-prod sshd[2333]: Accepted publickey for andrea from 192.168.1.50 port 22036 ssh2
+Jul 14  8:17:56 web-prod sshd[2335]: Failed password for root from 198.51.100.24 port 29161 ssh2
+Jul 14  8:18:00 server02 sshd[2337]: Connection closed by authenticating user root 192.0.2.45 port 64976 [preauth]
+Jul 14  8:18:11 server01 CRON[2340]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:18:13 server01 sshd[2341]: Failed password for postgres from 10.0.0.15 port 28440 ssh2
+Jul 14  8:18:15 server01 sshd[2345]: Failed password for deploy from 2001:db8:feed::99 port 45886 ssh2
+Jul 14  8:18:26 web-prod sshd[2347]: Failed password for ubuntu from 192.0.2.45 port 38021 ssh2
+Jul 14  8:18:27 db-node sshd[2349]: Invalid user service from 45.155.205.99 port 47000
+Jul 14  8:18:35 server01 sshd[2350]: Failed password for git from 192.0.2.44 port 47474 ssh2
+Jul 14  8:18:39 db-node kernel: eth0: link is up
+Jul 14  8:18:47 db-node sshd[2355]: Failed password for ubuntu from 192.168.1.50 port 41076 ssh2
+Jul 14  8:18:48 gateway sshd[2357]: Failed password for invalid user minecraft from 91.240.118.172 port 23839 ssh2
+Jul 14  8:18:57 gateway sshd[2359]: Received disconnect: 11: Bye Bye
+Jul 14  8:18:59 server02 sshd[2361]: Failed password for invalid user nagios from 203.0.113.11 port 34379 ssh2
+Jul 14  8:19:05 server02 sshd[2363]: Failed password for invalid user administrator from 2001:db8::10 port 43513 ssh2
+Jul 14  8:19:17 gateway sshd[2365]: Invalid user service from 198.51.100.24 port 52258
+Jul 14  8:19:22 server02 sshd[2369]: Failed password for invalid user administrator from 203.0.113.11 port 35245 ssh2
+Jul 14  8:19:31 web-prod sshd[2370]: Failed password for ubuntu from 185.220.101.18 port 28551 ssh2
+Jul 14  8:19:37 server01 sshd[2371]: Failed password for invalid user jenkins from 192.0.2.44 port 27269 ssh2
+Jul 14  8:19:39 gateway sshd[2375]: Invalid user jenkins from 192.0.2.45 port 39776
+Jul 14  8:19:42 server02 sshd[2379]: Connection closed by authenticating user root 45.155.205.99 port 62544 [preauth]
+Jul 14  8:19:48 server02 sshd[2382]: Failed password for webmaster from 192.0.2.45 port 44797 ssh2
+Jul 14  8:19:53 server02 sshd[2384]: Accepted publickey for deploy from 172.16.0.12 port 22122 ssh2
+Jul 14  8:19:56 db-node CRON[2387]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:20:06 server02 CRON[2388]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:20:09 gateway sshd[2389]: Failed password for invalid user guest from 2001:db8::10 port 31002 ssh2
+Jul 14  8:20:21 gateway sshd[2393]: Failed password for invalid user jenkins from 185.220.101.18 port 36353 ssh2
+Jul 14  8:20:26 server01 sshd[2394]: Failed password for invalid user nagios from 10.0.0.15 port 47502 ssh2
+Jul 14  8:20:34 web-prod sshd[2397]: Failed password for invalid user manager from 198.51.100.24 port 51423 ssh2
+Jul 14  8:20:45 server02 sshd[2399]: Failed password for oracle from 203.0.113.11 port 39327 ssh2
+Jul 14  8:20:47 server01 sshd[2402]: Failed password for invalid user service from 2001:db8:abcd::42 port 30545 ssh2
+Jul 14  8:20:49 gateway sshd[2406]: Accepted publickey for deploy from 172.16.0.12 port 30813 ssh2
+Jul 14  8:20:59 web-prod sshd[2408]: Failed password for invalid user nagios from 2001:db8::10 port 33470 ssh2
+Jul 14  8:21:11 db-node sshd[2411]: Invalid user guest from 192.0.2.44 port 35567
+Jul 14  8:21:12 web-prod sshd[2415]: Failed password for oracle from 2001:db8::11 port 20250 ssh2
+Jul 14  8:21:23 db-node sshd[2419]: Failed password for oracle from 203.0.113.10 port 33562 ssh2
+Jul 14  8:21:25 web-prod sshd[2420]: Failed password for support from 2001:db8:abcd::42 port 50863 ssh2
+Jul 14  8:21:30 server01 sshd[2424]: Failed password for root from 2001:db8:abcd::42 port 44209 ssh2
+Jul 14  8:21:35 web-prod sshd[2428]: Failed password for webmaster from 91.240.118.172 port 56978 ssh2
+Jul 14  8:21:46 server01 sshd[2429]: Invalid user nagios from 2001:db8:abcd::42 port 55484
+Jul 14  8:21:56 server02 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:22:05 web-prod sshd[2434]: Invalid user devops from 198.51.100.24 port 51212
+Jul 14  8:22:07 web-prod sshd[2435]: Failed password for invalid user manager from 192.168.1.50 port 57452 ssh2
+Jul 14  8:22:10 server01 sshd[2439]: Failed password for invalid user pi from 192.0.2.45 port 33886 ssh2
+
+Jul 14  8:22:15 server02 sshd[2443]: Failed password for deploy from 198.51.100.23 port 25703 ssh2
+Jul 14  8:22:24 gateway sshd[2446]: Failed password for invalid user nagios from 203.0.113.10 port 60832 ssh2
+Jul 14  8:22:26 web-prod sshd[2448]: Failed password for invalid user guest from 198.51.100.24 port 26922 ssh2
+Jul 14  8:22:31 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:22:36 web-prod sshd[2455]: Invalid user pi from 45.155.205.99 port 22455
+Jul 14  8:22:41 web-prod sshd[2457]: Invalid user administrator from 2001:db8::10 port 46327
+Jul 14  8:22:48 gateway sshd[2459]: Failed password for invalid user administrator from 10.0.0.20 port 37601 ssh2
+Jul 14  8:22:54 gateway sshd[2462]: Failed password for test from 10.0.0.20 port 64882 ssh2
+Jul 14  8:22:57 gateway sshd[2466]: Connection closed by authenticating user root 192.0.2.45 port 37656 [preauth]
+Jul 14  8:23:09 web-prod sshd[2467]: Failed password for invalid user service from 185.220.101.18 port 46684 ssh2
+Jul 14  8:23:15 server01 sshd[2469]: Failed password for git from 192.168.1.50 port 46436 ssh2
+Jul 14  8:23:25 server01 sshd[2471]: Failed password for backup from 185.220.101.18 port 23776 ssh2
+Jul 14  8:23:26 gateway sshd[2473]: Failed password for admin from 10.0.0.15 port 53103 ssh2
+Jul 14  8:23:37 server01 sshd[2475]: Failed password for invalid user minecraft from 10.0.0.15 port 31638 ssh2
+Jul 14  8:23:47 db-node sshd[2478]: Failed password for deploy from 91.240.118.172 port 25923 ssh2
+Jul 14  8:23:48 server02 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:23:59 server02 sshd[2482]: Failed password for support from 2001:db8:feed::99 port 53638 ssh2
+Jul 14  8:24:00 web-prod sshd[2484]: Invalid user ftpuser from 89.248.165.12 port 20554
+Jul 14  8:24:05 db-node sshd[2487]: Accepted publickey for alessio from 192.168.1.50 port 44672 ssh2
+Jul 14  8:24:11 web-prod sshd[2490]: Failed password for user from 89.248.165.12 port 64380 ssh2
+Jul 14  8:24:18 db-node sshd[2491]: Failed password for invalid user manager from 2001:db8::11 port 56795 ssh2
+Jul 14  8:24:23 gateway sshd[2492]: Failed password for invalid user devops from 2001:db8::10 port 38119 ssh2
+Jul 14  8:24:28 gateway sshd[2494]: Failed password for invalid user manager from 45.155.205.99 port 23720 ssh2
+Jul 14  8:24:35 gateway sshd[2496]: Accepted publickey for alessio from 172.16.0.12 port 37001 ssh2
+Jul 14  8:24:42 web-prod sshd[2500]: Accepted publickey for alessio from 10.0.0.20 port 34572 ssh2
+Jul 14  8:24:53 db-node CRON[2504]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:25:04 gateway sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:25:15 db-node sshd[2509]: Failed password for invalid user service from 10.0.0.20 port 28384 ssh2
+Jul 14  8:25:18 gateway sshd[2510]: Failed password for postgres from 45.155.205.99 port 40125 ssh2
+Jul 14  8:25:24 gateway sshd[2513]: Failed password for support from 198.51.100.24 port 50837 ssh2
+Jul 14  8:25:34 db-node sshd[2514]: Failed password for support from 185.220.101.18 port 52799 ssh2
+Jul 14  8:25:41 db-node sshd[2517]: Failed password for invalid user jenkins from 192.0.2.44 port 29002 ssh2
+Jul 14  8:25:48 db-node sshd[2521]: Failed password for support from 192.0.2.45 port 25296 ssh2
+Jul 14  8:25:51 gateway sshd[2522]: Failed password for invalid user pi from 91.240.118.172 port 33722 ssh2
+Jul 14  8:26:01 server02 sshd[2526]: Connection closed by authenticating user root 203.0.113.11 port 28480 [preauth]
+Jul 14  8:26:11 web-prod sshd[2530]: Failed password for git from 10.0.0.20 port 45121 ssh2
+Jul 14  8:26:15 gateway sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:26:24 server02 sshd[2532]: Accepted publickey for andrea from 10.0.0.20 port 42567 ssh2
+Jul 14  8:26:29 server02 sshd[2533]: Failed password for root from 89.248.165.12 port 30945 ssh2
+Jul 14  8:26:34 gateway sshd[2537]: Accepted publickey for alessio from 192.168.1.50 port 28768 ssh2
+Jul 14  8:26:40 web-prod sshd[2540]: Accepted publickey for alessio from 10.0.0.20 port 21253 ssh2
+Jul 14  8:26:44 server02 sshd[2542]: Failed password for admin from 203.0.113.10 port 58646 ssh2
+Jul 14  8:26:50 server01 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:26:55 db-node sshd[2547]: Invalid user guest from 203.0.113.10 port 63382
+Jul 14  8:27:06 server01 sshd[2548]: Accepted publickey for alessio from 172.16.0.12 port 44920 ssh2
+Jul 14  8:27:08 db-node sshd[2551]: Failed password for invalid user administrator from 192.0.2.44 port 33467 ssh2
+Jul 14  8:27:13 web-prod sshd[2552]: Invalid user manager from 192.0.2.44 port 60815
+Jul 14  8:27:25 server02 sshd[2556]: Connection closed by authenticating user root 203.0.113.11 port 53527 [preauth]
+Jul 14  8:27:37 db-node sshd[2557]: Failed password for test from 198.51.100.24 port 52619 ssh2
+Jul 14  8:27:42 db-node sshd[2559]: Failed password for git from 2001:db8:feed::99 port 39356 ssh2
+Jul 14  8:27:50 server02 sshd[2563]: Failed password for invalid user guest from 203.0.113.10 port 20835 ssh2
+Jul 14  8:28:00 web-prod CRON[2565]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:28:09 server01 CRON[2566]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:28:20 server02 kernel: eth0: link is up
+Jul 14  8:28:25 web-prod sshd[2571]: Failed password for invalid user jenkins from 192.0.2.45 port 22585 ssh2
+Jul 14  8:28:36 gateway sshd[2575]: Accepted publickey for andrea from 10.0.0.15 port 20633 ssh2
+Jul 14  8:28:39 server02 sshd[2578]: Failed password for webmaster from 10.0.0.15 port 60750 ssh2
+Jul 14  8:28:41 gateway sshd[2581]: Failed password for invalid user devops from 2001:db8:abcd::42 port 46230 ssh2
+Jul 14  8:28:48 web-prod sshd[2585]: Invalid user guest from 2001:db8:abcd::42 port 30930
+Jul 14  8:28:51 server01 sshd[2587]: Failed password for invalid user pi from 10.0.0.20 port 57286 ssh2
+Jul 14  8:29:01 web-prod sshd[2590]: Invalid user pi from 2001:db8:feed::99 port 64857
+Jul 14  8:29:09 web-prod sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:29:17 server01 sshd[2592]: Failed password for invalid user service from 2001:db8::10 port 20810 ssh2
+Jul 14  8:29:29 db-node kernel: eth0: link is up
+Jul 14  8:29:38 db-node sshd[2595]: Failed password for support from 45.155.205.99 port 51583 ssh2
+Jul 14  8:29:49 web-prod sshd[2597]: Connection closed by authenticating user root 91.240.118.172 port 60167 [preauth]
+Jul 14  8:29:50 server01 sshd[2599]: Failed password for invalid user guest from 10.0.0.20 port 52495 ssh2
+Jul 14  8:29:58 gateway sshd[2601]: Failed password for git from 91.240.118.172 port 23299 ssh2
+Jul 14  8:30:09 web-prod sshd[2605]: Connection closed by authenticating user root 203.0.113.11 port 50087 [preauth]
+Jul 14  8:30:17 db-node sshd[2609]: Failed password for backup from 10.0.0.20 port 49299 ssh2
+Jul 14  8:30:29 server01 sshd[2610]: Failed password for admin from 203.0.113.11 port 56512 ssh2
+Jul 14  8:30:39 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:30:48 server02 sshd[2617]: Received disconnect: 11: Bye Bye
+Jul 14  8:30:54 server01 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:31:00 db-node sshd[2623]: Accepted publickey for deploy from 192.168.1.50 port 49657 ssh2
+Jul 14  8:31:02 server01 sshd[2625]: Failed password for invalid user devops from 2001:db8::11 port 61527 ssh2
+Jul 14  8:31:11 db-node sshd[2628]: Accepted publickey for andrea from 10.0.0.15 port 52271 ssh2
+Jul 14  8:31:14 web-prod sshd[2629]: Failed password for deploy from 185.220.101.18 port 32290 ssh2
+Jul 14  8:31:18 web-prod sshd[2631]: Accepted publickey for alessio from 10.0.0.15 port 23047 ssh2
+Jul 14  8:31:29 db-node sshd[2632]: Connection closed by authenticating user root 45.155.205.99 port 49975 [preauth]
+Jul 14  8:31:40 db-node sshd[2634]: Received disconnect: 11: Bye Bye
+Jul 14  8:31:41 db-node sshd[2635]: Invalid user minecraft from 185.220.101.18 port 58346
+Jul 14  8:31:50 server02 sshd[2637]: Accepted publickey for andrea from 10.0.0.20 port 45389 ssh2
+Jul 14  8:32:01 db-node sshd[2640]: Failed password for invalid user ftpuser from 2001:db8:abcd::42 port 47437 ssh2
+Jul 14  8:32:06 web-prod sshd[2643]: Received disconnect: 11: Bye Bye
+Jul 14  8:32:14 server02 sshd[2645]: Failed password for invalid user service from 192.168.1.50 port 39589 ssh2
+Jul 14  8:32:20 db-node sshd[2647]: Failed password for support from 89.248.165.12 port 64997 ssh2
+Jul 14  8:32:23 server02 sshd[2650]: Accepted publickey for deploy from 192.168.1.50 port 51481 ssh2
+Jul 14  8:32:33 db-node sshd[2654]: Accepted publickey for alessio from 192.168.1.50 port 20836 ssh2
+Jul 14  8:32:42 server01 sshd[2655]: Failed password for oracle from 203.0.113.11 port 63925 ssh2
+Jul 14  8:32:45 gateway sshd[2658]: Failed password for git from 203.0.113.11 port 39342 ssh2
+Jul 14  8:32:46 gateway sshd[2662]: Failed password for invalid user service from 172.16.0.12 port 34700 ssh2
+Jul 14  8:32:53 server02 sshd[2665]: Accepted publickey for alessio from 10.0.0.15 port 45398 ssh2
+Jul 14  8:33:00 gateway sshd[2666]: Failed password for invalid user minecraft from 91.240.118.172 port 33309 ssh2
+Jul 14  8:33:04 gateway sshd[2668]: Connection closed by authenticating user root 198.51.100.24 port 39279 [preauth]
+Jul 14  8:33:12 server02 sshd[2669]: Failed password for root from 192.0.2.45 port 53675 ssh2
+Jul 14  8:33:19 gateway sshd[2672]: Failed password for webmaster from 91.240.118.172 port 20369 ssh2
+Jul 14  8:33:22 server01 CRON[2674]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:33:32 server01 sshd[2677]: Failed password for webmaster from 172.16.0.12 port 43467 ssh2
+Jul 14  8:33:38 db-node sshd[2679]: Received disconnect: 11: Bye Bye
+Jul 14  8:33:47 server01 sshd[2681]: Failed password for test from 172.16.0.12 port 46438 ssh2
+Jul 14  8:33:51 gateway sshd[2684]: Failed password for git from 185.220.101.18 port 60519 ssh2
+Jul 14  8:34:02 server01 sshd[2685]: Invalid user manager from 45.155.205.99 port 35751
+Jul 14  8:34:12 server02 sshd[2686]: Accepted publickey for alessio from 192.168.1.50 port 27430 ssh2
+Jul 14  8:34:19 gateway sshd[2689]: Failed password for git from 192.168.1.50 port 44573 ssh2
+Jul 14  8:34:27 web-prod sshd[2690]: Failed password for admin from 185.220.101.18 port 40992 ssh2
+Jul 14  8:34:30 db-node sshd[2691]: Invalid user ftpuser from 198.51.100.24 port 63931
+Jul 14  8:34:41 web-prod sshd[2692]: Failed password for invalid user guest from 2001:db8:feed::99 port 62373 ssh2
+Jul 14  8:34:53 server02 sshd[2693]: Failed password for root from 2001:db8::10 port 22482 ssh2
+Jul 14  8:34:56 gateway sshd[2694]: Invalid user nagios from 198.51.100.24 port 36950
+Jul 14  8:35:03 web-prod sshd[2698]: Failed password for invalid user service from 203.0.113.10 port 45526 ssh2
+Jul 14  8:35:04 db-node sshd[2699]: Accepted publickey for deploy from 10.0.0.15 port 24757 ssh2
+Jul 14  8:35:10 db-node sshd[2700]: Failed password for backup from 89.248.165.12 port 59751 ssh2
+Jul 14  8:35:17 web-prod sshd[2701]: Failed password for deploy from 172.16.0.12 port 34409 ssh2
+Jul 14  8:35:26 gateway sshd[2703]: Failed password for invalid user service from 2001:db8::11 port 20730 ssh2
+Jul 14  8:35:29 server01 sshd[2704]: Failed password for admin from 2001:db8:abcd::42 port 55202 ssh2
+Jul 14  8:35:34 server02 sshd[2707]: Failed password for test from 192.168.1.50 port 29335 ssh2
+Jul 14  8:35:44 gateway sshd[2709]: Failed password for git from 203.0.113.11 port 55969 ssh2
+Jul 14  8:35:46 gateway sshd[2710]: Failed password for postgres from 185.220.101.18 port 58049 ssh2
+Jul 14  8:35:52 server02 sshd[2712]: Failed password for backup from 198.51.100.23 port 32681 ssh2
+Jul 14  8:35:58 db-node sshd[2715]: Accepted publickey for deploy from 10.0.0.20 port 57149 ssh2
+Jul 14  8:36:04 gateway sshd[2719]: Failed password for invalid user nagios from 2001:db8::10 port 36133 ssh2
+Jul 14  8:36:09 gateway sshd[2721]: Accepted publickey for alessio from 192.168.1.50 port 50333 ssh2
+Jul 14  8:36:17 gateway sshd[2724]: Failed password for invalid user guest from 198.51.100.24 port 31519 ssh2
+Jul 14  8:36:22 server02 sshd[2726]: Failed password for invalid user service from 198.51.100.23 port 24941 ssh2
+Jul 14  8:36:33 server01 sshd[2730]: Accepted publickey for andrea from 10.0.0.20 port 56149 ssh2
+Jul 14  8:36:38 db-node sshd[2734]: Invalid user nagios from 198.51.100.23 port 43974
+Jul 14  8:36:42 db-node sshd[2737]: Failed password for postgres from 192.168.1.50 port 53450 ssh2
+Jul 14  8:36:51 server01 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:37:01 server02 sshd[2741]: Failed password for invalid user pi from 192.0.2.45 port 57116 ssh2
+Jul 14  8:37:13 web-prod sshd[2744]: Failed password for postgres from 10.0.0.20 port 35187 ssh2
+Jul 14  8:37:17 server01 sshd[2746]: Failed password for backup from 2001:db8::11 port 45434 ssh2
+Jul 14  8:37:18 server01 sshd[2749]: Failed password for invalid user devops from 192.168.1.50 port 61521 ssh2
+Jul 14  8:37:28 db-node sshd[2751]: Failed password for invalid user guest from 2001:db8:abcd::42 port 43940 ssh2
+Jul 14  8:37:37 gateway sshd[2755]: Received disconnect: 11: Bye Bye
+Jul 14  8:37:41 db-node sshd[2759]: Failed password for invalid user manager from 2001:db8::11 port 51906 ssh2
+Jul 14  8:37:42 db-node sshd[2761]: Failed password for oracle from 45.155.205.99 port 25052 ssh2
+Jul 14  8:37:46 server02 sshd[2763]: Failed password for postgres from 198.51.100.24 port 63326 ssh2
+Jul 14  8:37:58 server01 sshd[2767]: Accepted publickey for andrea from 172.16.0.12 port 58718 ssh2
+Jul 14  8:38:01 web-prod sshd[2768]: Failed password for invalid user pi from 192.0.2.44 port 57584 ssh2
+Jul 14  8:38:12 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:38:15 server01 sshd[2771]: Failed password for invalid user manager from 192.0.2.45 port 53858 ssh2
+Jul 14  8:38:25 server01 CRON[2774]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:38:29 web-prod sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:38:32 server02 sshd[2782]: Invalid user pi from 2001:db8:abcd::42 port 58184
+Jul 14  8:38:42 db-node sshd[2785]: Failed password for invalid user guest from 2001:db8::10 port 49718 ssh2
+Jul 14  8:38:46 web-prod sshd[2789]: Failed password for git from 203.0.113.10 port 33261 ssh2
+Jul 14  8:38:57 web-prod sshd[2791]: Invalid user manager from 198.51.100.23 port 51186
+Jul 14  8:39:07 server01 sshd[2792]: Failed password for root from 192.0.2.44 port 59549 ssh2
+Jul 14  8:39:18 web-prod sshd[2796]: Failed password for backup from 203.0.113.11 port 54722 ssh2
+Jul 14  8:39:25 gateway sshd[2797]: Failed password for invalid user guest from 91.240.118.172 port 51269 ssh2
+Jul 14  8:39:30 db-node sshd[2801]: Failed password for invalid user guest from 203.0.113.10 port 20466 ssh2
+Jul 14  8:39:39 server01 sshd[2805]: Invalid user nagios from 2001:db8::11 port 40702
+Jul 14  8:39:45 server01 sshd[2807]: Failed password for invalid user nagios from 91.240.118.172 port 37124 ssh2
+
+Jul 14  8:39:59 web-prod sshd[2814]: Failed password for oracle from 172.16.0.12 port 56366 ssh2
+Jul 14  8:40:09 gateway sshd[2818]: Accepted publickey for deploy from 10.0.0.15 port 35058 ssh2
+Jul 14  8:40:17 server02 sshd[2819]: Failed password for invalid user manager from 2001:db8:abcd::42 port 42179 ssh2
+Jul 14  8:40:29 server01 sshd[2821]: Failed password for invalid user minecraft from 203.0.113.10 port 25969 ssh2
+Jul 14  8:40:39 web-prod sshd[2822]: Failed password for root from 45.155.205.99 port 44303 ssh2
+Jul 14  8:40:51 web-prod sshd[2826]: Invalid user manager from 91.240.118.172 port 38774
+Jul 14  8:40:52 server02 sshd[2830]: Failed password for invalid user service from 185.220.101.18 port 63049 ssh2
+Jul 14  8:40:57 server02 sshd[2831]: Connection closed by authenticating user root 91.240.118.172 port 53804 [preauth]
+Jul 14  8:41:09 server02 sshd[2833]: Accepted publickey for andrea from 192.168.1.50 port 62927 ssh2
+
+Jul 14  8:41:16 web-prod sshd[2838]: Invalid user guest from 91.240.118.172 port 21007
+Jul 14  8:41:18 db-node sshd[2841]: Accepted publickey for alessio from 192.168.1.50 port 38121 ssh2
+Jul 14  8:41:22 db-node sshd[2843]: Failed password for ubuntu from 2001:db8:abcd::42 port 57677 ssh2
+Jul 14  8:41:29 db-node sshd[2844]: Invalid user jenkins from 91.240.118.172 port 39284
+Jul 14  8:41:31 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:41:41 gateway sshd[2851]: Received disconnect: 11: Bye Bye
+Jul 14  8:41:51 web-prod sshd[2853]: Accepted publickey for deploy from 172.16.0.12 port 50193 ssh2
+Jul 14  8:42:01 server01 sshd[2857]: Failed password for invalid user ftpuser from 198.51.100.23 port 45078 ssh2
+Jul 14  8:42:12 server02 sshd[2860]: Failed password for webmaster from 2001:db8::11 port 53849 ssh2
+Jul 14  8:42:17 server02 sshd[2863]: Failed password for invalid user pi from 2001:db8::10 port 24982 ssh2
+Jul 14  8:42:25 gateway sshd[2866]: Failed password for invalid user ftpuser from 91.240.118.172 port 31978 ssh2
+Jul 14  8:42:33 server02 sshd[2868]: Accepted publickey for andrea from 192.168.1.50 port 35021 ssh2
+Jul 14  8:42:37 server02 sshd[2871]: Failed password for invalid user minecraft from 198.51.100.24 port 27856 ssh2
+Jul 14  8:42:47 server01 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:42:53 db-node sshd[2875]: Failed password for git from 91.240.118.172 port 52165 ssh2
+Jul 14  8:42:58 web-prod sshd[2877]: Accepted publickey for andrea from 10.0.0.20 port 54454 ssh2
+Jul 14  8:43:05 web-prod sshd[2878]: Failed password for invalid user minecraft from 2001:db8:abcd::42 port 64979 ssh2
+Jul 14  8:43:07 db-node sshd[2882]: Failed password for invalid user nagios from 203.0.113.10 port 20774 ssh2
+Jul 14  8:43:17 server01 sshd[2885]: Failed password for test from 91.240.118.172 port 32265 ssh2
+Jul 14  8:43:22 web-prod sshd[2888]: Failed password for webmaster from 10.0.0.20 port 47783 ssh2
+Jul 14  8:43:28 gateway sshd[2892]: Failed password for user from 192.0.2.45 port 57447 ssh2
+Jul 14  8:43:39 server02 sshd[2893]: Accepted publickey for deploy from 10.0.0.20 port 48325 ssh2
+Jul 14  8:43:46 server02 sshd[2895]: Connection closed by authenticating user root 198.51.100.23 port 50997 [preauth]
+Jul 14  8:43:47 server02 sshd[2899]: Failed password for invalid user minecraft from 192.168.1.50 port 54995 ssh2
+Jul 14  8:43:52 gateway sshd[2900]: Failed password for oracle from 192.0.2.45 port 23934 ssh2
+Jul 14  8:44:00 server01 sshd[2904]: Accepted publickey for alessio from 192.168.1.50 port 43613 ssh2
+Jul 14  8:44:09 db-node sshd[2907]: Failed password for support from 2001:db8:feed::99 port 27945 ssh2
+Jul 14  8:44:19 server02 kernel: eth0: link is up
+Jul 14  8:44:25 gateway sshd[2913]: Connection closed by authenticating user root 45.155.205.99 port 25138 [preauth]
+Jul 14  8:44:32 db-node sshd[2916]: Failed password for invalid user jenkins from 192.0.2.44 port 30982 ssh2
+Jul 14  8:44:39 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:44:41 server01 sshd[2922]: Failed password for invalid user devops from 2001:db8::10 port 40766 ssh2
+Jul 14  8:44:51 web-prod sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:44:57 db-node sshd[2929]: Failed password for test from 192.0.2.45 port 21513 ssh2
+Jul 14  8:45:08 gateway sshd[2930]: Failed password for backup from 2001:db8:abcd::42 port 26750 ssh2
+Jul 14  8:45:17 server01 sshd[2931]: Connection closed by authenticating user root 91.240.118.172 port 25455 [preauth]
+Jul 14  8:45:19 gateway sshd[2933]: Failed password for webmaster from 2001:db8:abcd::42 port 40274 ssh2
+Jul 14  8:45:24 web-prod sshd[2935]: Failed password for postgres from 192.0.2.45 port 21872 ssh2
+Jul 14  8:45:30 web-prod sshd[2939]: Received disconnect: 11: Bye Bye
+Jul 14  8:45:39 gateway sshd[2943]: Failed password for invalid user minecraft from 172.16.0.12 port 31602 ssh2
+Jul 14  8:45:50 db-node sshd[2947]: Failed password for invalid user minecraft from 172.16.0.12 port 40293 ssh2
+Jul 14  8:45:59 server02 sshd[2948]: Failed password for oracle from 2001:db8::11 port 47014 ssh2
+Jul 14  8:46:00 server01 sshd[2950]: Failed password for backup from 10.0.0.20 port 55068 ssh2
+Jul 14  8:46:08 gateway sshd[2951]: Accepted publickey for deploy from 192.168.1.50 port 35152 ssh2
+Jul 14  8:46:09 db-node sshd[2954]: Failed password for ubuntu from 172.16.0.12 port 48646 ssh2
+Jul 14  8:46:21 web-prod sshd[2958]: Failed password for invalid user service from 198.51.100.23 port 47671 ssh2
+Jul 14  8:46:31 gateway sshd[2961]: Invalid user nagios from 91.240.118.172 port 37617
+Jul 14  8:46:35 server01 sshd[2963]: Failed password for backup from 198.51.100.24 port 61739 ssh2
+Jul 14  8:46:40 db-node sshd[2967]: Failed password for git from 203.0.113.10 port 29971 ssh2
+Jul 14  8:46:41 server02 sshd[2968]: Failed password for invalid user ftpuser from 192.0.2.44 port 48732 ssh2
+Jul 14  8:46:43 server02 sshd[2969]: Failed password for backup from 2001:db8::10 port 47541 ssh2
+Jul 14  8:46:49 web-prod sshd[2970]: Failed password for deploy from 192.0.2.44 port 23672 ssh2
+Jul 14  8:46:51 db-node sshd[2974]: Failed password for invalid user guest from 91.240.118.172 port 45007 ssh2
+Jul 14  8:47:03 server02 sshd[2978]: Connection closed by authenticating user root 45.155.205.99 port 36198 [preauth]
+Jul 14  8:47:15 server01 sshd[2980]: Failed password for invalid user ftpuser from 198.51.100.24 port 54153 ssh2
+Jul 14  8:47:23 web-prod CRON[2983]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:47:26 server01 sshd[2984]: Failed password for root from 89.248.165.12 port 33023 ssh2
+Jul 14  8:47:37 server02 sshd[2985]: Failed password for oracle from 2001:db8:feed::99 port 41267 ssh2
+Jul 14  8:47:47 server01 sshd[2989]: Connection closed by authenticating user root 203.0.113.10 port 22752 [preauth]
+Jul 14  8:47:57 web-prod sshd[2991]: Failed password for admin from 198.51.100.23 port 36300 ssh2
+Jul 14  8:48:08 db-node CRON[2994]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:48:19 server01 sshd[2995]: Failed password for invalid user pi from 192.0.2.44 port 55150 ssh2
+Jul 14  8:48:27 server02 kernel: eth0: link is up
+Jul 14  8:48:35 server02 sshd[2999]: Accepted publickey for deploy from 192.168.1.50 port 28829 ssh2
+Jul 14  8:48:40 server01 sshd[3003]: Accepted publickey for deploy from 192.168.1.50 port 52118 ssh2
+Jul 14  8:48:44 db-node sshd[3005]: Failed password for user from 2001:db8::10 port 50696 ssh2
+Jul 14  8:48:53 server02 sshd[3006]: Failed password for invalid user service from 10.0.0.15 port 39377 ssh2
+Jul 14  8:48:59 web-prod sshd[3007]: Connection closed by authenticating user root 91.240.118.172 port 44840 [preauth]
+Jul 14  8:49:11 server02 sshd[3008]: Invalid user ftpuser from 192.0.2.45 port 60645
+Jul 14  8:49:17 server01 sshd[3012]: Failed password for oracle from 10.0.0.20 port 56140 ssh2
+Jul 14  8:49:23 web-prod sshd[3015]: Failed password for ubuntu from 192.168.1.50 port 63181 ssh2
+Jul 14  8:49:26 server01 sshd[3017]: Failed password for support from 185.220.101.18 port 26471 ssh2
+Jul 14  8:49:33 web-prod sshd[3020]: Failed password for invalid user administrator from 45.155.205.99 port 59711 ssh2
+Jul 14  8:49:37 web-prod sshd[3021]: Failed password for invalid user nagios from 203.0.113.11 port 43653 ssh2
+Jul 14  8:49:43 server01 sshd[3024]: Failed password for test from 198.51.100.23 port 39916 ssh2
+Jul 14  8:49:52 server01 sshd[3025]: Accepted publickey for andrea from 172.16.0.12 port 32656 ssh2
+Jul 14  8:50:01 server02 sshd[3027]: Invalid user guest from 91.240.118.172 port 47209
+Jul 14  8:50:12 db-node sshd[3030]: Accepted publickey for andrea from 172.16.0.12 port 30932 ssh2
+Jul 14  8:50:15 db-node sshd[3034]: Failed password for invalid user minecraft from 192.0.2.45 port 54989 ssh2
+Jul 14  8:50:21 gateway sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:50:28 web-prod sshd[3040]: Invalid user ftpuser from 89.248.165.12 port 55758
+Jul 14  8:50:35 db-node sshd[3043]: Failed password for invalid user administrator from 10.0.0.15 port 49327 ssh2
+Jul 14  8:50:47 server01 sshd[3046]: Invalid user devops from 91.240.118.172 port 28852
+Jul 14  8:50:48 gateway sshd[3048]: Failed password for invalid user devops from 2001:db8::10 port 21422 ssh2
+Jul 14  8:50:57 db-node sshd[3050]: Failed password for oracle from 10.0.0.15 port 43308 ssh2
+Jul 14  8:51:03 db-node sshd[3052]: Failed password for invalid user manager from 89.248.165.12 port 26023 ssh2
+Jul 14  8:51:07 server01 sshd[3055]: Connection closed by authenticating user root 198.51.100.23 port 51999 [preauth]
+Jul 14  8:51:19 db-node sshd[3056]: Invalid user manager from 192.0.2.44 port 22449
+Jul 14  8:51:26 server01 CRON[3057]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:51:32 gateway sshd[3061]: Failed password for invalid user manager from 198.51.100.24 port 34858 ssh2
+Jul 14  8:51:33 web-prod sshd[3062]: Failed password for ubuntu from 203.0.113.11 port 40926 ssh2
+Jul 14  8:51:39 db-node sshd[3064]: Failed password for invalid user manager from 2001:db8:abcd::42 port 49203 ssh2
+Jul 14  8:51:48 server01 sshd[3066]: Failed password for admin from 2001:db8:abcd::42 port 29700 ssh2
+Jul 14  8:51:56 db-node sshd[3067]: Failed password for deploy from 91.240.118.172 port 25575 ssh2
+Jul 14  8:52:08 server02 sshd[3069]: Failed password for user from 185.220.101.18 port 51972 ssh2
+Jul 14  8:52:12 db-node sshd[3071]: Failed password for user from 91.240.118.172 port 48184 ssh2
+Jul 14  8:52:14 server01 sshd[3075]: Failed password for user from 2001:db8::11 port 32483 ssh2
+Jul 14  8:52:25 server01 sshd[3078]: Failed password for invalid user minecraft from 2001:db8::11 port 60384 ssh2
+Jul 14  8:52:35 server02 sshd[3082]: Failed password for invalid user pi from 45.155.205.99 port 33086 ssh2
+Jul 14  8:52:47 server01 sshd[3083]: Accepted publickey for deploy from 10.0.0.20 port 29678 ssh2
+Jul 14  8:52:52 server01 sshd[3086]: Accepted publickey for alessio from 10.0.0.15 port 49495 ssh2
+Jul 14  8:53:00 server01 sshd[3089]: Failed password for git from 172.16.0.12 port 33885 ssh2
+Jul 14  8:53:05 db-node sshd[3093]: Invalid user administrator from 198.51.100.23 port 63795
+Jul 14  8:53:12 db-node sshd[3094]: Failed password for webmaster from 203.0.113.11 port 38613 ssh2
+Jul 14  8:53:22 gateway sshd[3095]: Failed password for oracle from 203.0.113.10 port 24364 ssh2
+Jul 14  8:53:33 gateway sshd[3096]: Failed password for invalid user service from 2001:db8:abcd::42 port 35149 ssh2
+Jul 14  8:53:45 server01 sshd[3099]: Failed password for git from 172.16.0.12 port 25768 ssh2
+Jul 14  8:53:53 db-node sshd[3100]: Failed password for deploy from 192.168.1.50 port 39983 ssh2
+Jul 14  8:54:05 server02 sshd[3101]: Failed password for invalid user ftpuser from 2001:db8::11 port 43290 ssh2
+Jul 14  8:54:14 gateway sshd[3102]: Invalid user service from 185.220.101.18 port 21931
+Jul 14  8:54:19 server02 sshd[3104]: Failed password for webmaster from 2001:db8:abcd::42 port 63052 ssh2
+Jul 14  8:54:26 db-node sshd[3106]: Failed password for invalid user manager from 192.0.2.44 port 47948 ssh2
+Jul 14  8:54:32 web-prod sshd[3108]: Failed password for test from 192.0.2.44 port 58078 ssh2
+Jul 14  8:54:35 gateway sshd[3110]: Failed password for invalid user pi from 192.0.2.44 port 63006 ssh2
+Jul 14  8:54:41 server01 sshd[3111]: Failed password for invalid user nagios from 192.0.2.44 port 21932 ssh2
+Jul 14  8:54:48 gateway sshd[3115]: Accepted publickey for andrea from 192.168.1.50 port 32316 ssh2
+Jul 14  8:54:50 server02 sshd[3117]: Failed password for invalid user ftpuser from 91.240.118.172 port 59688 ssh2
+Jul 14  8:55:00 server02 sshd[3119]: Accepted publickey for andrea from 192.168.1.50 port 51234 ssh2
+Jul 14  8:55:03 db-node sshd[3123]: Accepted publickey for andrea from 192.168.1.50 port 45392 ssh2
+Jul 14  8:55:11 web-prod sshd[3125]: Failed password for root from 45.155.205.99 port 22112 ssh2
+Jul 14  8:55:16 web-prod sshd[3127]: Accepted publickey for andrea from 10.0.0.20 port 24334 ssh2
+Jul 14  8:55:19 web-prod sshd[3131]: Accepted publickey for andrea from 172.16.0.12 port 48020 ssh2
+Jul 14  8:55:26 server01 sshd[3135]: Accepted publickey for deploy from 172.16.0.12 port 57482 ssh2
+Jul 14  8:55:36 db-node sshd[3136]: Failed password for invalid user administrator from 10.0.0.15 port 49943 ssh2
+questa riga non è un log SSH valido
+Jul 14  8:55:49 web-prod sshd[3141]: Failed password for invalid user devops from 10.0.0.15 port 46085 ssh2
+Jul 14  8:55:57 server02 sshd[3145]: Failed password for invalid user minecraft from 203.0.113.11 port 53880 ssh2
+Jul 14  8:56:08 web-prod sshd[3146]: Accepted publickey for andrea from 10.0.0.15 port 58367 ssh2
+Jul 14  8:56:20 db-node sshd[3148]: Failed password for backup from 2001:db8::10 port 49549 ssh2
+Jul 14  8:56:30 server02 sshd[3152]: Failed password for invalid user pi from 2001:db8::10 port 62505 ssh2
+Jul 14  8:56:42 server01 sshd[3153]: Failed password for git from 10.0.0.15 port 61554 ssh2
+Jul 14  8:56:54 web-prod sshd[3155]: Failed password for invalid user jenkins from 2001:db8:abcd::42 port 22877 ssh2
+Jul 14  8:57:04 server02 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  8:57:07 server01 sshd[3161]: Failed password for invalid user guest from 10.0.0.15 port 38925 ssh2
+Jul 14  8:57:10 server02 sshd[3162]: Invalid user minecraft from 192.0.2.44 port 20800
+Jul 14  8:57:18 web-prod sshd[3163]: Invalid user ftpuser from 45.155.205.99 port 35589
+Jul 14  8:57:28 web-prod sshd[3167]: Failed password for invalid user ftpuser from 198.51.100.23 port 59401 ssh2
+Jul 14  8:57:37 gateway sshd[3169]: Failed password for invalid user administrator from 192.0.2.44 port 23608 ssh2
+Jul 14  8:57:40 server01 sshd[3172]: Failed password for ubuntu from 198.51.100.23 port 23213 ssh2
+Jul 14  8:57:43 gateway sshd[3174]: Received disconnect: 11: Bye Bye
+Jul 14  8:57:55 db-node CRON[3177]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:57:57 gateway sshd[3180]: Failed password for invalid user service from 2001:db8:abcd::42 port 24434 ssh2
+Jul 14  8:57:59 gateway sshd[3184]: Failed password for git from 91.240.118.172 port 41575 ssh2
+Jul 14  8:58:03 server02 sshd[3185]: Failed password for webmaster from 192.168.1.50 port 25745 ssh2
+Jul 14  8:58:13 gateway sshd[3189]: Invalid user service from 192.0.2.45 port 37017
+Jul 14  8:58:23 db-node CRON[3192]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  8:58:33 db-node sshd[3196]: Failed password for invalid user manager from 10.0.0.20 port 52276 ssh2
+Jul 14  8:58:37 gateway sshd[3198]: Failed password for invalid user guest from 203.0.113.10 port 50466 ssh2
+Jul 14  8:58:49 server02 sshd[3202]: Failed password for invalid user ftpuser from 2001:db8::10 port 42914 ssh2
+Jul 14  8:58:50 server02 sshd[3205]: Failed password for git from 198.51.100.23 port 40170 ssh2
+Jul 14  8:58:56 server01 sshd[3206]: Accepted publickey for alessio from 192.168.1.50 port 57284 ssh2
+Jul 14  8:59:06 server01 sshd[3208]: Failed password for backup from 2001:db8::10 port 64071 ssh2
+Jul 14  8:59:07 server02 sshd[3212]: Failed password for invalid user minecraft from 10.0.0.15 port 55190 ssh2
+Jul 14  8:59:14 server01 sshd[3215]: Invalid user service from 2001:db8::10 port 40676
+Jul 14  8:59:23 server01 sshd[3217]: Invalid user guest from 192.0.2.45 port 43173
+Jul 14  8:59:26 gateway sshd[3218]: Failed password for ubuntu from 2001:db8:abcd::42 port 61059 ssh2
+Jul 14  8:59:36 db-node sshd[3222]: Failed password for invalid user jenkins from 198.51.100.24 port 40203 ssh2
+Jul 14  8:59:48 server01 sshd[3225]: Failed password for oracle from 10.0.0.20 port 35574 ssh2
+Jul 14  8:59:52 db-node sshd[3228]: Failed password for invalid user guest from 2001:db8::11 port 22450 ssh2
+Jul 14  9:00:00 db-node sshd[3229]: Connection closed by authenticating user root 91.240.118.172 port 30097 [preauth]
+Jul 14  9:00:04 gateway sshd[3233]: Accepted publickey for alessio from 192.168.1.50 port 29390 ssh2
+Jul 14  9:00:06 db-node sshd[3235]: Failed password for git from 203.0.113.11 port 50105 ssh2
+Jul 14  9:00:08 server01 CRON[3238]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  9:00:19 db-node sshd[3239]: Failed password for support from 203.0.113.11 port 26756 ssh2
+Jul 14  9:00:31 gateway sshd[3240]: Invalid user ftpuser from 192.0.2.44 port 61867
+Jul 14  9:00:37 server02 sshd[3242]: Failed password for invalid user guest from 172.16.0.12 port 40915 ssh2
+Jul 14  9:00:42 server02 sshd[3244]: Failed password for invalid user guest from 203.0.113.10 port 60825 ssh2
+Jul 14  9:00:46 db-node sshd[3247]: Failed password for invalid user devops from 91.240.118.172 port 29277 ssh2
+Jul 14  9:00:56 server02 sshd[3249]: Failed password for ubuntu from 2001:db8::10 port 55427 ssh2
+Jul 14  9:00:57 web-prod sshd[3250]: Failed password for ubuntu from 203.0.113.11 port 25643 ssh2
+Jul 14  9:01:09 db-node sshd[3254]: Invalid user ftpuser from 192.0.2.44 port 41779
+Jul 14  9:01:21 db-node sshd[3255]: Received disconnect: 11: Bye Bye
+Jul 14  9:01:29 db-node sshd[3257]: Failed password for support from 10.0.0.15 port 26374 ssh2
+Jul 14  9:01:40 web-prod sshd[3261]: Failed password for invalid user manager from 45.155.205.99 port 29418 ssh2
+Jul 14  9:01:45 gateway sshd[3265]: Failed password for root from 2001:db8::10 port 41283 ssh2
+Jul 14  9:01:47 web-prod sshd[3266]: Failed password for postgres from 10.0.0.15 port 31193 ssh2
+Jul 14  9:01:57 db-node sshd[3268]: Failed password for support from 2001:db8:abcd::42 port 27011 ssh2
+Jul 14  9:01:59 gateway sshd[3272]: Failed password for invalid user service from 2001:db8:feed::99 port 35635 ssh2
+Jul 14  9:02:02 web-prod sshd[3276]: Failed password for deploy from 185.220.101.18 port 58729 ssh2
+Jul 14  9:02:12 gateway sshd[3278]: Failed password for invalid user guest from 198.51.100.23 port 57630 ssh2
+Jul 14  9:02:22 db-node sshd[3282]: Failed password for deploy from 198.51.100.24 port 49177 ssh2
+Jul 14  9:02:24 db-node sshd[3283]: Accepted publickey for alessio from 172.16.0.12 port 52394 ssh2
+Jul 14  9:02:35 server01 sshd[3284]: Failed password for invalid user administrator from 192.0.2.44 port 58061 ssh2
+Jul 14  9:02:38 server02 sshd[3288]: Failed password for invalid user ftpuser from 2001:db8:abcd::42 port 60342 ssh2
+Jul 14  9:02:42 gateway sshd[3291]: Invalid user nagios from 2001:db8::10 port 39958
+Jul 14  9:02:54 gateway sshd[3292]: Invalid user nagios from 89.248.165.12 port 53451
+Jul 14  9:02:57 gateway sshd[3293]: Failed password for git from 172.16.0.12 port 23481 ssh2
+Jul 14  9:03:03 server01 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  9:03:07 web-prod sshd[3300]: Invalid user nagios from 2001:db8::11 port 45086
+Jul 14  9:03:14 web-prod sshd[3302]: Invalid user ftpuser from 45.155.205.99 port 29114
+Jul 14  9:03:23 web-prod sshd[3305]: Connection closed by authenticating user root 198.51.100.23 port 38905 [preauth]
+Jul 14  9:03:34 server02 sshd[3307]: Failed password for invalid user minecraft from 203.0.113.10 port 29436 ssh2
+Jul 14  9:03:45 web-prod sshd[3309]: Failed password for invalid user manager from 2001:db8:feed::99 port 49886 ssh2
+Jul 14  9:03:52 db-node sshd[3311]: Failed password for invalid user nagios from 2001:db8:feed::99 port 56179 ssh2
+Jul 14  9:03:58 server02 sshd[3313]: Failed password for webmaster from 203.0.113.10 port 57875 ssh2
+Jul 14  9:04:02 db-node sshd[3316]: Failed password for root from 172.16.0.12 port 57771 ssh2
+Jul 14  9:04:12 web-prod sshd[3319]: Failed password for webmaster from 10.0.0.20 port 25247 ssh2
+Jul 14  9:04:21 gateway sshd[3323]: Failed password for backup from 192.168.1.50 port 59981 ssh2
+Jul 14  9:04:32 server01 sshd[3326]: Invalid user administrator from 192.0.2.45 port 55063
+Jul 14  9:04:40 web-prod sshd[3330]: Invalid user jenkins from 192.0.2.45 port 47591
+Jul 14  9:04:45 gateway sshd[3332]: Failed password for support from 89.248.165.12 port 56943 ssh2
+Jul 14  9:04:53 db-node sshd[3334]: Invalid user manager from 2001:db8::10 port 39120
+Jul 14  9:04:54 gateway sshd[3338]: Failed password for invalid user devops from 192.168.1.50 port 25037 ssh2
+Jul 14  9:04:59 server02 sshd[3341]: Failed password for invalid user manager from 91.240.118.172 port 20930 ssh2
+Jul 14  9:05:02 db-node sshd[3343]: Invalid user devops from 192.0.2.45 port 31494
+Jul 14  9:05:14 server02 sshd[3347]: Failed password for admin from 192.168.1.50 port 22168 ssh2
+Jul 14  9:05:17 db-node sshd[3349]: Connection closed by authenticating user root 185.220.101.18 port 45111 [preauth]
+Jul 14  9:05:21 web-prod sshd[3351]: Failed password for invalid user guest from 2001:db8::11 port 23560 ssh2
+Jul 14  9:05:22 server02 sshd[3355]: Failed password for invalid user service from 89.248.165.12 port 51212 ssh2
+Jul 14  9:05:26 web-prod sshd[3359]: Failed password for invalid user administrator from 192.0.2.44 port 54763 ssh2
+Jul 14  9:05:31 web-prod sshd[3363]: Accepted publickey for andrea from 10.0.0.15 port 54818 ssh2
+Jul 14  9:05:42 gateway sshd[3367]: Invalid user jenkins from 2001:db8::10 port 37864
+Jul 14  9:05:47 gateway sshd[3368]: Failed password for invalid user ftpuser from 2001:db8:abcd::42 port 50219 ssh2
+Jul 14  9:05:59 db-node sshd[3370]: Failed password for support from 192.0.2.45 port 40530 ssh2
+Jul 14  9:06:00 server01 sshd[3371]: Failed password for invalid user jenkins from 192.168.1.50 port 26809 ssh2
+Jul 14  9:06:04 gateway sshd[3374]: Failed password for user from 203.0.113.10 port 60592 ssh2
+Jul 14  9:06:15 server02 sshd[3375]: Accepted publickey for andrea from 10.0.0.15 port 59628 ssh2
+Jul 14  9:06:18 web-prod sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  9:06:30 server02 sshd[3380]: Failed password for oracle from 198.51.100.23 port 61863 ssh2
+Jul 14  9:06:37 gateway sshd[3383]: Failed password for invalid user nagios from 198.51.100.23 port 38172 ssh2
+Jul 14  9:06:44 gateway sshd[3384]: Failed password for backup from 91.240.118.172 port 31660 ssh2
+Jul 14  9:06:48 db-node sshd[3388]: Failed password for deploy from 10.0.0.20 port 27106 ssh2
+Jul 14  9:06:52 db-node CRON[3389]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  9:07:04 gateway sshd[3390]: Failed password for invalid user minecraft from 198.51.100.23 port 57443 ssh2
+Jul 14  9:07:05 web-prod sshd[3392]: Invalid user nagios from 203.0.113.10 port 22479
+Jul 14  9:07:10 server02 CRON[3395]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  9:07:20 server01 sshd[3399]: Failed password for root from 2001:db8:abcd::42 port 24594 ssh2
+Jul 14  9:07:27 web-prod sshd[3400]: Invalid user devops from 192.0.2.45 port 41852
+Jul 14  9:07:34 server01 sshd[3401]: Failed password for invalid user devops from 2001:db8::10 port 25272 ssh2
+Jul 14  9:07:45 server02 sshd[3403]: Invalid user ftpuser from 185.220.101.18 port 63301
+Jul 14  9:07:50 web-prod sshd[3404]: Invalid user guest from 192.0.2.45 port 51883
+Jul 14  9:08:01 web-prod sshd[3406]: Failed password for invalid user manager from 185.220.101.18 port 21662 ssh2
+Jul 14  9:08:05 web-prod sshd[3410]: Failed password for git from 172.16.0.12 port 62166 ssh2
+Jul 14  9:08:13 server01 sshd[3411]: Failed password for test from 2001:db8::10 port 22805 ssh2
+Jul 14  9:08:24 db-node CRON[3415]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  9:08:33 server02 CRON[3417]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  9:08:34 server02 sshd[3421]: Invalid user administrator from 45.155.205.99 port 60525
+Jul 14  9:08:38 server02 sshd[3422]: Failed password for invalid user guest from 203.0.113.11 port 40141 ssh2
+Jul 14  9:08:46 db-node sshd[3424]: Connection closed by authenticating user root 203.0.113.11 port 26968 [preauth]
+Jul 14  9:08:48 web-prod sshd[3426]: Failed password for webmaster from 185.220.101.18 port 47932 ssh2
+Jul 14  9:08:59 web-prod sshd[3429]: Failed password for test from 172.16.0.12 port 29000 ssh2
+Jul 14  9:09:00 db-node sshd[3431]: Failed password for deploy from 198.51.100.24 port 37949 ssh2
+Jul 14  9:09:03 gateway sshd[3433]: Failed password for support from 203.0.113.11 port 28740 ssh2
+Jul 14  9:09:13 web-prod sshd[3435]: Failed password for ubuntu from 10.0.0.20 port 25290 ssh2
+Jul 14  9:09:15 db-node sshd[3438]: Failed password for support from 10.0.0.20 port 28316 ssh2
+Jul 14  9:09:20 db-node sshd[3442]: Failed password for invalid user manager from 192.0.2.45 port 60012 ssh2
+Jul 14  9:09:23 web-prod sshd[3443]: Invalid user jenkins from 2001:db8:abcd::42 port 39739
+Jul 14  9:09:30 server01 sshd[3445]: Failed password for invalid user service from 192.168.1.50 port 26270 ssh2
+Jul 14  9:09:39 server02 sshd[3449]: Connection closed by authenticating user root 198.51.100.24 port 38115 [preauth]
+Jul 14  9:09:40 server02 sshd[3450]: Connection closed by authenticating user root 45.155.205.99 port 52605 [preauth]
+Jul 14  9:09:43 server02 sshd[3451]: Failed password for oracle from 2001:db8::11 port 38681 ssh2
+Jul 14  9:09:49 db-node sshd[3455]: Failed password for root from 203.0.113.11 port 55216 ssh2
+Jul 14  9:09:57 db-node sshd[3456]: Failed password for invalid user jenkins from 45.155.205.99 port 49151 ssh2
+Jul 14  9:10:04 server02 sshd[3459]: Failed password for test from 198.51.100.24 port 41373 ssh2
+Jul 14  9:10:16 web-prod sshd[3461]: Failed password for backup from 45.155.205.99 port 24818 ssh2
+Jul 14  9:10:17 web-prod sshd[3463]: Failed password for ubuntu from 10.0.0.15 port 31669 ssh2
+Jul 14  9:10:25 server02 sshd[3466]: Failed password senza indirizzo IP
+Jul 14  9:10:31 server02 sshd[3467]: Accepted publickey for alessio from 10.0.0.15 port 28945 ssh2
+Jul 14  9:10:33 web-prod sshd[3471]: Failed password for invalid user manager from 2001:db8::10 port 34408 ssh2
+Jul 14  9:10:36 db-node sshd[3473]: Invalid user guest from 91.240.118.172 port 35053
+Jul 14  9:10:43 db-node sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  9:10:47 db-node sshd[3481]: Connection closed by authenticating user root 192.0.2.44 port 20950 [preauth]
+Jul 14  9:10:59 web-prod sshd[3483]: Failed password for user from 2001:db8:feed::99 port 57975 ssh2
+Jul 14  9:11:02 db-node sshd[3484]: Failed password for invalid user service from 203.0.113.11 port 22625 ssh2
+Jul 14  9:11:03 web-prod sshd[3488]: Failed password for admin from 198.51.100.24 port 49651 ssh2
+Jul 14  9:11:12 server01 CRON[3492]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  9:11:15 gateway sshd[3495]: Failed password for oracle from 198.51.100.23 port 21043 ssh2
+
+Jul 14  9:11:21 web-prod sshd[3498]: Connection closed by authenticating user root 192.0.2.45 port 61078 [preauth]
+Jul 14  9:11:29 server01 sshd[3499]: Failed password for deploy from 2001:db8::10 port 54794 ssh2
+Jul 14  9:11:34 db-node sshd[3501]: Connection closed by authenticating user root 203.0.113.11 port 60662 [preauth]
+Jul 14  9:11:40 server01 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  9:11:42 web-prod sshd[3507]: Failed password for support from 203.0.113.11 port 43958 ssh2
+Jul 14  9:11:51 server01 sshd[3509]: Failed password for support from 2001:db8::10 port 35639 ssh2
+Jul 14  9:11:59 db-node sshd[3511]: Accepted publickey for alessio from 10.0.0.20 port 43115 ssh2
+Jul 14  9:12:04 db-node sshd[3515]: Failed password for backup from 198.51.100.23 port 44432 ssh2
+Jul 14  9:12:13 db-node sshd[3516]: Failed password for invalid user devops from 172.16.0.12 port 64453 ssh2
+Jul 14  9:12:21 db-node sshd[3519]: Connection closed by authenticating user root 203.0.113.11 port 32343 [preauth]
+Jul 14  9:12:29 server01 sshd[3520]: Failed password for invalid user guest from 192.0.2.45 port 38898 ssh2
+Jul 14  9:12:31 server02 sshd[3523]: Failed password for test from 192.0.2.44 port 52527 ssh2
+Jul 14  9:12:40 server01 sshd[3526]: Failed password for deploy from 172.16.0.12 port 28652 ssh2
+Jul 14  9:12:48 server01 sshd[3529]: Failed password for invalid user service from 203.0.113.10 port 35225 ssh2
+Jul 14  9:12:59 gateway sshd[3533]: Invalid user jenkins from 2001:db8::10 port 62339
+Jul 14  9:13:07 db-node sshd[3537]: Failed password for oracle from 192.0.2.44 port 40086 ssh2
+Jul 14  9:13:11 web-prod sshd[3540]: Received disconnect: 11: Bye Bye
+Jul 14  9:13:12 server02 sshd[3543]: Failed password for invalid user service from 192.0.2.45 port 60542 ssh2
+Jul 14  9:13:17 server02 sshd[3545]: Connection closed by authenticating user root 198.51.100.23 port 30567 [preauth]
+Jul 14  9:13:21 server01 sshd[3546]: Failed password senza indirizzo IP
+Jul 14  9:13:29 gateway sshd[3549]: Failed password for invalid user jenkins from 172.16.0.12 port 22273 ssh2
+Jul 14  9:13:32 gateway sshd[3553]: Failed password for root from 192.0.2.45 port 54972 ssh2
+Jul 14  9:13:39 web-prod CRON[3555]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  9:13:45 server02 sshd[3556]: Received disconnect: 11: Bye Bye
+Jul 14  9:13:54 db-node sshd[3559]: Invalid user devops from 192.0.2.44 port 51058
+Jul 14  9:14:04 server02 sshd[3563]: Failed password for invalid user pi from 198.51.100.24 port 51390 ssh2
+Jul 14  9:14:15 db-node sshd[3564]: Failed password for invalid user minecraft from 2001:db8:abcd::42 port 60469 ssh2
+Jul 14  9:14:21 server01 sshd[3567]: Failed password for oracle from 185.220.101.18 port 58235 ssh2
+Jul 14  9:14:25 server01 sshd[3568]: Failed password for invalid user guest from 10.0.0.15 port 64372 ssh2
+Jul 14  9:14:34 web-prod sshd[3570]: Failed password for invalid user jenkins from 192.168.1.50 port 23673 ssh2
+Jul 14  9:14:41 server02 sshd[3574]: Failed password for postgres from 2001:db8::11 port 20798 ssh2
+Jul 14  9:14:46 web-prod sshd[3575]: Failed password for invalid user devops from 10.0.0.15 port 47237 ssh2
+Jul 14  9:14:49 web-prod sshd[3579]: Failed password for backup from 198.51.100.23 port 29413 ssh2
+Jul 14  9:14:58 gateway CRON[3580]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  9:15:08 web-prod sshd[3581]: Failed password for backup from 91.240.118.172 port 47165 ssh2
+Jul 14  9:15:20 db-node sshd[3583]: Failed password for invalid user administrator from 2001:db8:abcd::42 port 38970 ssh2
+Jul 14  9:15:25 db-node sshd[3586]: Failed password for root from 10.0.0.15 port 34714 ssh2
+Jul 14  9:15:28 gateway sshd[3589]: Received disconnect: 11: Bye Bye
+Jul 14  9:15:39 web-prod sshd[3590]: Invalid user pi from 192.0.2.44 port 47338
+Jul 14  9:15:47 server02 sshd[3591]: Failed password for invalid user guest from 91.240.118.172 port 52312 ssh2
+Jul 14  9:15:57 gateway sshd[3595]: Invalid user minecraft from 2001:db8:feed::99 port 36902
+Jul 14  9:16:09 server01 sshd[3598]: Failed password for root from 203.0.113.10 port 37009 ssh2
+Jul 14  9:16:12 gateway sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  9:16:15 gateway sshd[3604]: Failed password for invalid user jenkins from 2001:db8::11 port 47493 ssh2
+Jul 14  9:16:16 gateway sshd[3607]: Failed password for support from 198.51.100.23 port 53676 ssh2
+Jul 14  9:16:19 server01 sshd[3609]: Failed password for invalid user devops from 2001:db8::10 port 64890 ssh2
+Jul 14  9:16:30 gateway sshd[3610]: Failed password for git from 2001:db8::11 port 29418 ssh2
+Jul 14  9:16:35 gateway sshd[3614]: Failed password for git from 192.0.2.45 port 26712 ssh2
+Jul 14  9:16:39 server02 sshd[3615]: Failed password for invalid user administrator from 198.51.100.23 port 27639 ssh2
+Jul 14  9:16:47 gateway sshd[3618]: Accepted publickey for alessio from 10.0.0.20 port 59167 ssh2
+Jul 14  9:16:56 gateway sshd[3620]: Accepted publickey for deploy from 10.0.0.15 port 27772 ssh2
+Jul 14  9:17:00 server02 sshd[3622]: Accepted publickey for andrea from 192.168.1.50 port 33752 ssh2
+Jul 14  9:17:03 server01 sshd[3626]: Accepted publickey for andrea from 10.0.0.15 port 21232 ssh2
+Jul 14  9:17:11 web-prod sshd[3627]: Failed password for root from 203.0.113.11 port 63239 ssh2
+Jul 14  9:17:19 server01 sshd[3630]: Failed password for admin from 89.248.165.12 port 63750 ssh2
+Jul 14  9:17:21 db-node sshd[3632]: Invalid user jenkins from 198.51.100.24 port 32109
+Jul 14  9:17:22 server01 sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  9:17:27 db-node sshd[3637]: Failed password for user from 192.168.1.50 port 60170 ssh2
+Jul 14  9:17:29 server01 sshd[3638]: Failed password for git from 185.220.101.18 port 38471 ssh2
+Jul 14  9:17:30 server01 CRON[3640]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 14  9:17:42 web-prod sshd[3643]: Accepted publickey for alessio from 10.0.0.20 port 64140 ssh2
+
+Jul 14  9:17:48 db-node sshd[3648]: Failed password for git from 2001:db8::10 port 28101 ssh2
+Jul 14  9:17:51 web-prod sshd[3651]: Accepted publickey for andrea from 10.0.0.15 port 41503 ssh2
+Jul 14  9:17:59 server01 sshd[3655]: Failed password for deploy from 89.248.165.12 port 49095 ssh2
+Jul 14  9:18:04 web-prod sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Jul 14  9:18:12 gateway sshd[3659]: Failed password for backup from 10.0.0.20 port 64046 ssh2
+Jul 14  9:18:21 server01 sshd[3660]: Failed password for invalid user pi from 2001:db8:abcd::42 port 58702 ssh2
+Jul 14  9:18:23 gateway sshd[3662]: Failed password for deploy from 2001:db8:abcd::42 port 28045 ssh2
+Jul 14  9:18:35 web-prod sshd[3665]: Accepted publickey for deploy from 192.168.1.50 port 46229 ssh2
+Jul 14  9:18:41 web-prod kernel: eth0: link is up
+Jul 14  9:18:44 web-prod sshd[3670]: Failed password for ubuntu from 10.0.0.20 port 52589 ssh2
+Jul 14  9:18:45 server01 sshd[3671]: Connection closed by authenticating user root 45.155.205.99 port 64440 [preauth]
+Jul 14  9:18:46 server02 sshd[3675]: Invalid user devops from 192.0.2.45 port 30009
+Jul 14  9:18:56 db-node sshd[3676]: Accepted publickey for alessio from 172.16.0.12 port 33233 ssh2
+Jul 14  9:19:01 web-prod sshd[3680]: Failed password for invalid user service from 172.16.0.12 port 42519 ssh2
+questa riga non è un log SSH valido
+Jul 14  9:19:17 web-prod sudo: andrea : TTY=pts/0 ; PWD=/home/andrea ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
