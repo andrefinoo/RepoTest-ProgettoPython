@@ -1,5 +1,11 @@
 {
-  "threshold": 3,
-  "window_minutes": 10,
-  "whitelist": ["127.0.0.1/32", "::1/128"]
+  "max_attempts": 3,
+  "window_seconds": 120,
+  "whitelist": [
+    "127.0.0.1",
+    "::1"
+  ],
+  "backend": "dry-run",
+  "dry_run": true,
+  "state_file": "examples/ban_state.json"
 }
